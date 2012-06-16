@@ -1,0 +1,639 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+au.com.bytecode.opencsv.CSVParser:
+    public static final char DEFAULT_SEPARATOR
+    public static final int INITIAL_READ_SIZE
+    public static final char DEFAULT_QUOTE_CHARACTER
+    public static final char DEFAULT_ESCAPE_CHARACTER
+    public static final boolean DEFAULT_STRICT_QUOTES
+    public static final boolean DEFAULT_IGNORE_LEADING_WHITESPACE
+    public CSVParser(char)
+    public CSVParser(char,char)
+    public java.lang.String[] parseLine(java.lang.String)
+au.com.bytecode.opencsv.CSVReader:
+    public static final int DEFAULT_SKIP_LINES
+    public CSVReader(java.io.Reader,char)
+    public CSVReader(java.io.Reader,char,char)
+    public CSVReader(java.io.Reader,char,char,boolean)
+    public CSVReader(java.io.Reader,char,char,int)
+    public CSVReader(java.io.Reader,char,char,char,int)
+    public java.util.List readAll()
+au.com.bytecode.opencsv.CSVWriter:
+    public static final int INITIAL_STRING_SIZE
+    public static final char DEFAULT_ESCAPE_CHARACTER
+    public static final char DEFAULT_SEPARATOR
+    public static final char DEFAULT_QUOTE_CHARACTER
+    public static final char NO_QUOTE_CHARACTER
+    public static final char NO_ESCAPE_CHARACTER
+    public static final java.lang.String DEFAULT_LINE_END
+    public CSVWriter(java.io.Writer,char,char,java.lang.String)
+    public void writeAll(java.util.List)
+    protected void writeColumnNames(java.sql.ResultSet)
+    public void writeAll(java.sql.ResultSet,boolean)
+    public boolean checkError()
+    public void setResultService(au.com.bytecode.opencsv.ResultSetHelper)
+au.com.bytecode.opencsv.ResultSetHelper:
+    public abstract java.lang.String[] getColumnNames(java.sql.ResultSet)
+    public abstract java.lang.String[] getColumnValues(java.sql.ResultSet)
+au.com.bytecode.opencsv.ResultSetHelperService:
+    public static final int CLOBBUFFERSIZE
+    private static final int NVARCHAR
+    private static final int NCHAR
+    private static final int LONGNVARCHAR
+    private static final int NCLOB
+    public java.lang.String[] getColumnNames(java.sql.ResultSet)
+    public java.lang.String[] getColumnValues(java.sql.ResultSet)
+    private java.lang.String handleObject(java.lang.Object)
+    private java.lang.String handleBigDecimal(java.math.BigDecimal)
+    private java.lang.String handleLong(java.sql.ResultSet,int)
+    private java.lang.String handleInteger(java.sql.ResultSet,int)
+    private java.lang.String handleDate(java.sql.ResultSet,int)
+    private java.lang.String handleTime(java.sql.Time)
+    private java.lang.String handleTimestamp(java.sql.Timestamp)
+    private java.lang.String getColumnValue(java.sql.ResultSet,int,int)
+    private static java.lang.String read(java.sql.Clob)
+au.com.bytecode.opencsv.bean.ColumnPositionMappingStrategy:
+    public void captureHeader(au.com.bytecode.opencsv.CSVReader)
+    protected java.lang.String getColumnName(int)
+    public java.lang.String[] getColumnMapping()
+    public void setColumnMapping(java.lang.String[])
+au.com.bytecode.opencsv.bean.CsvToBean:
+    public java.util.List parse(au.com.bytecode.opencsv.bean.MappingStrategy,java.io.Reader)
+    public java.util.List parse(au.com.bytecode.opencsv.bean.MappingStrategy,au.com.bytecode.opencsv.CSVReader)
+    protected java.lang.Object processLine(au.com.bytecode.opencsv.bean.MappingStrategy,java.lang.String[])
+    protected java.lang.Object convertValue(java.lang.String,java.beans.PropertyDescriptor)
+    private java.beans.PropertyEditor getPropertyEditorValue(java.lang.Class)
+    private void addEditorToMap(java.lang.Class,java.beans.PropertyEditor)
+    protected java.beans.PropertyEditor getPropertyEditor(java.beans.PropertyDescriptor)
+au.com.bytecode.opencsv.bean.HeaderColumnNameMappingStrategy:
+    protected java.lang.String[] header
+    protected java.lang.Class type
+    public void captureHeader(au.com.bytecode.opencsv.CSVReader)
+    public java.beans.PropertyDescriptor findDescriptor(int)
+    protected java.lang.String getColumnName(int)
+    protected java.beans.PropertyDescriptor findDescriptor(java.lang.String)
+    protected boolean matches(java.lang.String,java.beans.PropertyDescriptor)
+    protected java.util.Map loadDescriptorMap(java.lang.Class)
+    private java.beans.PropertyDescriptor[] loadDescriptors(java.lang.Class)
+    public java.lang.Object createBean()
+    public java.lang.Class getType()
+    public void setType(java.lang.Class)
+au.com.bytecode.opencsv.bean.HeaderColumnNameTranslateMappingStrategy:
+    protected java.lang.String getColumnName(int)
+    public java.util.Map getColumnMapping()
+    public void setColumnMapping(java.util.Map)
+au.com.bytecode.opencsv.bean.MappingStrategy:
+    public abstract java.beans.PropertyDescriptor findDescriptor(int)
+    public abstract java.lang.Object createBean()
+    public abstract void captureHeader(au.com.bytecode.opencsv.CSVReader)
+de.betaapps.andlytics.AdmobActivity:
+    public java.lang.Integer heighestRatingChange
+    public java.lang.Integer lowestRatingChange
+    protected java.lang.String admobToken
+de.betaapps.andlytics.AdmobAuthenticatorActivity:
+    public static final java.lang.String PARAM_AUTHTOKEN_TYPE
+    public static final java.lang.String PARAM_USERNAME
+    public static final java.lang.String PARAM_CONFIRM_CREDENTIALS
+    public static final java.lang.String PARAM_PASSWORD
+de.betaapps.andlytics.AdmobListAdapter:
+    287:287:public java.lang.Object getCurrentChart()
+    306:306:public java.util.List getStats()
+    315:315:public java.util.List getSecondPageCharts()
+de.betaapps.andlytics.AndlyticsApp:
+    private static final java.lang.String CONTENT_URI
+    private java.lang.String feedbackMessage
+    98:99:public void setFeedbackMessage(java.lang.String)
+    102:102:public java.lang.String getFeedbackMessage()
+de.betaapps.andlytics.AppStatsDiff:
+    62:62:public int getActiveInstallsChange()
+    78:78:public int getRating1Change()
+    86:86:public int getRating2Change()
+    94:94:public int getRating3Change()
+    102:102:public int getRating4Change()
+    110:110:public int getRating5Change()
+    122:122:public java.lang.String getPackageName()
+    138:138:public java.lang.String getIconName()
+    154:154:public java.lang.String getVersionName()
+de.betaapps.andlytics.AppVersion
+de.betaapps.andlytics.BaseActivity:
+    private static final int REQUEST_AUTHENTICATE
+    659:659:protected void onPostAuthentication()
+de.betaapps.andlytics.BuildConfig
+de.betaapps.andlytics.ChartListAdapter:
+    private static final int RED_TEXT
+    365:365:public java.lang.Object getCurrentChart()
+    391:391:public java.util.List getVersionUpdateDates()
+de.betaapps.andlytics.CommentsActivity:
+    private static final int MAX_LOAD_COMMENTS
+de.betaapps.andlytics.Constants
+de.betaapps.andlytics.ContentAdapter:
+    793:865:public java.util.Map getDailyRatings(java.util.Date,java.lang.String)
+    872:875:private java.lang.Integer getDiff(java.lang.Integer,int)
+de.betaapps.andlytics.ContentAdapter$1
+de.betaapps.andlytics.DemoDataActivity:
+    41:56:public static java.lang.String readTestData(char)
+de.betaapps.andlytics.DemoDataActivity$LoadDemoData:
+    private static final int VALUE_LENGTH_1
+de.betaapps.andlytics.DeveloperConsole:
+    private static final java.lang.String GWT_PERMUTATION
+    private static final java.lang.String PARAM_XSRFTOKEN
+    private static final java.lang.String GET_FULL_ASSET_INFO_FOR_USER_REQUEST
+    private static final java.lang.String GET_ASSET_FOR_USER_COUNT_REQUEST
+    private static final java.lang.String GET_USER_COMMENTS_REQUEST
+    private static final java.lang.String GET_FEEDBACK_OVERVIEW
+    private static final java.lang.String PARAM_APPNAME
+    private static final java.lang.String PARAM_LENGTH
+    private static final java.lang.String PARAM_PACKAGELIST
+    private static final java.lang.String PARAM_STARTINDEX
+    private static final long PARAM_MAX_APPS_NUMBER
+    public static final java.lang.String ACCOUNT_TYPE
+    public static final java.lang.String SERVICE
+    private static final java.lang.String URL_GOOGLE_LOGIN
+    private static final java.lang.String URL_DEVELOPER_CONSOLE
+    private static final java.lang.String URL_DEVELOPER_EDIT_APP
+    private static final java.lang.String URL_COMMENTS
+    private static final java.lang.String URL_FEEDBACK
+    241:248:public java.util.Map parseFeedbackOverviewResponse(java.lang.String)
+    254:261:private long parseGetAssetForUserCount(java.lang.String)
+    302:310:protected boolean isInteger(java.lang.String)
+    349:365:private java.lang.String grepGetAssetForUserCount()
+    410:439:protected java.lang.String grapFeedbackOverview(java.util.List)
+    627:644:private static java.lang.String convertStreamToString(java.io.InputStream)
+    648:673:public java.lang.String login(java.lang.String,java.lang.String)
+    678:710:protected java.lang.String postUrl(java.lang.String,java.util.Map)
+de.betaapps.andlytics.DeveloperConsoleRemoteCall
+de.betaapps.andlytics.LoginActivity:
+    private static final java.lang.String TAG
+    protected static final int CREATE_ACCOUNT_REQUEST
+de.betaapps.andlytics.Main:
+    private static final int FEEDBACK_DIALOG
+de.betaapps.andlytics.MainListAdapter:
+    private static final int RED_TEXT
+    public static final int TAG_IMAGE_REF
+    public static final int TAG_IS_EXPANDED
+    private static final int TAG_ROW_ID
+    private static final int ANIMATION_DURATION
+    637:637:public de.betaapps.andlytics.Preferences$StatsMode getStatsMode()
+de.betaapps.andlytics.MainListAdapter$ExpandAnimation:
+    private static final int SLEEP_TIME
+de.betaapps.andlytics.MainListAdapter$ViewHolder:
+    public android.widget.ScrollView scrollview
+de.betaapps.andlytics.Preferences:
+    public static final java.lang.String PREF
+    private static final java.lang.String ACCOUNT_NAME
+    private static final java.lang.String GWTPERMUTATION
+    private static final java.lang.String POST_REQUEST_GET_FULL_ASSET_INFOS
+    private static final java.lang.String POST_REQUEST_GET_USER_INFO_SIZE
+    private static final java.lang.String POST_REQUEST_USER_COMMENTS
+    private static final java.lang.String POST_REQUEST_FEEDBACK
+    private static final java.lang.String AUTOSYNC
+    private static final java.lang.String CRASH_REPORT_DISABLE
+    public static final java.lang.String CHART_TIMEFRAME
+    public static final java.lang.String ADMOB_TIMEFRAME
+    private static final java.lang.String CHART_SMOOTH
+    private static final java.lang.String SKIP_AUTO_LOGIN
+    private static final java.lang.String STATS_MODE
+    public static final java.lang.String NOTIFICATION_CHANGES_RATING
+    public static final java.lang.String NOTIFICATION_CHANGES_COMMENTS
+    public static final java.lang.String NOTIFICATION_CHANGES_DOWNLOADS
+    public static final java.lang.String NOTIFICATION_SOUND
+    public static final java.lang.String NOTIFICATION_LIGHT
+    public static final java.lang.String DATE_FORMAT_SHORT
+    public static final java.lang.String DATE_FORMAT_LONG
+    private static final java.lang.String LEVEL_7_ALARM_MANAGER_PERIOD
+    private static final java.lang.String PRO_DIALOG_HINT
+    private static final java.lang.String ADMOB_SITE_ID
+    private static final java.lang.String ADMOB_ACCOUNT
+    private static final java.lang.String SHOW_CHART_HINT
+    private static final java.lang.String LATEST_VERSION_CODE
+    9:9:public Preferences()
+    92:93:public static void saveGwtPermutation(android.content.Context,java.lang.String)
+    110:111:public static void saveRequestFullAssetInfo(android.content.Context,java.lang.String)
+    114:114:public static java.lang.String getRequestGetAssetForUserCount(android.content.Context)
+    118:119:public static void saveRequestGetAssetForUserCount(android.content.Context,java.lang.String)
+    126:127:public static void saveRequestUserComments(android.content.Context,java.lang.String)
+    134:137:private static void saveVersionDependingProperty(java.lang.String,java.lang.String,android.content.Context)
+    274:277:public static void saveLatestVersionCode(android.content.Context,int)
+    280:280:public static java.lang.String getRequestFeedback(android.content.Context)
+    284:285:public static void saveRequestFeedback(android.content.Context,java.lang.String)
+de.betaapps.andlytics.R
+de.betaapps.andlytics.R$anim
+de.betaapps.andlytics.R$attr
+de.betaapps.andlytics.R$drawable
+de.betaapps.andlytics.R$id
+de.betaapps.andlytics.R$layout
+de.betaapps.andlytics.R$string
+de.betaapps.andlytics.R$style
+de.betaapps.andlytics.R$xml
+de.betaapps.andlytics.admob.AdmobAccountRemovedException:
+    private static final long serialVersionUID
+de.betaapps.andlytics.admob.AdmobAskForPasswordException:
+    private static final long serialVersionUID
+de.betaapps.andlytics.admob.AdmobAuthenticationUtilities:
+    private static final int REQUEST_AUTHENTICATE
+de.betaapps.andlytics.admob.AdmobGenericException:
+    private static final long serialVersionUID
+de.betaapps.andlytics.admob.AdmobInvalidRequestException:
+    private static final long serialVersionUID
+de.betaapps.andlytics.admob.AdmobInvalidSiteIdException
+de.betaapps.andlytics.admob.AdmobInvalidTokenException:
+    private static final long serialVersionUID
+de.betaapps.andlytics.admob.AdmobRateLimitExceededException:
+    private static final long serialVersionUID
+de.betaapps.andlytics.admob.AdmobRequest:
+    public static final java.lang.String ERROR_TOKEN_INVALID
+    public static final java.lang.String ERROR_INVALID_SITE_ID
+    public static final java.lang.String ERROR_RATE_LIMIT_EXCEEDED
+    public static final java.lang.String ERROR_NETWORK_ERROR
+    public static final java.lang.String ERROR_ACCOUNT_REMOVED
+    public static final java.lang.String ERROR_ASK_USER_PASSWORD
+    public static final java.lang.String ERROR_REQUESET_INVALID
+    public static final java.lang.String KEY_SITE_ID
+    public static final java.lang.String KEY_REQUESTS
+    public static final java.lang.String KEY_HOUSEAD_REQUESTS
+    public static final java.lang.String KEY_INTERSTITIAL_REQUESTS
+    public static final java.lang.String KEY_IMPRESSIONS
+    public static final java.lang.String KEY_FILL_RATE
+    public static final java.lang.String KEY_HOUSEAD_FILL_RATE
+    public static final java.lang.String KEY_OVERALL_FILL_RATE
+    public static final java.lang.String KEY_CLICKS
+    public static final java.lang.String KEY_HOUSEAD_CLICKS
+    public static final java.lang.String KEY_CTR
+    public static final java.lang.String KEY_ECPM
+    public static final java.lang.String KEY_REVENUE
+    public static final java.lang.String KEY_CPC_REVENUE
+    public static final java.lang.String KEY_CPM_REVENUE
+    public static final java.lang.String KEY_EXCHANGE_DOWNLOADS
+    public static final java.lang.String KEY_DATE
+    private static final java.lang.String BASE_URL
+    private static final java.lang.String clientKey
+    public static final long RETRY_TIME
+de.betaapps.andlytics.cache.AppIconInMemoryCache:
+    private static final long serialVersionUID
+    private static final int MAX_ENTRIES
+de.betaapps.andlytics.cache.LRUBitmapCache:
+    private static final float hashTableLoadFactor
+    81:82:public synchronized void clear()
+    90:90:public synchronized int usedEntries()
+    105:105:public synchronized java.util.Collection getAll()
+de.betaapps.andlytics.cache.LRUBitmapCache$1:
+    private static final long serialVersionUID
+de.betaapps.andlytics.chart.AbstractChart:
+    46:58:protected org.achartengine.model.XYMultipleSeriesDataset buildDataset(java.lang.String[],java.util.List,java.util.List)
+    141:147:protected org.achartengine.model.CategorySeries buildCategoryDataset(java.lang.String,double[])
+    159:165:protected org.achartengine.model.MultipleCategorySeries buildMultipleCategoryDataset(java.lang.String,java.util.List,java.util.List)
+    175:181:protected org.achartengine.renderer.DefaultRenderer buildCategoryRenderer(int[])
+de.betaapps.andlytics.chart.Chart:
+    private static final int MAX_BAR_VALUES
+de.betaapps.andlytics.chart.ChartTextSwitcher:
+    21:22:public ChartTextSwitcher(android.content.Context)
+    32:33:public ChartTextSwitcher(android.content.Context,android.util.AttributeSet)
+    79:90:public void setCurrentText(java.lang.CharSequence,android.graphics.drawable.Drawable)
+de.betaapps.andlytics.db.AdmobTable:
+    public static final java.lang.String DATABASE_TABLE_NAME
+    public static final java.lang.String CONTENT_TYPE
+    public static final java.lang.String KEY_ROWID
+    public static final java.lang.String KEY_SITE_ID
+    public static final java.lang.String KEY_REQUESTS
+    public static final java.lang.String KEY_HOUSEAD_REQUESTS
+    public static final java.lang.String KEY_INTERSTITIAL_REQUESTS
+    public static final java.lang.String KEY_IMPRESSIONS
+    public static final java.lang.String KEY_FILL_RATE
+    public static final java.lang.String KEY_HOUSEAD_FILL_RATE
+    public static final java.lang.String KEY_OVERALL_FILL_RATE
+    public static final java.lang.String KEY_CLICKS
+    public static final java.lang.String KEY_HOUSEAD_CLICKS
+    public static final java.lang.String KEY_CTR
+    public static final java.lang.String KEY_ECPM
+    public static final java.lang.String KEY_REVENUE
+    public static final java.lang.String KEY_CPC_REVENUE
+    public static final java.lang.String KEY_CPM_REVENUE
+    public static final java.lang.String KEY_EXCHANGE_DOWNLOADS
+    public static final java.lang.String KEY_DATE
+    public static final java.lang.String TABLE_CREATE_ADMOB
+    7:7:public AdmobTable()
+de.betaapps.andlytics.db.AndlyticsContentProvider:
+    private static final java.lang.String TAG
+    private static final int DATABASE_VERSION
+    private static final java.lang.String DATABASE_NAME
+    private static final int ID_TABLE_STATS
+    private static final int ID_TABLE_APPINFO
+    private static final int ID_TABLE_COMMENTS
+    private static final int ID_TABLE_ADMOB
+    private static final int ID_APP_VERSION_CHANGE
+    public static final java.lang.String AUTHORITY
+    public static final java.lang.String APP_VERSION_CHANGE
+de.betaapps.andlytics.db.AppInfoTable:
+    public static final java.lang.String DATABASE_TABLE_NAME
+    public static final java.lang.String CONTENT_TYPE
+    public static final java.lang.String KEY_ROWID
+    public static final java.lang.String KEY_APP_PACKAGENAME
+    public static final java.lang.String KEY_APP_ACCOUNT
+    public static final java.lang.String KEY_APP_LASTUPDATE
+    public static final java.lang.String KEY_APP_NAME
+    public static final java.lang.String KEY_APP_CATEGORY
+    public static final java.lang.String KEY_APP_PUBLISHSTATE
+    public static final java.lang.String KEY_APP_ICONURL
+    public static final java.lang.String KEY_APP_GHOST
+    public static final java.lang.String KEY_APP_RATINGS_EXPANDED
+    public static final java.lang.String KEY_APP_SKIP_NOTIFICATION
+    public static final java.lang.String KEY_APP_VERSION_NAME
+    public static final java.lang.String TABLE_CREATE_APPINFO
+    7:7:public AppInfoTable()
+de.betaapps.andlytics.db.AppStatsTable:
+    public static final java.lang.String DATABASE_TABLE_NAME
+    public static final java.lang.String CONTENT_TYPE
+    public static final java.lang.String KEY_ROWID
+    public static final java.lang.String KEY_STATS_PACKAGENAME
+    public static final java.lang.String KEY_STATS_REQUESTDATE
+    public static final java.lang.String KEY_STATS_DOWNLOADS
+    public static final java.lang.String KEY_STATS_INSTALLS
+    public static final java.lang.String KEY_STATS_COMMENTS
+    public static final java.lang.String KEY_STATS_MARKETERANKING
+    public static final java.lang.String KEY_STATS_CATEGORYRANKING
+    public static final java.lang.String KEY_STATS_5STARS
+    public static final java.lang.String KEY_STATS_4STARS
+    public static final java.lang.String KEY_STATS_3STARS
+    public static final java.lang.String KEY_STATS_2STARS
+    public static final java.lang.String KEY_STATS_1STARS
+    public static final java.lang.String KEY_STATS_VERSIONCODE
+    public static final java.lang.String TABLE_CREATE_STATS
+    7:7:public AppStatsTable()
+de.betaapps.andlytics.db.CommentsTable:
+    public static final java.lang.String DATABASE_TABLE_NAME
+    public static final java.lang.String CONTENT_TYPE
+    public static final java.lang.String KEY_ROWID
+    public static final java.lang.String KEY_COMMENT_PACKAGENAME
+    public static final java.lang.String KEY_COMMENT_TEXT
+    public static final java.lang.String KEY_COMMENT_DATE
+    public static final java.lang.String KEY_COMMENT_USER
+    public static final java.lang.String KEY_COMMENT_RATING
+    public static final java.lang.String KEY_COMMENT_DEVICE
+    public static final java.lang.String KEY_COMMENT_APP_VERSION
+    public static final java.lang.String TABLE_CREATE_COMMENTS
+    7:7:public CommentsTable()
+de.betaapps.andlytics.dialog.AutosyncDialog:
+    public static final int TAG_IMAGE_REF
+de.betaapps.andlytics.dialog.AutosyncDialog$GhostSelectonChangeListener
+de.betaapps.andlytics.dialog.CrashDialog:
+    20:21:public CrashDialog(android.content.Context)
+de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder:
+    70:71:public de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder setTitle(int)
+    93:95:public de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder setPositiveButton(int,android.content.DialogInterface$OnClickListener)
+    119:121:public de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder setNegativeButton(int,android.content.DialogInterface$OnClickListener)
+de.betaapps.andlytics.dialog.ExportDialog:
+    public static final int TAG_IMAGE_REF
+de.betaapps.andlytics.dialog.FeedbackDialog:
+    30:31:public FeedbackDialog(android.content.Context)
+    236:236:public android.widget.EditText getInputField()
+de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder:
+    68:69:public de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder setMessage(int)
+    79:80:public de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder setTitle(int)
+    102:104:public de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder setPositiveButton(int,android.content.DialogInterface$OnClickListener)
+    128:130:public de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder setNegativeButton(int,android.content.DialogInterface$OnClickListener)
+de.betaapps.andlytics.dialog.GhostDialog:
+    public static final int TAG_IMAGE_REF
+de.betaapps.andlytics.dialog.ImportDialog:
+    public static final int TAG_IMAGE_REF
+    199:200:public void setFileName(java.util.List)
+    203:203:public java.util.List getFileNames()
+de.betaapps.andlytics.dialog.NotificationsDialog:
+    public static final int TAG_IMAGE_REF
+de.betaapps.andlytics.dialog.NotificationsDialog$GhostSelectonChangeListener
+de.betaapps.andlytics.exception.AuthenticationException:
+    private static final long serialVersionUID
+de.betaapps.andlytics.exception.DeveloperConsoleException:
+    private static final long serialVersionUID
+    10:11:public DeveloperConsoleException(java.lang.String)
+    14:15:public DeveloperConsoleException(java.lang.Exception)
+de.betaapps.andlytics.exception.FeedbackException:
+    private static final long serialVersionUID
+de.betaapps.andlytics.exception.InvalidJSONResponseException:
+    private static final long serialVersionUID
+de.betaapps.andlytics.exception.MultiAccountAcception:
+    private static final long serialVersionUID
+de.betaapps.andlytics.exception.NegativeIndexValueExecption:
+    private static final long serialVersionUID
+de.betaapps.andlytics.exception.NetworkException:
+    private static final long serialVersionUID
+    13:14:public NetworkException(java.lang.Exception,int)
+de.betaapps.andlytics.exception.NoCookieSetException:
+    private static final long serialVersionUID
+de.betaapps.andlytics.exception.SignupException:
+    private static final long serialVersionUID
+    8:9:public SignupException(java.lang.String)
+de.betaapps.andlytics.gwt.Base64Utils:
+    47:91:public static byte[] fromBase64(java.lang.String)
+    120:154:public static java.lang.String toBase64(byte[])
+de.betaapps.andlytics.gwt.GwtParser:
+    73:80:public long getAppInfoSize()
+    219:253:public java.util.Map getFeedbackOverview()
+    279:279:public java.util.ArrayList getValueList()
+    283:283:public static boolean isValidResponse(java.lang.String)
+    821:839:protected int getMapLenght(int,java.util.List,java.util.ArrayList)
+de.betaapps.andlytics.gwt.GwtParserException:
+    private static final long serialVersionUID
+de.betaapps.andlytics.io.ExportService:
+    public static final int NOTIFICATION_ID_PROGRESS
+    public static final int NOTIFICATION_ID_FINISHED
+    public static final java.lang.String PACKAGE_NAMES
+    public static final java.lang.String ACCOUNT_NAME
+de.betaapps.andlytics.io.ImportService:
+    public static final int NOTIFICATION_ID_PROGRESS
+    public static final int NOTIFICATION_ID_FINISHED
+    public static final java.lang.String FILE_NAMES
+    public static final java.lang.String ACCOUNT_NAME
+de.betaapps.andlytics.io.ServiceExceptoin:
+    private static final long serialVersionUID
+de.betaapps.andlytics.io.StatsCsvReaderWriter:
+    private static final java.lang.String EXPORT_DIR
+de.betaapps.andlytics.model.AppInfo:
+    private java.lang.Integer numberOfErrors
+    90:91:public void setHistory(java.util.List)
+    94:94:public java.util.List getHistory()
+    98:99:public void addToHistory(de.betaapps.andlytics.model.AppStats)
+    219:220:public void setNumberOfErrors(java.lang.Integer)
+    223:223:public java.lang.Integer getNumberOfErrors()
+de.betaapps.andlytics.model.AppStats:
+    177:198:public void addRating(int,int)
+de.betaapps.andlytics.model.Comment:
+    44:52:public java.util.Date getDateObject()
+de.betaapps.andlytics.sync.AutosyncHandler:
+    public static final int DEFAULT_PERIOD
+    public abstract boolean isAutosyncEnabled(java.lang.String)
+de.betaapps.andlytics.sync.AutosyncHandlerFactory:
+    5:5:public AutosyncHandlerFactory()
+de.betaapps.andlytics.sync.AutosyncHandlerLevel8:
+    17:18:public boolean isAutosyncEnabled(java.lang.String)
+de.betaapps.andlytics.sync.NotificationHandler:
+    static final java.lang.String GROWL_ACTION
+    static final java.lang.String EXTRA_TITLE
+    static final java.lang.String EXTRA_DESCRIPTION
+    19:19:public NotificationHandler()
+de.betaapps.andlytics.view.ChartGallery:
+    private static final float SWIPE_MIN_DISTANCE
+    20:21:public ChartGallery(android.content.Context,android.util.AttributeSet,int)
+    24:25:public ChartGallery(android.content.Context,android.util.AttributeSet)
+    28:29:public ChartGallery(android.content.Context)
+    89:90:public void setInterceptTouchEvents(boolean)
+    93:93:public boolean isInterceptTouchEvents()
+    97:98:public void setUseMultiImageFling(boolean)
+    101:101:public boolean isUseMultiImageFling()
+de.betaapps.andlytics.view.ViewSwitcher3D:
+    private static final java.lang.String TAG
+    41:42:public void setDuration(long)
+    72:72:public boolean isBacksideVisible()
+org.achartengine.ChartFactory:
+    public static final java.lang.String CHART
+    public static final java.lang.String TITLE
+    47:49:private ChartFactory()
+    64:66:public static final org.achartengine.GraphicalView getLineChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    82:84:public static final org.achartengine.GraphicalView getScatterChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    100:102:public static final org.achartengine.GraphicalView getBubbleChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    159:161:public static final org.achartengine.GraphicalView getRangeBarChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,org.achartengine.chart.BarChart$Type)
+    178:180:public static final org.achartengine.GraphicalView getPieChartView(android.content.Context,org.achartengine.model.CategorySeries,org.achartengine.renderer.DefaultRenderer)
+    197:199:public static final org.achartengine.GraphicalView getDoughnutChartView(android.content.Context,org.achartengine.model.MultipleCategorySeries,org.achartengine.renderer.DefaultRenderer)
+    217:217:public static final android.content.Intent getLineChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    234:234:public static final android.content.Intent getScatterChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    251:251:public static final android.content.Intent getBubbleChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    270:270:public static final android.content.Intent getTimeChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String)
+    288:288:public static final android.content.Intent getBarChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,org.achartengine.chart.BarChart$Type)
+    305:305:public static final android.content.Intent getPieChartIntent(android.content.Context,org.achartengine.model.CategorySeries,org.achartengine.renderer.DefaultRenderer)
+    326:331:public static final android.content.Intent getLineChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String)
+    349:354:public static final android.content.Intent getScatterChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String)
+    372:377:public static final android.content.Intent getBubbleChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String)
+    397:403:public static final android.content.Intent getTimeChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String,java.lang.String)
+    422:427:public static final android.content.Intent getBarChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,org.achartengine.chart.BarChart$Type,java.lang.String)
+    446:451:public static final android.content.Intent getRangeBarChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,org.achartengine.chart.BarChart$Type,java.lang.String)
+    469:474:public static final android.content.Intent getPieChartIntent(android.content.Context,org.achartengine.model.CategorySeries,org.achartengine.renderer.DefaultRenderer,java.lang.String)
+    492:497:public static final android.content.Intent getDoughnutChartIntent(android.content.Context,org.achartengine.model.MultipleCategorySeries,org.achartengine.renderer.DefaultRenderer,java.lang.String)
+    528:533:private static void checkParameters(org.achartengine.model.CategorySeries,org.achartengine.renderer.DefaultRenderer)
+    545:550:private static void checkParameters(org.achartengine.model.MultipleCategorySeries,org.achartengine.renderer.DefaultRenderer)
+    553:558:private static boolean checkMultipleSeriesItems(org.achartengine.model.MultipleCategorySeries,int)
+org.achartengine.GraphicalView:
+    64:69:public void repaint()
+org.achartengine.GraphicalView$1
+org.achartengine.chart.BarChart:
+    private static final int SHAPE_WIDTH
+org.achartengine.chart.BubbleChart
+org.achartengine.chart.DoughnutChart
+org.achartengine.chart.LineChart:
+    private static final int SHAPE_WIDTH
+org.achartengine.chart.PieChart
+org.achartengine.chart.PointStyle:
+    60:68:public static org.achartengine.chart.PointStyle getPointStyleForName(java.lang.String)
+    76:84:public static int getIndexForName(java.lang.String)
+org.achartengine.chart.RangeBarChart
+org.achartengine.chart.ScatterChart:
+    private static final float SIZE
+    private static final int SHAPE_WIDTH
+org.achartengine.chart.TimeChart:
+    public static final long DAY
+    53:53:public java.lang.String getDateFormat()
+org.achartengine.model.CategorySeries:
+    48:48:public java.lang.String getTitle()
+    77:79:public void remove(int)
+    85:87:public void clear()
+    96:96:public double getValue(int)
+    106:106:public java.lang.String getCategory(int)
+    115:115:public int getItemCount()
+org.achartengine.model.MultipleCategorySeries
+org.achartengine.model.RangeCategorySeries
+org.achartengine.model.TimeSeries
+org.achartengine.model.XYMultipleSeriesDataset:
+    43:44:public void removeSeries(int)
+    51:52:public void removeSeries(org.achartengine.model.XYSeries)
+    76:76:public org.achartengine.model.XYSeries[] getSeries()
+org.achartengine.model.XYSeries:
+    98:99:public void setTitle(java.lang.String)
+    119:124:public void remove(int)
+    130:133:public void clear()
+org.achartengine.model.XYValueSeries
+org.achartengine.renderer.DefaultRenderer:
+    public static final int BACKGROUND_COLOR
+    public static final int TEXT_COLOR
+    79:80:public void removeSeriesRenderer(org.achartengine.renderer.SimpleSeriesRenderer)
+    107:107:public org.achartengine.renderer.SimpleSeriesRenderer[] getSeriesRenderers()
+    125:126:public void setBackgroundColor(int)
+    143:144:public void setApplyBackgroundColor(boolean)
+    233:234:public void setShowLabels(boolean)
+    305:306:public void setLegendTextSize(float)
+    315:317:public void setTextTypeface(java.lang.String,int)
+org.achartengine.renderer.XYMultipleSeriesRenderer:
+    132:133:public void setChartTitleTextSize(float)
+    186:187:public void setAxisTitleTextSize(float)
+    371:372:public void setDisplayChartValues(boolean)
+    389:390:public void setChartValuesTextSize(float)
+org.achartengine.renderer.XYSeriesRenderer:
+    53:54:public void setFillBelowLine(boolean)
+    89:90:public void setFillBelowLineColor(int)
+    125:126:public void setLineWidth(float)
+org.achartengine.util.MathHelper:
+    public static final int ANGLE
+    public static final double NULL_VALUE
+    44:46:private MathHelper()
+    66:72:public static int getAngle(int)
+    81:86:public static double sum(java.util.List)
+    95:106:public static double[] minmax(java.util.List)
+    198:203:public static double[] getDoubles(java.lang.Object[])
+    212:217:public static float[] getFloats(java.lang.Object[])
+org.acra.ACRAConfigurationException:
+    private static final long serialVersionUID
+org.acra.ConfigurationInspector:
+    private static final java.lang.String SUFFIX_MASK
+    private static final java.lang.String FIELD_SCREENLAYOUT
+    private static final java.lang.String FIELD_UIMODE
+    private static final java.lang.String FIELD_MNC
+    private static final java.lang.String FIELD_MCC
+    private static final java.lang.String PREFIX_UI_MODE
+    private static final java.lang.String PREFIX_TOUCHSCREEN
+    private static final java.lang.String PREFIX_SCREENLAYOUT
+    private static final java.lang.String PREFIX_ORIENTATION
+    private static final java.lang.String PREFIX_NAVIGATIONHIDDEN
+    private static final java.lang.String PREFIX_NAVIGATION
+    private static final java.lang.String PREFIX_KEYBOARDHIDDEN
+    private static final java.lang.String PREFIX_KEYBOARD
+    private static final java.lang.String PREFIX_HARDKEYBOARDHIDDEN
+    39:39:public ConfigurationInspector()
+org.acra.CrashReportDialog:
+    private static final int CRASH_DIALOG_LEFT_ICON
+org.acra.ErrorReporter:
+    private static final int MAX_SEND_REPORTS
+    private static final java.lang.String VERSION_NAME_KEY
+    private static final java.lang.String PACKAGE_NAME_KEY
+    private static final java.lang.String FILE_PATH_KEY
+    private static final java.lang.String PHONE_MODEL_KEY
+    private static final java.lang.String ANDROID_VERSION_KEY
+    private static final java.lang.String BOARD_KEY
+    private static final java.lang.String BRAND_KEY
+    private static final java.lang.String DEVICE_KEY
+    private static final java.lang.String BUILD_DISPLAY_KEY
+    private static final java.lang.String FINGERPRINT_KEY
+    private static final java.lang.String HOST_KEY
+    private static final java.lang.String ID_KEY
+    private static final java.lang.String MODEL_KEY
+    private static final java.lang.String PRODUCT_KEY
+    private static final java.lang.String TAGS_KEY
+    private static final java.lang.String TIME_KEY
+    private static final java.lang.String TYPE_KEY
+    private static final java.lang.String USER_KEY
+    private static final java.lang.String TOTAL_MEM_SIZE_KEY
+    private static final java.lang.String AVAILABLE_MEM_SIZE_KEY
+    private static final java.lang.String CUSTOM_DATA_KEY
+    private static final java.lang.String STACK_TRACE_KEY
+    private static final java.lang.String INITIAL_CONFIGURATION_KEY
+    private static final java.lang.String CRASH_CONFIGURATION_KEY
+    private static final java.lang.String DISPLAY_KEY
+    private static final java.lang.String USER_COMMENT_KEY
+    private static final java.lang.String USER_CRASH_DATE_KEY
+    static final java.lang.String IS_SILENT_KEY
+    static final java.lang.String SILENT_SUFFIX
+    static final java.lang.String EXTRA_REPORT_FILE_NAME
+    237:237:public java.lang.String putCustomData(java.lang.String,java.lang.String)
+    250:250:public java.lang.String removeCustomData(java.lang.String)
+    263:263:public java.lang.String getCustomData(java.lang.String)
+    857:858:public void deletePendingSilentReports()
+    864:865:public void deletePendingNonSilentReports()
+org.acra.HttpUtils:
+    private static final int SOCKET_TIMEOUT
+    45:45:HttpUtils()

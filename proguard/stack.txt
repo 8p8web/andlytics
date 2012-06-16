@@ -1,0 +1,13 @@
+java.lang.NullPointerException
+at java.text.SimpleDateFormat.parse(SimpleDateFormat.java:1201)
+at java.text.DateFormat.parse(DateFormat.java:642)
+at de.betaapps.andlytics.c.g(SourceFile:92)
+at de.betaapps.andlytics.o.a(SourceFile:123)
+at de.betaapps.andlytics.n.a(SourceFile:277)
+at de.betaapps.andlytics.n.doInBackground(SourceFile:1)
+at android.os.AsyncTask$2.call(AsyncTask.java:185)
+at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1068)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:561)
+at java.lang.Thread.run(Thread.java:1102)

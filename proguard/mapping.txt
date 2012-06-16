@@ -1,0 +1,2330 @@
+au.com.bytecode.opencsv.CSVParser -> au.com.bytecode.opencsv.CSVParser:
+    char separator -> a
+    char quotechar -> b
+    char escape -> c
+    boolean strictQuotes -> d
+    java.lang.String pending -> e
+    boolean inField -> f
+    boolean ignoreLeadingWhiteSpace -> g
+    boolean isPending() -> a
+    java.lang.String[] parseLineMulti(java.lang.String) -> a
+    boolean isAllWhiteSpace(java.lang.CharSequence) -> a
+au.com.bytecode.opencsv.CSVReader -> au.com.bytecode.opencsv.CSVReader:
+    java.io.BufferedReader br -> a
+    boolean hasNext -> b
+    au.com.bytecode.opencsv.CSVParser parser -> c
+    int skipLines -> d
+    boolean linesSkiped -> e
+    java.lang.String[] readNext() -> a
+    void close() -> close
+au.com.bytecode.opencsv.CSVWriter -> au.com.bytecode.opencsv.CSVWriter:
+    java.io.Writer rawWriter -> a
+    java.io.PrintWriter pw -> b
+    char separator -> c
+    char quotechar -> d
+    char escapechar -> e
+    java.lang.String lineEnd -> f
+    au.com.bytecode.opencsv.ResultSetHelper resultService -> g
+    void writeNext(java.lang.String[]) -> a
+    java.lang.StringBuilder processLine(java.lang.String) -> a
+    void close() -> close
+au.com.bytecode.opencsv.ResultSetHelper -> au.com.bytecode.opencsv.ResultSetHelper:
+au.com.bytecode.opencsv.ResultSetHelperService -> au.com.bytecode.opencsv.ResultSetHelperService:
+au.com.bytecode.opencsv.bean.ColumnPositionMappingStrategy -> au.com.bytecode.opencsv.bean.ColumnPositionMappingStrategy:
+    java.lang.String[] columnMapping -> b
+au.com.bytecode.opencsv.bean.CsvToBean -> au.com.bytecode.opencsv.bean.CsvToBean:
+    java.util.Map editorMap -> a
+au.com.bytecode.opencsv.bean.HeaderColumnNameMappingStrategy -> au.com.bytecode.opencsv.bean.HeaderColumnNameMappingStrategy:
+    java.util.Map descriptorMap -> a
+au.com.bytecode.opencsv.bean.HeaderColumnNameTranslateMappingStrategy -> au.com.bytecode.opencsv.bean.HeaderColumnNameTranslateMappingStrategy:
+    java.util.Map columnMapping -> b
+au.com.bytecode.opencsv.bean.MappingStrategy -> au.com.bytecode.opencsv.bean.MappingStrategy:
+de.betaapps.andlytics.AdmobActivity -> de.betaapps.andlytics.AdmobActivity:
+    java.text.NumberFormat numberFormat -> i
+    java.lang.String TAG -> a
+    de.betaapps.andlytics.ContentAdapter db -> b
+    de.betaapps.andlytics.view.ChartGallery chartGallery -> j
+    de.betaapps.andlytics.chart.Chart$AdmobChartType currentChart -> k
+    android.widget.ListView historyList -> l
+    de.betaapps.andlytics.AdmobListAdapter admobListAdapter -> m
+    android.widget.TextView timeframeText -> n
+    de.betaapps.andlytics.chart.ChartTextSwitcher titleTextSwitcher -> o
+    int currentChartPosition -> p
+    android.view.animation.Animation inNegative -> q
+    android.view.animation.Animation outNegative -> r
+    android.view.animation.Animation inPositive -> s
+    android.view.animation.Animation outPositive -> t
+    java.lang.String timetext -> c
+    de.betaapps.andlytics.view.ViewSwitcher3D mainViewSwitcher -> u
+    de.betaapps.andlytics.view.ViewSwitcher3D smallConfigViewSwitcher -> v
+    de.betaapps.andlytics.view.ChartGalleryAdapter chartGalleryAdapter -> w
+    android.view.ViewGroup accountList -> x
+    android.view.View addAccountButton -> y
+    android.widget.ViewSwitcher configSwitcher -> z
+    android.view.ViewGroup siteList -> A
+    android.widget.ViewSwitcher toolbarViewSwitcher -> B
+    de.betaapps.andlytics.Preferences$Timeframe currentTimeFrame -> C
+    de.betaapps.andlytics.model.Admob overallStats -> d
+    java.lang.String subHeadlineText -> e
+    int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$AdmobChartType -> D
+    103:412:void onCreate(android.os.Bundle) -> onCreate
+    416:483:void updateChartHeadline() -> a
+    488:497:void updateTitleTextSwitcher(java.lang.String) -> a
+    501:528:void showAccountList() -> b
+    559:562:void onResume() -> onResume
+    798:800:void onViewChanged$1385ff() -> c
+    805:807:void onRender() -> d
+    95:95:de.betaapps.andlytics.Preferences$Timeframe access$0(de.betaapps.andlytics.AdmobActivity) -> a
+    745:745:void access$1(de.betaapps.andlytics.AdmobActivity,java.util.List) -> a
+    69:69:de.betaapps.andlytics.AdmobListAdapter access$2(de.betaapps.andlytics.AdmobActivity) -> b
+    67:67:de.betaapps.andlytics.chart.Chart$AdmobChartType access$3(de.betaapps.andlytics.AdmobActivity) -> c
+    93:93:android.widget.ViewSwitcher access$4(de.betaapps.andlytics.AdmobActivity) -> d
+    91:91:android.view.ViewGroup access$5(de.betaapps.andlytics.AdmobActivity) -> e
+    80:80:de.betaapps.andlytics.view.ViewSwitcher3D access$6(de.betaapps.andlytics.AdmobActivity) -> f
+    66:66:de.betaapps.andlytics.view.ChartGallery access$7(de.betaapps.andlytics.AdmobActivity) -> g
+    87:87:android.widget.ViewSwitcher access$8(de.betaapps.andlytics.AdmobActivity) -> h
+    81:81:de.betaapps.andlytics.view.ViewSwitcher3D access$9(de.betaapps.andlytics.AdmobActivity) -> i
+    95:95:void access$10(de.betaapps.andlytics.AdmobActivity,de.betaapps.andlytics.Preferences$Timeframe) -> a
+    72:72:int access$11(de.betaapps.andlytics.AdmobActivity) -> j
+    71:71:de.betaapps.andlytics.chart.ChartTextSwitcher access$12(de.betaapps.andlytics.AdmobActivity) -> k
+    73:73:android.view.animation.Animation access$13(de.betaapps.andlytics.AdmobActivity) -> l
+    74:74:android.view.animation.Animation access$14(de.betaapps.andlytics.AdmobActivity) -> m
+    75:75:android.view.animation.Animation access$15(de.betaapps.andlytics.AdmobActivity) -> n
+    76:76:android.view.animation.Animation access$16(de.betaapps.andlytics.AdmobActivity) -> o
+    72:72:void access$17(de.betaapps.andlytics.AdmobActivity,int) -> a
+    67:67:void access$18(de.betaapps.andlytics.AdmobActivity,de.betaapps.andlytics.chart.Chart$AdmobChartType) -> a
+    531:531:void access$19(de.betaapps.andlytics.AdmobActivity) -> p
+    59:59:int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$AdmobChartType() -> j
+de.betaapps.andlytics.AdmobActivity$1 -> de.betaapps.andlytics.a:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    118:118:android.view.View makeView() -> makeView
+de.betaapps.andlytics.AdmobActivity$10 -> de.betaapps.andlytics.b:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    276:281:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+de.betaapps.andlytics.AdmobActivity$11 -> de.betaapps.andlytics.c:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    289:290:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.AdmobActivity$12 -> de.betaapps.andlytics.d:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    299:305:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.AdmobActivity$13 -> de.betaapps.andlytics.e:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    323:348:void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    352:352:void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+de.betaapps.andlytics.AdmobActivity$14 -> de.betaapps.andlytics.f:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    364:365:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.AdmobActivity$15 -> de.betaapps.andlytics.g:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    518:524:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.AdmobActivity$16 -> de.betaapps.andlytics.h:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    536:550:void run(android.accounts.AccountManagerFuture) -> run
+de.betaapps.andlytics.AdmobActivity$2 -> de.betaapps.andlytics.i:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    134:136:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.AdmobActivity$3 -> de.betaapps.andlytics.j:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    146:149:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.AdmobActivity$4 -> de.betaapps.andlytics.k:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    169:185:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.AdmobActivity$5 -> de.betaapps.andlytics.l:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    196:201:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+de.betaapps.andlytics.AdmobActivity$6 -> de.betaapps.andlytics.m:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    213:218:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+de.betaapps.andlytics.AdmobActivity$7 -> de.betaapps.andlytics.n:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    228:233:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+de.betaapps.andlytics.AdmobActivity$8 -> de.betaapps.andlytics.o:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    245:250:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+de.betaapps.andlytics.AdmobActivity$9 -> de.betaapps.andlytics.p:
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    261:266:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+de.betaapps.andlytics.AdmobActivity$LoadDbEntiesTask -> de.betaapps.andlytics.q:
+    java.util.List admobStats -> b
+    java.lang.Boolean executeRemoteCall -> c
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    572:572:void onPreExecute() -> onPreExecute
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.AdmobActivity$LoadRemoteEntiesTask -> de.betaapps.andlytics.r:
+    boolean isRunning -> a
+    de.betaapps.andlytics.AdmobActivity this$0 -> b
+    611:614:void onPreExecute() -> onPreExecute
+    619:650:java.lang.Exception doInBackground$65c3861d() -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    1:1:void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
+    1:1:void access$4(de.betaapps.andlytics.AdmobActivity$LoadRemoteEntiesTask,java.lang.Object[]) -> a
+de.betaapps.andlytics.AdmobActivity$LoadRemoteEntiesTask$1 -> de.betaapps.andlytics.s:
+    de.betaapps.andlytics.AdmobActivity$LoadRemoteEntiesTask this$1 -> a
+    637:638:void initialImportStarted() -> a
+de.betaapps.andlytics.AdmobActivity$LoadRemoteSiteListTask -> de.betaapps.andlytics.t:
+    java.util.Map data -> b
+    java.lang.String currentAdmobAccount -> c
+    de.betaapps.andlytics.AdmobActivity this$0 -> a
+    686:687:void onPreExecute() -> onPreExecute
+    693:697:java.lang.Exception doInBackground$65c3861d() -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    678:678:java.lang.String access$2(de.betaapps.andlytics.AdmobActivity$LoadRemoteSiteListTask) -> a
+    675:675:de.betaapps.andlytics.AdmobActivity access$3(de.betaapps.andlytics.AdmobActivity$LoadRemoteSiteListTask) -> b
+de.betaapps.andlytics.AdmobActivity$LoadRemoteSiteListTask$1 -> de.betaapps.andlytics.u:
+    de.betaapps.andlytics.AdmobActivity$LoadRemoteSiteListTask this$1 -> a
+    727:731:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.AdmobAuthenticatorActivity -> de.betaapps.andlytics.AdmobAuthenticatorActivity:
+    android.accounts.AccountManager mAccountManager -> a
+    java.lang.Thread mAuthThread -> b
+    java.lang.String mAuthtoken -> c
+    java.lang.String mAuthtokenType -> d
+    java.lang.Boolean mConfirmCredentials -> e
+    android.os.Handler mHandler -> f
+    android.widget.TextView mMessageView -> g
+    java.lang.String mPassword -> h
+    java.lang.String mUsername -> i
+    android.widget.EditText mPasswordEdit -> j
+    android.widget.EditText mUsernameEdit -> k
+    boolean mRequestNewAccount -> l
+    android.view.View mOkButton -> m
+    54:63:void onCreate(android.os.Bundle) -> onCreate
+    98:105:java.lang.CharSequence getMessage() -> b
+    110:126:android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    130:142:void handleLogin$3c7ec8c3() -> a
+    187:212:void onAuthenticationResult(java.lang.String) -> a
+    35:35:java.lang.Thread access$0(de.betaapps.andlytics.AdmobAuthenticatorActivity) -> a
+de.betaapps.andlytics.AdmobAuthenticatorActivity$1 -> de.betaapps.andlytics.v:
+    de.betaapps.andlytics.AdmobAuthenticatorActivity this$0 -> a
+    92:93:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.AdmobAuthenticatorActivity$2 -> de.betaapps.andlytics.w:
+    de.betaapps.andlytics.AdmobAuthenticatorActivity this$0 -> a
+    118:122:void onCancel(android.content.DialogInterface) -> onCancel
+de.betaapps.andlytics.AdmobListAdapter -> de.betaapps.andlytics.x:
+    java.text.NumberFormat numberFormat -> a
+    java.util.List stats -> b
+    android.view.LayoutInflater layoutInflater -> c
+    android.app.Activity activity -> d
+    float scale -> e
+    java.lang.Object currentChart -> f
+    java.text.SimpleDateFormat dateFormat -> g
+    java.util.List secondPageCharts -> h
+    int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$AdmobChartType -> i
+    52:52:int getCount() -> getCount
+    57:57:de.betaapps.andlytics.model.Admob getItem(int) -> a
+    62:62:long getItemId(int) -> getItemId
+    68:238:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    266:278:android.widget.TextView createTextView$7bfa433(java.lang.String,boolean) -> a
+    291:292:void setCurrentChart(java.lang.Object) -> a
+    297:299:void notifyDataSetChanged() -> notifyDataSetChanged
+    302:303:void setStats(java.util.List) -> a
+    311:312:void setSecondPageCharts(java.util.List) -> b
+    1:1:java.lang.Object getItem(int) -> getItem
+    25:25:int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$AdmobChartType() -> a
+de.betaapps.andlytics.AdmobListAdapter$AdmobViewHolder -> de.betaapps.andlytics.y:
+    android.widget.TextView clicks -> a
+    android.widget.TextView requests -> b
+    android.widget.TextView date -> c
+    android.widget.TextView revenue -> d
+    android.widget.TextView fillrate -> e
+    android.widget.TextView ecpm -> f
+    android.widget.TextView impressions -> g
+    android.widget.TextView ctr -> h
+    android.widget.TextView houseAdClicks -> i
+de.betaapps.andlytics.AndlyticsApp -> de.betaapps.andlytics.AndlyticsApp:
+    boolean proVersion -> a
+    java.lang.String authToken -> b
+    java.lang.String xsrfToken -> c
+    de.betaapps.andlytics.ContentAdapter db -> d
+    boolean skipMainReload -> e
+    33:36:void onCreate() -> onCreate
+    40:55:boolean isProVersion(android.content.Context) -> a
+    61:62:void onTerminate() -> onTerminate
+    69:69:de.betaapps.andlytics.ContentAdapter getDbAdapter() -> a
+    73:74:void setAuthToken(java.lang.String) -> a
+    77:77:java.lang.String getAuthToken() -> b
+    81:82:void setXsrfToken(java.lang.String) -> b
+    85:85:java.lang.String getXsrfToken() -> c
+    90:91:void setSkipMainReload(boolean) -> a
+    94:94:boolean isSkipMainReload() -> d
+de.betaapps.andlytics.AppStatsDiff -> de.betaapps.andlytics.z:
+    java.lang.String appName -> j
+    java.lang.String packageName -> k
+    java.lang.String iconName -> l
+    int commentsChange -> a
+    int downloadsChange -> b
+    int activeInstallsChange -> c
+    float avgRatingChange -> d
+    int rating1Change -> e
+    int rating2Change -> f
+    int rating3Change -> g
+    int rating4Change -> h
+    int rating5Change -> i
+    boolean skipNotification -> m
+    java.lang.String versionName -> n
+    35:41:boolean hasChanges() -> a
+    46:46:int getCommentsChange() -> b
+    54:54:int getDownloadsChange() -> c
+    70:70:float getAvgRatingChange() -> d
+    118:119:void setPackageName(java.lang.String) -> a
+    126:127:void setAppName(java.lang.String) -> b
+    130:130:java.lang.String getAppName() -> e
+    134:135:void setIconName(java.lang.String) -> c
+    142:143:void setSkipNotification(boolean) -> a
+    146:146:boolean isSkipNotification() -> f
+    150:151:void setVersionName(java.lang.String) -> d
+de.betaapps.andlytics.AuthenticationCallback -> de.betaapps.andlytics.aa:
+    void authenticationSuccess() -> a
+de.betaapps.andlytics.BaseActivity -> de.betaapps.andlytics.BaseActivity:
+    java.lang.String TAG -> a
+    android.view.View downloadsButton -> b
+    android.view.View admobButton -> c
+    android.view.View commentsButton -> d
+    java.lang.String packageName -> f
+    java.lang.String iconFilePath -> g
+    java.lang.String accountname -> h
+    android.view.View ratingsButton -> e
+    64:64:boolean isProVersion() -> e
+    69:78:void onCreate(android.os.Bundle) -> onCreate
+    82:87:void onResume() -> onResume
+    193:205:void startActivity(java.lang.Class,boolean,boolean) -> a
+    208:216:void startChartActivity(de.betaapps.andlytics.chart.Chart$ChartSet) -> a
+    219:301:void handleUserVisibleException(java.lang.Exception) -> a
+    304:332:void showNewVersionDialog$698b7e31() -> a
+    387:414:void showProDialog() -> f
+    494:494:de.betaapps.andlytics.ContentAdapter getDbAdapter() -> g
+    499:518:void authenticateAccountFromPreferences(boolean,de.betaapps.andlytics.AuthenticationCallback) -> a
+    641:646:void showLoadingIndecator(android.widget.ViewSwitcher) -> a
+    649:652:void hideLoadingIndecator(android.widget.ViewSwitcher) -> b
+    655:655:de.betaapps.andlytics.AndlyticsApp getAndlyticsApplication() -> h
+    663:677:void onBackPressed() -> onBackPressed
+    681:686:int getAppVersionCode(android.content.Context) -> a
+    57:57:android.view.View access$0(de.betaapps.andlytics.BaseActivity) -> a
+    56:56:android.view.View access$1(de.betaapps.andlytics.BaseActivity) -> b
+    61:61:android.view.View access$2(de.betaapps.andlytics.BaseActivity) -> c
+    55:55:android.view.View access$3(de.betaapps.andlytics.BaseActivity) -> d
+    376:376:void access$4$3e5ffeed(de.betaapps.andlytics.BaseActivity,java.lang.Exception) -> a
+    53:53:java.lang.String access$5() -> i
+de.betaapps.andlytics.BaseActivity$1 -> de.betaapps.andlytics.ab:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    128:139:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.BaseActivity$10 -> de.betaapps.andlytics.ac:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    407:408:void onClick(android.content.DialogInterface,int) -> onClick
+de.betaapps.andlytics.BaseActivity$11 -> de.betaapps.andlytics.ad:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    java.lang.Exception val$e -> b
+    428:437:void onClick(android.content.DialogInterface,int) -> onClick
+    424:424:de.betaapps.andlytics.BaseActivity access$0(de.betaapps.andlytics.BaseActivity$11) -> a
+de.betaapps.andlytics.BaseActivity$11$1 -> de.betaapps.andlytics.ae:
+    de.betaapps.andlytics.BaseActivity$11 this$1 -> a
+    java.lang.Exception val$e -> b
+    432:433:void run() -> run
+de.betaapps.andlytics.BaseActivity$12 -> de.betaapps.andlytics.af:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    443:444:void onClick(android.content.DialogInterface,int) -> onClick
+de.betaapps.andlytics.BaseActivity$13 -> de.betaapps.andlytics.ag:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    464:471:void onClick(android.content.DialogInterface,int) -> onClick
+de.betaapps.andlytics.BaseActivity$14 -> de.betaapps.andlytics.ah:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    477:483:void onClick(android.content.DialogInterface,int) -> onClick
+de.betaapps.andlytics.BaseActivity$15 -> de.betaapps.andlytics.ai:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    de.betaapps.andlytics.AuthenticationCallback val$callback -> b
+    532:560:void run(android.accounts.AccountManagerFuture) -> run
+de.betaapps.andlytics.BaseActivity$15$1 -> de.betaapps.andlytics.aj:
+    de.betaapps.andlytics.BaseActivity$15 this$1 -> a
+    de.betaapps.andlytics.AuthenticationCallback val$callback -> b
+    544:545:void run() -> run
+de.betaapps.andlytics.BaseActivity$2 -> de.betaapps.andlytics.ak:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    147:157:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.BaseActivity$3 -> de.betaapps.andlytics.al:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    164:173:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.BaseActivity$4 -> de.betaapps.andlytics.am:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    180:188:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.BaseActivity$5 -> de.betaapps.andlytics.an:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    313:318:void onClick(android.content.DialogInterface,int) -> onClick
+de.betaapps.andlytics.BaseActivity$6 -> de.betaapps.andlytics.ao:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    324:325:void onClick(android.content.DialogInterface,int) -> onClick
+de.betaapps.andlytics.BaseActivity$7 -> de.betaapps.andlytics.ap:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    java.lang.Exception val$e -> b
+    345:359:void onClick(android.content.DialogInterface,int) -> onClick
+    341:341:de.betaapps.andlytics.BaseActivity access$0(de.betaapps.andlytics.BaseActivity$7) -> a
+de.betaapps.andlytics.BaseActivity$7$1 -> de.betaapps.andlytics.aq:
+    de.betaapps.andlytics.BaseActivity$7 this$1 -> a
+    java.lang.Exception val$e -> b
+    351:352:void run() -> run
+de.betaapps.andlytics.BaseActivity$8 -> de.betaapps.andlytics.ar:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    365:366:void onClick(android.content.DialogInterface,int) -> onClick
+de.betaapps.andlytics.BaseActivity$9 -> de.betaapps.andlytics.as:
+    de.betaapps.andlytics.BaseActivity this$0 -> a
+    396:401:void onClick(android.content.DialogInterface,int) -> onClick
+de.betaapps.andlytics.ChartActivity -> de.betaapps.andlytics.ChartActivity:
+    de.betaapps.andlytics.ContentAdapter db -> e
+    de.betaapps.andlytics.view.ChartGallery chartGallery -> i
+    java.lang.Object currentChart -> j
+    android.widget.ListView historyList -> k
+    de.betaapps.andlytics.ChartListAdapter historyListAdapter -> l
+    android.widget.TextView historyListFooter -> m
+    android.widget.TextView timeframeText -> n
+    android.view.View oneEntryHint -> o
+    boolean dataUpdateRequested -> p
+    de.betaapps.andlytics.chart.ChartTextSwitcher titleTextSwitcher -> q
+    int currentChartPosition -> r
+    android.view.animation.Animation inNegative -> s
+    android.view.animation.Animation outNegative -> t
+    android.view.animation.Animation inPositive -> u
+    android.view.animation.Animation outPositive -> v
+    java.lang.String timetext -> a
+    de.betaapps.andlytics.chart.Chart$ChartSet currentChartSet -> w
+    java.lang.Integer heighestRatingChange -> b
+    java.lang.Integer lowestRatingChange -> c
+    de.betaapps.andlytics.view.ViewSwitcher3D viewSwitcher -> x
+    de.betaapps.andlytics.Preferences$Timeframe currentTimeFrame -> y
+    android.widget.RadioButton radioLastThrity -> z
+    android.widget.RadioButton radioUnlimited -> A
+    de.betaapps.andlytics.view.ChartGalleryAdapter chartGalleryAdapter -> B
+    android.widget.CheckBox checkSmooth -> C
+    java.lang.Boolean smoothEnabled -> D
+    android.widget.RadioButton radioDmy -> E
+    android.widget.RadioButton radioYmd -> F
+    android.widget.RadioButton radioMdy -> G
+    de.betaapps.andlytics.model.AppStats overallStats -> H
+    android.widget.RadioButton radioLastSeven -> I
+    java.util.List versionUpdateDates -> d
+    int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$DownloadChartType -> J
+    int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$RatingChartType -> K
+    84:346:void onCreate(android.os.Bundle) -> onCreate
+    351:431:void updateChartHeadline() -> a
+    436:443:void onResume() -> onResume
+    452:452:de.betaapps.andlytics.chart.Chart$ChartSet getCurrentChartSet() -> b
+    580:582:void onViewChanged$1385ff() -> c
+    587:589:void onRender() -> d
+    70:70:android.widget.RadioButton access$0(de.betaapps.andlytics.ChartActivity) -> a
+    71:71:android.widget.RadioButton access$1(de.betaapps.andlytics.ChartActivity) -> b
+    73:73:android.widget.CheckBox access$2(de.betaapps.andlytics.ChartActivity) -> c
+    56:56:boolean access$3(de.betaapps.andlytics.ChartActivity) -> d
+    47:47:de.betaapps.andlytics.ContentAdapter access$4(de.betaapps.andlytics.ChartActivity) -> e
+    69:69:de.betaapps.andlytics.Preferences$Timeframe access$5(de.betaapps.andlytics.ChartActivity) -> f
+    74:74:java.lang.Boolean access$6(de.betaapps.andlytics.ChartActivity) -> g
+    78:78:void access$7(de.betaapps.andlytics.ChartActivity,de.betaapps.andlytics.model.AppStats) -> a
+    56:56:void access$8(de.betaapps.andlytics.ChartActivity,boolean) -> a
+    48:48:de.betaapps.andlytics.view.ChartGallery access$9(de.betaapps.andlytics.ChartActivity) -> h
+    72:72:de.betaapps.andlytics.view.ChartGalleryAdapter access$10(de.betaapps.andlytics.ChartActivity) -> i
+    52:52:de.betaapps.andlytics.ChartListAdapter access$11(de.betaapps.andlytics.ChartActivity) -> j
+    49:49:java.lang.Object access$12(de.betaapps.andlytics.ChartActivity) -> k
+    65:65:de.betaapps.andlytics.chart.Chart$ChartSet access$13(de.betaapps.andlytics.ChartActivity) -> l
+    53:53:android.widget.TextView access$14(de.betaapps.andlytics.ChartActivity) -> m
+    55:55:android.view.View access$15(de.betaapps.andlytics.ChartActivity) -> n
+    68:68:de.betaapps.andlytics.view.ViewSwitcher3D access$16(de.betaapps.andlytics.ChartActivity) -> o
+    69:69:void access$17(de.betaapps.andlytics.ChartActivity,de.betaapps.andlytics.Preferences$Timeframe) -> a
+    74:74:void access$18(de.betaapps.andlytics.ChartActivity,java.lang.Boolean) -> a
+    58:58:int access$19(de.betaapps.andlytics.ChartActivity) -> p
+    57:57:de.betaapps.andlytics.chart.ChartTextSwitcher access$20(de.betaapps.andlytics.ChartActivity) -> q
+    59:59:android.view.animation.Animation access$21(de.betaapps.andlytics.ChartActivity) -> r
+    60:60:android.view.animation.Animation access$22(de.betaapps.andlytics.ChartActivity) -> s
+    61:61:android.view.animation.Animation access$23(de.betaapps.andlytics.ChartActivity) -> t
+    62:62:android.view.animation.Animation access$24(de.betaapps.andlytics.ChartActivity) -> u
+    58:58:void access$25(de.betaapps.andlytics.ChartActivity,int) -> a
+    49:49:void access$26(de.betaapps.andlytics.ChartActivity,java.lang.Object) -> a
+    45:45:int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$DownloadChartType() -> j
+    45:45:int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$RatingChartType() -> k
+de.betaapps.andlytics.ChartActivity$1 -> de.betaapps.andlytics.at:
+    de.betaapps.andlytics.ChartActivity this$0 -> a
+    97:97:android.view.View makeView() -> makeView
+de.betaapps.andlytics.ChartActivity$10 -> de.betaapps.andlytics.au:
+    de.betaapps.andlytics.ChartActivity this$0 -> a
+    248:257:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+de.betaapps.andlytics.ChartActivity$11 -> de.betaapps.andlytics.av:
+    de.betaapps.andlytics.ChartActivity this$0 -> a
+    264:265:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.ChartActivity$12 -> de.betaapps.andlytics.aw:
+    de.betaapps.andlytics.ChartActivity this$0 -> a
+    278:301:void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    305:305:void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+de.betaapps.andlytics.ChartActivity$2 -> de.betaapps.andlytics.ax:
+    de.betaapps.andlytics.ChartActivity this$0 -> a
+    117:119:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.ChartActivity$3 -> de.betaapps.andlytics.ay:
+    de.betaapps.andlytics.ChartActivity this$0 -> a
+    134:136:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.ChartActivity$4 -> de.betaapps.andlytics.az:
+    de.betaapps.andlytics.ChartActivity this$0 -> a
+    147:152:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+de.betaapps.andlytics.ChartActivity$5 -> de.betaapps.andlytics.ba:
+    de.betaapps.andlytics.ChartActivity this$0 -> a
+    163:168:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+de.betaapps.andlytics.ChartActivity$6 -> de.betaapps.andlytics.bb:
+    de.betaapps.andlytics.ChartActivity this$0 -> a
+    178:183:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+de.betaapps.andlytics.ChartActivity$7 -> de.betaapps.andlytics.bc:
+    de.betaapps.andlytics.ChartActivity this$0 -> a
+    195:201:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+de.betaapps.andlytics.ChartActivity$8 -> de.betaapps.andlytics.bd:
+    de.betaapps.andlytics.ChartActivity this$0 -> a
+    212:218:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+de.betaapps.andlytics.ChartActivity$9 -> de.betaapps.andlytics.be:
+    de.betaapps.andlytics.ChartActivity this$0 -> a
+    228:234:void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+de.betaapps.andlytics.ChartActivity$LoadChartData -> de.betaapps.andlytics.bf:
+    java.util.List statsForApp -> b
+    boolean smoothedValues -> c
+    de.betaapps.andlytics.ChartActivity this$0 -> a
+    465:470:void onPreExecute() -> onPreExecute
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.ChartListAdapter -> de.betaapps.andlytics.bg:
+    int BLACK_TEXT -> a
+    java.util.List downloadInfos -> b
+    java.util.List versionUpdateDates -> c
+    android.view.LayoutInflater layoutInflater -> d
+    android.app.Activity activity -> e
+    float scale -> f
+    java.lang.Object currentChart -> g
+    java.text.SimpleDateFormat dateFormat -> h
+    int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$DownloadChartType -> i
+    int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$RatingChartType -> j
+    54:54:int getCount() -> getCount
+    59:59:de.betaapps.andlytics.model.AppStats getItem(int) -> a
+    64:64:long getItemId(int) -> getItemId
+    70:319:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    344:356:android.widget.TextView createTextView$7bfa433(java.lang.String,boolean) -> a
+    369:370:void setCurrentChart(java.lang.Object) -> a
+    373:374:void setDownloadInfos(java.util.List) -> a
+    382:384:void notifyDataSetChanged() -> notifyDataSetChanged
+    387:388:void setVersionUpdateDates(java.util.List) -> b
+    1:1:java.lang.Object getItem(int) -> getItem
+    24:24:int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$DownloadChartType() -> a
+    24:24:int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$RatingChartType() -> b
+de.betaapps.andlytics.ChartListAdapter$DownloadsViewHolder -> de.betaapps.andlytics.bh:
+    android.widget.TextView smooth -> a
+    android.widget.TextView date -> b
+    android.widget.TextView total -> c
+    android.widget.TextView daily -> d
+    android.widget.TextView active -> e
+    android.widget.TextView activeTotal -> f
+de.betaapps.andlytics.ChartListAdapter$RatingsViewHolder -> de.betaapps.andlytics.bi:
+    android.widget.TextView smooth -> a
+    android.widget.TextView date -> b
+    android.widget.TextView avgrating -> c
+    android.widget.TextView rating1 -> d
+    android.widget.TextView rating2 -> e
+    android.widget.TextView rating3 -> f
+    android.widget.TextView rating4 -> g
+    android.widget.TextView rating5 -> h
+de.betaapps.andlytics.CommentsActivity -> de.betaapps.andlytics.CommentsActivity:
+    java.lang.String TAG -> a
+    de.betaapps.andlytics.CommentsListAdapter commentsListAdapter -> d
+    android.widget.ExpandableListView list -> e
+    android.view.View footer -> i
+    android.widget.ViewSwitcher toolbarViewSwitcher -> j
+    int maxAvalibleComments -> k
+    java.util.ArrayList commentGroups -> l
+    java.util.List comments -> m
+    int nextCommentIndex -> b
+    android.view.View nocomments -> n
+    boolean hasMoreComments -> c
+    de.betaapps.andlytics.ContentAdapter db -> o
+    android.view.View refreshButton -> p
+    android.view.View backButton -> q
+    53:116:void onCreate(android.os.Bundle) -> onCreate
+    120:123:void onResume() -> onResume
+    247:271:void rebuildCommentGroups() -> b
+    274:280:void addNewCommentGroup(de.betaapps.andlytics.model.Comment) -> a
+    285:287:void authenticationSuccess() -> a
+    44:44:de.betaapps.andlytics.ContentAdapter access$0(de.betaapps.andlytics.CommentsActivity) -> a
+    36:36:void access$1(de.betaapps.andlytics.CommentsActivity,java.util.List) -> a
+    36:36:java.util.List access$2(de.betaapps.andlytics.CommentsActivity) -> b
+    24:24:de.betaapps.andlytics.CommentsListAdapter access$3(de.betaapps.andlytics.CommentsActivity) -> c
+    34:34:java.util.ArrayList access$4(de.betaapps.andlytics.CommentsActivity) -> d
+    26:26:android.widget.ExpandableListView access$5(de.betaapps.andlytics.CommentsActivity) -> e
+    32:32:int access$6(de.betaapps.andlytics.CommentsActivity) -> f
+    32:32:void access$7(de.betaapps.andlytics.CommentsActivity,int) -> a
+    28:28:android.view.View access$8(de.betaapps.andlytics.CommentsActivity) -> g
+    40:40:android.view.View access$9(de.betaapps.andlytics.CommentsActivity) -> h
+    30:30:android.widget.ViewSwitcher access$10(de.betaapps.andlytics.CommentsActivity) -> i
+de.betaapps.andlytics.CommentsActivity$1 -> de.betaapps.andlytics.bj:
+    de.betaapps.andlytics.CommentsActivity this$0 -> a
+    90:93:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.CommentsActivity$2 -> de.betaapps.andlytics.bk:
+    de.betaapps.andlytics.CommentsActivity this$0 -> a
+    100:102:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.CommentsActivity$3 -> de.betaapps.andlytics.bl:
+    de.betaapps.andlytics.CommentsActivity this$0 -> a
+    109:110:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.CommentsActivity$LoadCommentsCache -> de.betaapps.andlytics.bm:
+    de.betaapps.andlytics.CommentsActivity this$0 -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.CommentsActivity$LoadCommentsData -> de.betaapps.andlytics.bn:
+    de.betaapps.andlytics.CommentsActivity this$0 -> a
+    157:201:java.lang.Exception doInBackground$65c3861d() -> a
+    239:241:void onPreExecute() -> onPreExecute
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.CommentsListAdapter -> de.betaapps.andlytics.bo:
+    android.view.LayoutInflater layoutInflater -> a
+    android.graphics.Bitmap ratingImage1 -> b
+    android.graphics.Bitmap ratingImage2 -> c
+    android.graphics.Bitmap ratingImage3 -> d
+    android.graphics.Bitmap ratingImage4 -> e
+    android.graphics.Bitmap ratingImage5 -> f
+    java.util.ArrayList commentGroups -> g
+    de.betaapps.andlytics.CommentsActivity context -> h
+    60:152:android.view.View getChildView(int,int,boolean,android.view.View,android.view.ViewGroup) -> getChildView
+    161:183:android.view.View getGroupView(int,boolean,android.view.View,android.view.ViewGroup) -> getGroupView
+    199:199:int getGroupCount() -> getGroupCount
+    204:204:int getChildrenCount(int) -> getChildrenCount
+    209:209:de.betaapps.andlytics.model.CommentGroup getGroup(int) -> a
+    214:214:de.betaapps.andlytics.model.Comment getChild(int,int) -> a
+    219:219:long getGroupId(int) -> getGroupId
+    224:224:long getChildId(int,int) -> getChildId
+    229:229:boolean hasStableIds() -> hasStableIds
+    234:234:boolean isChildSelectable(int,int) -> isChildSelectable
+    238:239:void setCommentGroups(java.util.ArrayList) -> a
+    1:1:java.lang.Object getChild(int,int) -> getChild
+    1:1:java.lang.Object getGroup(int) -> getGroup
+    41:41:de.betaapps.andlytics.CommentsActivity access$2(de.betaapps.andlytics.CommentsListAdapter) -> a
+de.betaapps.andlytics.CommentsListAdapter$1 -> de.betaapps.andlytics.bp:
+    de.betaapps.andlytics.CommentsListAdapter this$0 -> a
+    de.betaapps.andlytics.model.Comment val$comment -> b
+    125:148:boolean onLongClick(android.view.View) -> onLongClick
+de.betaapps.andlytics.CommentsListAdapter$2 -> de.betaapps.andlytics.bq:
+    de.betaapps.andlytics.CommentsListAdapter this$0 -> a
+    180:180:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.CommentsListAdapter$ViewHolderChild -> de.betaapps.andlytics.br:
+    android.widget.TextView text -> a
+    android.widget.ImageView rating -> b
+    android.widget.TextView user -> c
+    android.widget.TextView device -> d
+de.betaapps.andlytics.CommentsListAdapter$ViewHolderGroup -> de.betaapps.andlytics.bs:
+    android.widget.TextView date -> a
+de.betaapps.andlytics.ContentAdapter -> de.betaapps.andlytics.bt:
+    android.content.Context context -> a
+    44:147:de.betaapps.andlytics.model.AdmobList getAdmobStats(java.lang.String,de.betaapps.andlytics.Preferences$Timeframe) -> a
+    153:165:void insertOrUpdateAdmobStats(de.betaapps.andlytics.model.Admob) -> a
+    193:201:void bulkInsertAdmobStats(java.util.List) -> a
+    207:227:android.content.ContentValues createAdmobContentValues(de.betaapps.andlytics.model.Admob) -> b
+    234:252:de.betaapps.andlytics.AppStatsDiff insertOrUpdateStats(de.betaapps.andlytics.model.AppInfo) -> a
+    258:277:void insertOrUpdateAppStats(de.betaapps.andlytics.model.AppStats,java.lang.String) -> a
+    333:334:java.lang.String formatDate(java.util.Date) -> a
+    339:343:java.util.Date parseDate(java.lang.String) -> d
+    350:410:java.util.List getAllAppsLatestStats(java.lang.String) -> a
+    415:427:long setGhost$3b99f9df(java.lang.String,boolean) -> a
+    432:443:long setRatingExpanded$3b99f9df(java.lang.String,boolean) -> b
+    448:458:long getAppInfoByPackageName(java.lang.String) -> e
+    481:746:de.betaapps.andlytics.model.AppStatsList getStatsForApp(java.lang.String,de.betaapps.andlytics.Preferences$Timeframe,java.lang.Boolean) -> a
+    753:788:de.betaapps.andlytics.model.AppStats getLatestForApp(java.lang.String) -> b
+    882:898:void updateCommentsCache(java.util.List,java.lang.String) -> a
+    902:922:java.util.List getCommentsFromCache(java.lang.String) -> c
+    927:937:long setSkipNotification(java.lang.String,boolean) -> c
+de.betaapps.andlytics.DemoDataActivity -> de.betaapps.andlytics.DemoDataActivity:
+    de.betaapps.andlytics.ContentAdapter db -> a
+    java.lang.String accountname -> b
+    29:37:void onCreate(android.os.Bundle) -> onCreate
+    25:25:java.lang.String access$0(de.betaapps.andlytics.DemoDataActivity) -> a
+    24:24:de.betaapps.andlytics.ContentAdapter access$1(de.betaapps.andlytics.DemoDataActivity) -> b
+de.betaapps.andlytics.DemoDataActivity$LoadDemoData -> de.betaapps.andlytics.bu:
+    android.app.ProgressDialog progressDialog -> b
+    de.betaapps.andlytics.DemoDataActivity this$0 -> a
+    112:118:void onPreExecute() -> onPreExecute
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    1:1:void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
+de.betaapps.andlytics.DeveloperConsole -> de.betaapps.andlytics.bv:
+    java.lang.String cookie -> a
+    java.lang.String devacc -> b
+    android.content.Context context -> c
+    java.lang.String cookieAuthtoken -> d
+    java.lang.String postData -> e
+    130:130:java.util.List getAppDownloadInfos(java.lang.String,java.lang.String) -> a
+    200:218:java.util.List getAppComments$54cdcab4(java.lang.String,java.lang.String,int) -> a
+    265:273:void testIfJsonIsValid(java.lang.String) -> a
+    278:296:java.util.List parseCommentsResponse$56729ae2(java.lang.String) -> b
+    321:344:java.lang.String grapAppStatistics$2c2f4af6() -> a
+    380:404:java.lang.String grapComments$782597e1(java.lang.String,int) -> a
+    445:483:java.lang.String getGwtRpcResponse(java.lang.String,java.net.URL) -> a
+    493:619:void developerConsoleAuthentication(java.lang.String,boolean) -> a
+de.betaapps.andlytics.LoginActivity -> de.betaapps.andlytics.LoginActivity:
+    android.widget.LinearLayout accountList -> a
+    android.widget.TextView headline -> b
+    31:50:void onCreate(android.os.Bundle) -> onCreate
+    54:64:void onResume() -> onResume
+    68:91:void showAccountList() -> a
+    119:124:void redirectToMain(java.lang.String) -> a
+    93:93:void access$0(de.betaapps.andlytics.LoginActivity) -> a
+    118:118:void access$1(de.betaapps.andlytics.LoginActivity,java.lang.String) -> a
+de.betaapps.andlytics.LoginActivity$1 -> de.betaapps.andlytics.bw:
+    de.betaapps.andlytics.LoginActivity this$0 -> a
+    46:47:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.LoginActivity$2 -> de.betaapps.andlytics.bx:
+    de.betaapps.andlytics.LoginActivity this$0 -> a
+    85:87:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.LoginActivity$3 -> de.betaapps.andlytics.by:
+    de.betaapps.andlytics.LoginActivity this$0 -> a
+    97:111:void run(android.accounts.AccountManagerFuture) -> run
+de.betaapps.andlytics.Main -> de.betaapps.andlytics.Main:
+    java.lang.String TAG -> a
+    android.view.View buttonRefresh -> k
+    boolean cancelRequested -> l
+    android.widget.ListView mainListView -> m
+    de.betaapps.andlytics.ContentAdapter db -> n
+    android.widget.TextView statusText -> o
+    android.widget.ViewSwitcher mainViewSwitcher -> p
+    de.betaapps.andlytics.MainListAdapter adapter -> q
+    boolean dotracking -> b
+    android.view.View footer -> r
+    android.view.View feedbackButton -> s
+    android.view.View ghostButton -> t
+    de.betaapps.andlytics.dialog.GhostDialog ghostDialog -> c
+    boolean isAuthenticationRetry -> u
+    android.widget.ViewSwitcher progressSwitcher -> v
+    android.view.animation.Animation aniPrevIn -> d
+    android.view.View statsModeToggle -> w
+    de.betaapps.andlytics.Preferences$StatsMode currentStatsMode -> x
+    android.widget.TextView statsModeText -> y
+    android.widget.ImageView statsModeIcon -> z
+    android.view.View notificationButton -> A
+    android.view.View autosyncButton -> B
+    de.betaapps.andlytics.dialog.NotificationsDialog notificationDialog -> e
+    android.view.View exportButton -> C
+    android.view.View importButton -> D
+    de.betaapps.andlytics.dialog.ExportDialog exportDialog -> i
+    de.betaapps.andlytics.dialog.ImportDialog importDialog -> j
+    int[] $SWITCH_TABLE$de$betaapps$andlytics$Preferences$StatsMode -> E
+    95:248:void onCreate(android.os.Bundle) -> onCreate
+    252:262:void onResume() -> onResume
+    266:266:java.lang.Object onRetainNonConfigurationInstance() -> onRetainNonConfigurationInstance
+    271:272:void onPostResume() -> onPostResume
+    276:277:void onPause() -> onPause
+    673:678:void showAutosyncDialog() -> b
+    705:707:void onBackPressed() -> onBackPressed
+    712:713:void onStop() -> onStop
+    718:721:void onGhostSelectionChanged(java.lang.String,boolean) -> a
+    726:728:void onGhostDialogClose() -> c
+    731:749:void updateStatsMode() -> d
+    816:842:android.app.Dialog onCreateDialog(int) -> onCreateDialog
+    853:854:void authenticationSuccess() -> a
+    59:59:boolean access$0(de.betaapps.andlytics.Main) -> a
+    59:59:void access$1$4f9e98ce(de.betaapps.andlytics.Main) -> b
+    61:61:de.betaapps.andlytics.ContentAdapter access$2(de.betaapps.andlytics.Main) -> c
+    72:72:android.widget.ViewSwitcher access$3(de.betaapps.andlytics.Main) -> d
+    58:58:android.view.View access$4(de.betaapps.andlytics.Main) -> e
+    71:71:boolean access$5(de.betaapps.andlytics.Main) -> f
+    71:71:void access$6$4f9e98ce(de.betaapps.andlytics.Main) -> g
+    279:279:void access$7(de.betaapps.andlytics.Main,java.util.List) -> a
+    64:64:de.betaapps.andlytics.MainListAdapter access$8(de.betaapps.andlytics.Main) -> h
+    75:75:de.betaapps.andlytics.Preferences$StatsMode access$9(de.betaapps.andlytics.Main) -> i
+    75:75:void access$10(de.betaapps.andlytics.Main,de.betaapps.andlytics.Preferences$StatsMode) -> a
+    730:730:void access$11(de.betaapps.andlytics.Main) -> j
+    55:55:int[] $SWITCH_TABLE$de$betaapps$andlytics$Preferences$StatsMode() -> j
+de.betaapps.andlytics.Main$1 -> de.betaapps.andlytics.bz:
+    de.betaapps.andlytics.Main this$0 -> a
+    140:148:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.Main$10 -> de.betaapps.andlytics.ca:
+    de.betaapps.andlytics.Main this$0 -> a
+    828:829:void onClick(android.content.DialogInterface,int) -> onClick
+de.betaapps.andlytics.Main$11 -> de.betaapps.andlytics.cb:
+    de.betaapps.andlytics.Main this$0 -> a
+    835:836:void onClick(android.content.DialogInterface,int) -> onClick
+de.betaapps.andlytics.Main$2 -> de.betaapps.andlytics.cc:
+    de.betaapps.andlytics.Main this$0 -> a
+    156:161:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.Main$3 -> de.betaapps.andlytics.cd:
+    de.betaapps.andlytics.Main this$0 -> a
+    169:170:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.Main$4 -> de.betaapps.andlytics.ce:
+    de.betaapps.andlytics.Main this$0 -> a
+    178:179:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.Main$5 -> de.betaapps.andlytics.cf:
+    de.betaapps.andlytics.Main this$0 -> a
+    186:187:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.Main$6 -> de.betaapps.andlytics.cg:
+    de.betaapps.andlytics.Main this$0 -> a
+    195:201:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.Main$7 -> de.betaapps.andlytics.ch:
+    de.betaapps.andlytics.Main this$0 -> a
+    208:213:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.Main$8 -> de.betaapps.andlytics.ci:
+    de.betaapps.andlytics.Main this$0 -> a
+    220:225:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.Main$9 -> de.betaapps.andlytics.cj:
+    de.betaapps.andlytics.Main this$0 -> a
+    232:233:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.Main$LoadDbEntries -> de.betaapps.andlytics.ck:
+    java.util.List allStats -> b
+    java.util.List filteredStats -> c
+    java.lang.Boolean triggerRemoteCall -> d
+    de.betaapps.andlytics.Main this$0 -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.Main$LoadExportDialog -> de.betaapps.andlytics.cl:
+    java.util.List allStats -> b
+    de.betaapps.andlytics.Main this$0 -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.Main$LoadGhostDialog -> de.betaapps.andlytics.cm:
+    java.util.List allStats -> b
+    de.betaapps.andlytics.Main this$0 -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.Main$LoadIconInCache -> de.betaapps.andlytics.cn:
+    de.betaapps.andlytics.Main this$0 -> a
+    521:569:java.lang.Boolean doInBackground(java.util.List[]) -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.Main$LoadImportDialog -> de.betaapps.andlytics.co:
+    java.util.List fileNames -> b
+    de.betaapps.andlytics.Main this$0 -> a
+    635:649:java.lang.Boolean doInBackground$7b29ea36() -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.Main$LoadNotificationDialog -> de.betaapps.andlytics.cp:
+    java.util.List allStats -> b
+    de.betaapps.andlytics.Main this$0 -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.Main$LoadRemoteEntries -> de.betaapps.andlytics.cq:
+    de.betaapps.andlytics.Main this$0 -> a
+    329:402:java.lang.Exception doInBackground$404a5c0() -> a
+    451:455:void onPreExecute() -> onPreExecute
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.MainListAdapter -> de.betaapps.andlytics.cr:
+    java.text.NumberFormat numberFormat -> g
+    int BLACK_TEXT -> h
+    int GREEN_TEXT -> i
+    java.util.List appInfos -> j
+    android.view.LayoutInflater layoutInflater -> k
+    android.app.Activity activity -> l
+    android.graphics.drawable.Drawable spacerIcon -> m
+    java.lang.String accountname -> a
+    java.io.File cachDir -> n
+    de.betaapps.andlytics.cache.AppIconInMemoryCache inMemoryCache -> o
+    java.util.List animationList -> p
+    int expandViewHeight -> q
+    android.graphics.drawable.Drawable iconDown -> r
+    android.graphics.drawable.Drawable iconUp -> s
+    int expandMargin -> t
+    de.betaapps.andlytics.ContentAdapter db -> u
+    android.graphics.Bitmap ratingImage1 -> b
+    android.graphics.Bitmap ratingImage2 -> c
+    android.graphics.Bitmap ratingImage3 -> d
+    android.graphics.Bitmap ratingImage4 -> e
+    android.graphics.Bitmap ratingImage5 -> f
+    android.view.animation.AccelerateInterpolator upInterpolator -> v
+    android.view.animation.BounceInterpolator downInterpolator -> w
+    de.betaapps.andlytics.Preferences$StatsMode statsMode -> x
+    int expandViewHeightAdmob -> y
+    140:140:int getCount() -> getCount
+    145:145:de.betaapps.andlytics.model.AppInfo getItem(int) -> a
+    150:150:long getItemId(int) -> getItemId
+    158:486:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    491:503:void setupValueDiff(android.widget.TextView,java.lang.Integer) -> a
+    607:608:void setAppInfos(java.util.List) -> a
+    611:611:java.util.List getAppInfos() -> a
+    615:619:void updateMainImage$b4cd46(android.widget.ImageView,android.graphics.Bitmap) -> a
+    622:630:void changeBackgroundDrawable(android.view.View,android.graphics.drawable.Drawable) -> b
+    633:634:void setStatsMode(de.betaapps.andlytics.Preferences$StatsMode) -> a
+    1:1:java.lang.Object getItem(int) -> getItem
+    70:70:android.graphics.drawable.Drawable access$1(de.betaapps.andlytics.MainListAdapter) -> a
+    76:76:de.betaapps.andlytics.cache.AppIconInMemoryCache access$2(de.betaapps.andlytics.MainListAdapter) -> b
+    100:100:android.view.animation.AccelerateInterpolator access$3(de.betaapps.andlytics.MainListAdapter) -> c
+    102:102:android.view.animation.BounceInterpolator access$4(de.betaapps.andlytics.MainListAdapter) -> d
+    78:78:java.util.List access$5(de.betaapps.andlytics.MainListAdapter) -> e
+    68:68:android.app.Activity access$6(de.betaapps.andlytics.MainListAdapter) -> f
+    88:88:de.betaapps.andlytics.ContentAdapter access$7(de.betaapps.andlytics.MainListAdapter) -> g
+    86:86:int access$8(de.betaapps.andlytics.MainListAdapter) -> h
+    82:82:android.graphics.drawable.Drawable access$9(de.betaapps.andlytics.MainListAdapter) -> i
+    621:621:void access$10$53bd051d(android.view.View,android.graphics.drawable.Drawable) -> a
+    84:84:android.graphics.drawable.Drawable access$11(de.betaapps.andlytics.MainListAdapter) -> j
+de.betaapps.andlytics.MainListAdapter$1 -> de.betaapps.andlytics.cs:
+    de.betaapps.andlytics.MainListAdapter this$0 -> a
+    java.lang.String val$packageName -> b
+    java.io.File val$iconFile -> c
+    331:341:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.MainListAdapter$2 -> de.betaapps.andlytics.ct:
+    de.betaapps.andlytics.MainListAdapter this$0 -> a
+    java.lang.String val$packageName -> b
+    java.io.File val$iconFile -> c
+    348:357:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.MainListAdapter$3 -> de.betaapps.andlytics.cu:
+    de.betaapps.andlytics.MainListAdapter this$0 -> a
+    java.lang.String val$packageName -> b
+    java.io.File val$iconFile -> c
+    364:372:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.MainListAdapter$4 -> de.betaapps.andlytics.cv:
+    de.betaapps.andlytics.MainListAdapter this$0 -> a
+    java.lang.String val$packageName -> b
+    java.io.File val$iconFile -> c
+    380:390:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.MainListAdapter$5 -> de.betaapps.andlytics.cw:
+    de.betaapps.andlytics.MainListAdapter this$0 -> a
+    int val$position -> b
+    de.betaapps.andlytics.MainListAdapter$ViewHolder val$holder -> c
+    java.lang.String val$packageName -> d
+    de.betaapps.andlytics.model.AppInfo val$appDownloadInfo -> e
+    int val$expandHeight -> f
+    428:483:void onClick(android.view.View) -> onClick
+    423:423:de.betaapps.andlytics.MainListAdapter access$0(de.betaapps.andlytics.MainListAdapter$5) -> a
+de.betaapps.andlytics.MainListAdapter$5$1 -> de.betaapps.andlytics.cx:
+    de.betaapps.andlytics.MainListAdapter$5 this$1 -> a
+    android.view.View val$v -> b
+    460:460:void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    464:464:void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    468:473:void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+de.betaapps.andlytics.MainListAdapter$ExpandAnimation -> de.betaapps.andlytics.cy:
+    android.view.View view -> b
+    boolean up -> c
+    int height -> d
+    int margin -> e
+    java.lang.Integer rowId -> f
+    de.betaapps.andlytics.MainListAdapter this$0 -> a
+    660:704:java.lang.Void doInBackground$10299ca() -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    1:1:void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
+de.betaapps.andlytics.MainListAdapter$GetCachedImageTask -> de.betaapps.andlytics.cz:
+    android.widget.ImageView imageView -> b
+    java.lang.String reference -> c
+    de.betaapps.andlytics.MainListAdapter this$0 -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.MainListAdapter$ViewHolder -> de.betaapps.andlytics.da:
+    android.widget.TextView admobRevenue -> a
+    android.widget.TextView admobRequests -> b
+    android.view.View admobFrame -> c
+    android.widget.TextView downloadsCountPercent -> d
+    android.view.View downloadFrame -> e
+    android.widget.ImageView ratingbar2 -> f
+    android.widget.ImageView ratingbar3 -> g
+    android.widget.ImageView ratingbar4 -> h
+    android.widget.ImageView ratingbar5 -> i
+    android.widget.ImageView ratingbar1 -> j
+    android.widget.TextView ratingCountPercent -> k
+    android.widget.TextView commentsCountPercent -> l
+    android.widget.RelativeLayout row -> m
+    android.widget.TextView commentsCount -> n
+    android.widget.RatingBar ratingbar -> o
+    android.widget.ImageView icon -> p
+    android.widget.ImageView expand -> q
+    android.widget.TextView ratingtext1 -> r
+    android.widget.TextView ratingtext2 -> s
+    android.widget.TextView ratingtext3 -> t
+    android.widget.TextView ratingtext4 -> u
+    android.widget.TextView ratingtext5 -> v
+    android.widget.TextView ratingpercent1 -> w
+    android.widget.TextView ratingpercent2 -> x
+    android.widget.TextView ratingpercent3 -> y
+    android.widget.TextView ratingpercent4 -> z
+    android.widget.TextView ratingpercent5 -> A
+    android.widget.TextView name -> B
+    android.widget.TextView packageName -> C
+    android.widget.TextView downloadsCount -> D
+    android.widget.TextView ratingCount -> E
+    android.widget.TextView activeInstallsPercent -> F
+    android.widget.TextView activeInstalls -> G
+    android.widget.TextView avgrating -> H
+    android.widget.TextView avgratingPercent -> I
+    android.view.View buttonHistory -> J
+    android.view.View ratingFrame -> K
+de.betaapps.andlytics.Preferences -> de.betaapps.andlytics.db:
+    68:71:void saveAccountName(android.content.Context,java.lang.String) -> a
+    74:77:void removeAccountName(android.content.Context) -> a
+    80:80:java.lang.String getAccountName(android.content.Context) -> b
+    88:88:java.lang.String getGwtPermutation(android.content.Context) -> c
+    106:106:java.lang.String getRequestFullAssetInfo(android.content.Context) -> d
+    122:122:java.lang.String getRequestUserComments(android.content.Context) -> e
+    130:130:java.lang.String getVersionDependingProperty(java.lang.String,android.content.Context) -> a
+    141:146:int getAppVersionCode(android.content.Context) -> l
+    150:153:void saveChartTimeframe(de.betaapps.andlytics.Preferences$Timeframe,android.content.Context) -> a
+    164:167:void saveSmooth(boolean,android.content.Context) -> a
+    174:177:void saveSkipAutoLogin(android.content.Context,java.lang.Boolean) -> a
+    190:190:boolean getNotificationPerf(android.content.Context,java.lang.String,java.lang.String) -> a
+    206:206:int getLevel7AlarmManagerPeriod(android.content.Context) -> f
+    210:210:java.lang.Boolean getProVersionHint(android.content.Context) -> g
+    214:217:void saveProVersionHint(android.content.Context,java.lang.Boolean) -> b
+    220:220:java.lang.Boolean getShowChartHint(android.content.Context) -> h
+    224:227:void saveShowChartHint(android.content.Context,java.lang.Boolean) -> c
+    230:230:java.lang.String getDateFormatShort(android.content.Context) -> i
+    234:237:void saveDateFormatShort(android.content.Context,java.lang.String) -> b
+    240:240:java.lang.String getDateFormatLong(android.content.Context) -> j
+    244:247:void saveDateFormatLong(android.content.Context,java.lang.String) -> c
+    250:253:void saveAdmobSiteId(android.content.Context,java.lang.String,java.lang.String) -> b
+    256:256:java.lang.String getAdmobSiteId(android.content.Context,java.lang.String) -> d
+    266:266:java.lang.String getAdmobAccount(android.content.Context,java.lang.String) -> e
+    270:270:int getLatestVersionCode(android.content.Context) -> k
+    292:295:void saveAdmobTimeframe(de.betaapps.andlytics.Preferences$Timeframe,android.content.Context) -> b
+de.betaapps.andlytics.Preferences$StatsMode -> de.betaapps.andlytics.dc:
+    de.betaapps.andlytics.Preferences$StatsMode PERCENT -> a
+    de.betaapps.andlytics.Preferences$StatsMode DAY_CHANGES -> b
+    de.betaapps.andlytics.Preferences$StatsMode[] ENUM$VALUES -> c
+    1:1:de.betaapps.andlytics.Preferences$StatsMode[] values() -> values
+    1:1:de.betaapps.andlytics.Preferences$StatsMode valueOf(java.lang.String) -> valueOf
+de.betaapps.andlytics.Preferences$Timeframe -> de.betaapps.andlytics.dd:
+    de.betaapps.andlytics.Preferences$Timeframe LAST_THIRTY_DAYS -> a
+    de.betaapps.andlytics.Preferences$Timeframe UNLIMITED -> b
+    de.betaapps.andlytics.Preferences$Timeframe LAST_TWO_DAYS -> c
+    de.betaapps.andlytics.Preferences$Timeframe LATEST_VALUE -> d
+    de.betaapps.andlytics.Preferences$Timeframe LAST_SEVEN_DAYS -> e
+    de.betaapps.andlytics.Preferences$Timeframe[] ENUM$VALUES -> f
+    1:1:de.betaapps.andlytics.Preferences$Timeframe[] values() -> values
+    1:1:de.betaapps.andlytics.Preferences$Timeframe valueOf(java.lang.String) -> valueOf
+de.betaapps.andlytics.Style -> de.betaapps.andlytics.de:
+    de.betaapps.andlytics.Style instance -> a
+    android.graphics.Typeface tf -> b
+    17:20:de.betaapps.andlytics.Style getInstance(android.content.res.AssetManager) -> a
+de.betaapps.andlytics.admob.AdmobAccountAuthenticator -> de.betaapps.andlytics.admob.AdmobAccountAuthenticator:
+    de.betaapps.andlytics.admob.AdmobAccountAuthenticator$Authenticator sAccountAuthenticator -> a
+    29:32:android.os.IBinder onBind(android.content.Intent) -> onBind
+de.betaapps.andlytics.admob.AdmobAccountAuthenticator$Authenticator -> de.betaapps.andlytics.admob.a:
+    android.content.Context mContext -> a
+    59:64:android.os.Bundle addAccount(android.accounts.AccountAuthenticatorResponse,java.lang.String,java.lang.String,java.lang.String[],android.os.Bundle) -> addAccount
+    73:90:android.os.Bundle confirmCredentials(android.accounts.AccountAuthenticatorResponse,android.accounts.Account,android.os.Bundle) -> confirmCredentials
+    99:99:android.os.Bundle editProperties(android.accounts.AccountAuthenticatorResponse,java.lang.String) -> editProperties
+    108:137:android.os.Bundle getAuthToken(android.accounts.AccountAuthenticatorResponse,android.accounts.Account,java.lang.String,android.os.Bundle) -> getAuthToken
+    145:148:java.lang.String getAuthTokenLabel(java.lang.String) -> getAuthTokenLabel
+    158:160:android.os.Bundle hasFeatures(android.accounts.AccountAuthenticatorResponse,android.accounts.Account,java.lang.String[]) -> hasFeatures
+    177:184:android.os.Bundle updateCredentials(android.accounts.AccountAuthenticatorResponse,android.accounts.Account,java.lang.String,android.os.Bundle) -> updateCredentials
+de.betaapps.andlytics.admob.AdmobAccountRemovedException -> de.betaapps.andlytics.admob.b:
+    java.lang.String accountName -> a
+    19:19:java.lang.String getAccountName() -> a
+de.betaapps.andlytics.admob.AdmobAskForPasswordException -> de.betaapps.andlytics.admob.c:
+de.betaapps.andlytics.admob.AdmobAuthenticationUtilities -> de.betaapps.andlytics.admob.d:
+    java.lang.String TAG -> a
+    87:106:java.lang.String authenticate(java.lang.String,java.lang.String,android.os.Handler,android.content.Context) -> a
+    123:131:void sendResult(java.lang.String,android.os.Handler,android.content.Context) -> a
+    148:154:java.lang.Thread attemptAuth(java.lang.String,java.lang.String,android.os.Handler,android.content.Context) -> b
+    159:182:java.lang.String authenticateAccount(java.lang.String,android.content.Context) -> a
+    187:226:java.lang.String authenticateAccount(android.accounts.AccountManager,android.accounts.Account,android.content.Context) -> a
+    232:237:void invalidateToken(java.lang.String,android.content.Context) -> b
+de.betaapps.andlytics.admob.AdmobAuthenticationUtilities$1 -> de.betaapps.andlytics.admob.e:
+    java.lang.Runnable val$runnable -> a
+    59:63:void run() -> run
+de.betaapps.andlytics.admob.AdmobAuthenticationUtilities$2 -> de.betaapps.andlytics.admob.f:
+    android.content.Context val$context -> a
+    java.lang.String val$result -> b
+    128:129:void run() -> run
+de.betaapps.andlytics.admob.AdmobAuthenticationUtilities$3 -> de.betaapps.andlytics.admob.g:
+    java.lang.String val$username -> a
+    java.lang.String val$password -> b
+    android.os.Handler val$handler -> c
+    android.content.Context val$context -> d
+    150:151:void run() -> run
+de.betaapps.andlytics.admob.AdmobGenericException -> de.betaapps.andlytics.admob.h:
+de.betaapps.andlytics.admob.AdmobInvalidRequestException -> de.betaapps.andlytics.admob.i:
+de.betaapps.andlytics.admob.AdmobInvalidTokenException -> de.betaapps.andlytics.admob.j:
+de.betaapps.andlytics.admob.AdmobRateLimitExceededException -> de.betaapps.andlytics.admob.k:
+de.betaapps.andlytics.admob.AdmobRequest -> de.betaapps.andlytics.admob.l:
+    java.lang.String TAG -> a
+    java.text.SimpleDateFormat dateFormat -> b
+    84:104:java.lang.String login(java.lang.String,java.lang.String) -> a
+    109:119:void handleNonJsonException(java.lang.Exception,java.lang.String) -> a
+    125:141:org.json.JSONArray getData(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String[]) -> a
+    148:155:java.lang.String createRequestParams(java.lang.String,java.lang.String[]) -> a
+    161:252:org.json.JSONArray getResponse(java.lang.String,java.lang.String,java.lang.String,boolean,boolean) -> a
+    258:300:void checkJsonErrors(org.json.JSONObject) -> a
+    314:426:void syncSiteStats(java.lang.String,android.content.Context,java.util.List,de.betaapps.andlytics.admob.AdmobRequest$SyncCallback) -> a
+    431:443:java.lang.String authenticateAdmobAccount(java.lang.String,android.content.Context) -> b
+    460:482:java.util.Map getSiteList(java.lang.String,android.content.Context) -> a
+de.betaapps.andlytics.admob.AdmobRequest$SyncCallback -> de.betaapps.andlytics.admob.m:
+    void initialImportStarted() -> a
+de.betaapps.andlytics.cache.AppIconInMemoryCache -> de.betaapps.andlytics.a.a:
+    de.betaapps.andlytics.cache.AppIconInMemoryCache instance -> a
+    17:20:de.betaapps.andlytics.cache.AppIconInMemoryCache getInstance() -> a
+de.betaapps.andlytics.cache.LRUBitmapCache -> de.betaapps.andlytics.a.b:
+    java.util.LinkedHashMap map -> a
+    int cacheSize -> b
+    java.lang.String TAG -> c
+    59:59:android.graphics.Bitmap get(java.lang.String) -> a
+    74:75:void put(java.lang.String,android.graphics.Bitmap) -> a
+    95:95:boolean contains(java.lang.String) -> b
+    17:17:int access$0(de.betaapps.andlytics.cache.LRUBitmapCache) -> a
+    19:19:java.lang.String access$1() -> b
+de.betaapps.andlytics.cache.LRUBitmapCache$1 -> de.betaapps.andlytics.a.c:
+    de.betaapps.andlytics.cache.LRUBitmapCache this$0 -> a
+    38:44:boolean removeEldestEntry(java.util.Map$Entry) -> removeEldestEntry
+de.betaapps.andlytics.chart.AbstractChart -> de.betaapps.andlytics.b.a:
+    69:77:org.achartengine.renderer.XYMultipleSeriesRenderer buildRenderer(int[],org.achartengine.chart.PointStyle[]) -> a
+    97:106:void setChartSettings$3721f50(org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String,java.lang.String,java.lang.String,double,double,double,double) -> a
+    118:130:org.achartengine.model.XYMultipleSeriesDataset buildDateDataset(java.lang.String[],java.util.List,java.util.List) -> a
+    192:203:org.achartengine.model.XYMultipleSeriesDataset buildBarDataset(java.lang.String[],java.util.List) -> a
+de.betaapps.andlytics.chart.Chart -> de.betaapps.andlytics.b.b:
+    java.text.SimpleDateFormat dateFormat -> a
+    int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$DownloadChartType -> b
+    int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$RatingChartType -> c
+    int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$AdmobChartType -> d
+    97:178:android.view.View buildBarChart(android.content.Context,java.lang.Object[],de.betaapps.andlytics.chart.Chart$ValueCallbackHander,double,double) -> a
+    184:278:android.view.View buildLineChart(android.content.Context,java.lang.Object[],de.betaapps.andlytics.chart.Chart$ValueCallbackHander) -> a
+    285:329:android.view.View buildDownloadChart(android.content.Context,java.util.List,de.betaapps.andlytics.chart.Chart$DownloadChartType) -> a
+    341:406:android.view.View buildRatingChart(android.content.Context,java.util.List,de.betaapps.andlytics.chart.Chart$RatingChartType,java.lang.Integer,java.lang.Integer) -> a
+    422:504:android.view.View buildAdmobChart(android.content.Context,java.util.List,de.betaapps.andlytics.chart.Chart$AdmobChartType) -> a
+    25:25:int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$DownloadChartType() -> a
+    25:25:int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$RatingChartType() -> b
+    25:25:int[] $SWITCH_TABLE$de$betaapps$andlytics$chart$Chart$AdmobChartType() -> c
+de.betaapps.andlytics.chart.Chart$1 -> de.betaapps.andlytics.b.c:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    294:294:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$10 -> de.betaapps.andlytics.b.d:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    402:402:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$11 -> de.betaapps.andlytics.b.e:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    431:431:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$12 -> de.betaapps.andlytics.b.f:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    442:442:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$13 -> de.betaapps.andlytics.b.g:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    453:453:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$14 -> de.betaapps.andlytics.b.h:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    463:463:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$15 -> de.betaapps.andlytics.b.i:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    473:473:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$16 -> de.betaapps.andlytics.b.j:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    482:482:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$17 -> de.betaapps.andlytics.b.k:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    491:491:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$18 -> de.betaapps.andlytics.b.l:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    500:500:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$2 -> de.betaapps.andlytics.b.m:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    305:305:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$3 -> de.betaapps.andlytics.b.n:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    315:315:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$4 -> de.betaapps.andlytics.b.o:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    325:325:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$5 -> de.betaapps.andlytics.b.p:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    350:350:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$6 -> de.betaapps.andlytics.b.q:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    361:361:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$7 -> de.betaapps.andlytics.b.r:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    372:372:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$8 -> de.betaapps.andlytics.b.s:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    382:382:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$9 -> de.betaapps.andlytics.b.t:
+    de.betaapps.andlytics.chart.Chart this$0 -> a
+    392:392:double getValue(java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$AdmobChartType -> de.betaapps.andlytics.b.u:
+    de.betaapps.andlytics.chart.Chart$AdmobChartType REVENUE -> a
+    de.betaapps.andlytics.chart.Chart$AdmobChartType REQUESTS -> b
+    de.betaapps.andlytics.chart.Chart$AdmobChartType CLICKS -> c
+    de.betaapps.andlytics.chart.Chart$AdmobChartType FILL_RATE -> d
+    de.betaapps.andlytics.chart.Chart$AdmobChartType ECPM -> e
+    de.betaapps.andlytics.chart.Chart$AdmobChartType IMPRESSIONS -> f
+    de.betaapps.andlytics.chart.Chart$AdmobChartType CTR -> g
+    de.betaapps.andlytics.chart.Chart$AdmobChartType HOUSEAD_CLICKS -> h
+    de.betaapps.andlytics.chart.Chart$AdmobChartType[] ENUM$VALUES -> i
+    1:1:de.betaapps.andlytics.chart.Chart$AdmobChartType[] values() -> values
+    1:1:de.betaapps.andlytics.chart.Chart$AdmobChartType valueOf(java.lang.String) -> valueOf
+de.betaapps.andlytics.chart.Chart$AdmobValueCallbackHander -> de.betaapps.andlytics.b.v:
+    de.betaapps.andlytics.chart.Chart this$0 -> b
+    82:82:java.util.Date getDate(java.lang.Object) -> b
+    89:89:boolean isHeilightValue(java.lang.Object,java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$ChartSet -> de.betaapps.andlytics.b.w:
+    de.betaapps.andlytics.chart.Chart$ChartSet DOWNLOADS -> a
+    de.betaapps.andlytics.chart.Chart$ChartSet RATINGS -> b
+    de.betaapps.andlytics.chart.Chart$ChartSet ADMOB -> c
+    de.betaapps.andlytics.chart.Chart$ChartSet[] ENUM$VALUES -> d
+    1:1:de.betaapps.andlytics.chart.Chart$ChartSet[] values() -> values
+    1:1:de.betaapps.andlytics.chart.Chart$ChartSet valueOf(java.lang.String) -> valueOf
+de.betaapps.andlytics.chart.Chart$DevConValueCallbackHander -> de.betaapps.andlytics.b.x:
+    de.betaapps.andlytics.chart.Chart this$0 -> b
+    54:54:java.util.Date getDate(java.lang.Object) -> b
+    61:75:boolean isHeilightValue(java.lang.Object,java.lang.Object) -> a
+de.betaapps.andlytics.chart.Chart$DownloadChartType -> de.betaapps.andlytics.b.y:
+    de.betaapps.andlytics.chart.Chart$DownloadChartType TOTAL_DOWNLAODS -> a
+    de.betaapps.andlytics.chart.Chart$DownloadChartType ACTIVE_INSTALLS_TOTAL -> b
+    de.betaapps.andlytics.chart.Chart$DownloadChartType TOTAL_DOWNLAODS_BY_DAY -> c
+    de.betaapps.andlytics.chart.Chart$DownloadChartType ACTIVE_INSTALLS_PERCENT -> d
+    de.betaapps.andlytics.chart.Chart$DownloadChartType[] ENUM$VALUES -> e
+    1:1:de.betaapps.andlytics.chart.Chart$DownloadChartType[] values() -> values
+    1:1:de.betaapps.andlytics.chart.Chart$DownloadChartType valueOf(java.lang.String) -> valueOf
+de.betaapps.andlytics.chart.Chart$RatingChartType -> de.betaapps.andlytics.b.z:
+    de.betaapps.andlytics.chart.Chart$RatingChartType AVG_RATING -> a
+    de.betaapps.andlytics.chart.Chart$RatingChartType RATINGS_5 -> b
+    de.betaapps.andlytics.chart.Chart$RatingChartType RATINGS_4 -> c
+    de.betaapps.andlytics.chart.Chart$RatingChartType RATINGS_3 -> d
+    de.betaapps.andlytics.chart.Chart$RatingChartType RATINGS_2 -> e
+    de.betaapps.andlytics.chart.Chart$RatingChartType RATINGS_1 -> f
+    de.betaapps.andlytics.chart.Chart$RatingChartType[] ENUM$VALUES -> g
+    1:1:de.betaapps.andlytics.chart.Chart$RatingChartType[] values() -> values
+    1:1:de.betaapps.andlytics.chart.Chart$RatingChartType valueOf(java.lang.String) -> valueOf
+de.betaapps.andlytics.chart.Chart$ValueCallbackHander -> de.betaapps.andlytics.b.aa:
+    double getValue(java.lang.Object) -> a
+    java.util.Date getDate(java.lang.Object) -> b
+    boolean isHeilightValue(java.lang.Object,java.lang.Object) -> a
+de.betaapps.andlytics.chart.ChartTextSwitcher -> de.betaapps.andlytics.b.ab:
+    43:49:void addView(android.view.View,int,android.view.ViewGroup$LayoutParams) -> addView
+    58:70:void setText(java.lang.CharSequence,android.graphics.drawable.Drawable) -> a
+de.betaapps.andlytics.db.AdmobTable -> de.betaapps.andlytics.db.a:
+    android.net.Uri CONTENT_URI -> a
+    java.util.HashMap PROJECTION_MAP -> b
+de.betaapps.andlytics.db.AndlyticsContentProvider -> de.betaapps.andlytics.db.AndlyticsContentProvider:
+    android.content.UriMatcher sUriMatcher -> a
+    de.betaapps.andlytics.db.AndlyticsContentProvider$DatabaseHelper dbHelper -> b
+    107:128:int delete(android.net.Uri,java.lang.String,java.lang.String[]) -> delete
+    133:146:java.lang.String getType(android.net.Uri) -> getType
+    154:225:android.net.Uri insert(android.net.Uri,android.content.ContentValues) -> insert
+    230:231:boolean onCreate() -> onCreate
+    236:281:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String) -> query
+    286:307:int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[]) -> update
+    343:347:java.util.Date parseDate(java.lang.String) -> a
+de.betaapps.andlytics.db.AndlyticsContentProvider$DatabaseHelper -> de.betaapps.andlytics.db.b:
+    49:54:void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    58:100:void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+de.betaapps.andlytics.db.AppInfoTable -> de.betaapps.andlytics.db.c:
+    android.net.Uri CONTENT_URI -> a
+    java.util.HashMap PROJECTION_MAP -> b
+de.betaapps.andlytics.db.AppStatsTable -> de.betaapps.andlytics.db.d:
+    android.net.Uri CONTENT_URI -> a
+    java.util.HashMap PROJECTION_MAP -> b
+de.betaapps.andlytics.db.CommentsTable -> de.betaapps.andlytics.db.e:
+    android.net.Uri CONTENT_URI -> a
+    java.util.HashMap PROJECTION_MAP -> b
+de.betaapps.andlytics.dialog.AutosyncDialog -> de.betaapps.andlytics.c.a:
+    android.widget.Button okButton -> a
+    android.view.LayoutInflater layoutInflater -> b
+    android.app.Activity context -> c
+    java.lang.String[] periodTexts -> d
+    java.lang.Integer[] periodValues -> e
+    android.widget.TextView periodTextView -> f
+    android.view.View periodPlusButton -> g
+    android.view.View periodMinusButton -> h
+    android.widget.TextView periodWarning -> i
+    127:163:void updatePeriod(java.lang.String,int) -> a
+    167:168:void show() -> show
+    173:175:void onClick(android.view.View) -> onClick
+    125:125:void access$0(de.betaapps.andlytics.dialog.AutosyncDialog,java.lang.String,int) -> a
+de.betaapps.andlytics.dialog.AutosyncDialog$1 -> de.betaapps.andlytics.c.b:
+    de.betaapps.andlytics.dialog.AutosyncDialog this$0 -> a
+    68:69:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.AutosyncDialog$2 -> de.betaapps.andlytics.c.c:
+    de.betaapps.andlytics.dialog.AutosyncDialog this$0 -> a
+    77:77:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    82:82:long getItemId(int) -> getItemId
+    87:87:java.lang.Object getItem(int) -> getItem
+    92:92:int getCount() -> getCount
+de.betaapps.andlytics.dialog.AutosyncDialog$3 -> de.betaapps.andlytics.c.d:
+    de.betaapps.andlytics.dialog.AutosyncDialog this$0 -> a
+    java.lang.String val$accountName -> b
+    110:111:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.AutosyncDialog$4 -> de.betaapps.andlytics.c.e:
+    de.betaapps.andlytics.dialog.AutosyncDialog this$0 -> a
+    java.lang.String val$accountName -> b
+    118:119:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.CrashDialog -> de.betaapps.andlytics.c.f:
+de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder -> de.betaapps.andlytics.c.g:
+    android.content.Context context -> a
+    java.lang.String title -> b
+    java.lang.String message -> c
+    java.lang.String positiveViewText -> d
+    java.lang.String negativeViewText -> e
+    android.content.DialogInterface$OnClickListener positiveViewClickListener -> f
+    android.content.DialogInterface$OnClickListener negativeViewClickListener -> g
+    int messageStringId -> h
+    48:49:de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder setMessage(java.lang.String) -> a
+    59:60:de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder setMessage(int) -> a
+    81:82:de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder setTitle(java.lang.String) -> b
+    106:108:de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder setPositiveButton(java.lang.String,android.content.DialogInterface$OnClickListener) -> a
+    132:134:de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder setNegativeButton(java.lang.String,android.content.DialogInterface$OnClickListener) -> b
+    142:190:de.betaapps.andlytics.dialog.CrashDialog create() -> a
+    34:34:android.content.DialogInterface$OnClickListener access$0(de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder) -> a
+    34:34:android.content.DialogInterface$OnClickListener access$1(de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder) -> b
+de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder$1 -> de.betaapps.andlytics.c.h:
+    de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder this$1 -> a
+    de.betaapps.andlytics.dialog.CrashDialog val$dialog -> b
+    158:159:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder$2 -> de.betaapps.andlytics.c.i:
+    de.betaapps.andlytics.dialog.CrashDialog$CrashDialogBuilder this$1 -> a
+    de.betaapps.andlytics.dialog.CrashDialog val$dialog -> b
+    173:174:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.ExportDialog -> de.betaapps.andlytics.c.j:
+    android.widget.Button okButton -> a
+    de.betaapps.andlytics.dialog.ExportDialog$ExportListAdapter adapter -> b
+    java.util.List appInfos -> c
+    android.view.LayoutInflater layoutInflater -> d
+    de.betaapps.andlytics.cache.AppIconInMemoryCache inMemoryCache -> e
+    java.io.File cachDir -> f
+    android.app.Activity context -> g
+    android.graphics.drawable.Drawable spacerIcon -> h
+    java.util.List exportPackageNames -> i
+    124:125:void show() -> show
+    130:132:void onClick(android.view.View) -> onClick
+    290:294:void updateMainImage$b4cd46(android.widget.ImageView,android.graphics.Bitmap) -> a
+    304:304:java.util.List getAppInfos() -> a
+    45:45:android.view.LayoutInflater access$0(de.betaapps.andlytics.dialog.ExportDialog) -> a
+    55:55:java.util.List access$1(de.betaapps.andlytics.dialog.ExportDialog) -> b
+    49:49:java.io.File access$2(de.betaapps.andlytics.dialog.ExportDialog) -> c
+    47:47:de.betaapps.andlytics.cache.AppIconInMemoryCache access$3(de.betaapps.andlytics.dialog.ExportDialog) -> d
+    51:51:android.app.Activity access$4(de.betaapps.andlytics.dialog.ExportDialog) -> e
+    53:53:android.graphics.drawable.Drawable access$5(de.betaapps.andlytics.dialog.ExportDialog) -> f
+de.betaapps.andlytics.dialog.ExportDialog$1 -> de.betaapps.andlytics.c.k:
+    de.betaapps.andlytics.dialog.ExportDialog this$0 -> a
+    75:76:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.ExportDialog$2 -> de.betaapps.andlytics.c.l:
+    de.betaapps.andlytics.dialog.ExportDialog this$0 -> a
+    android.app.Activity val$context -> b
+    java.lang.String val$accountName -> c
+    87:110:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.ExportDialog$ExportListAdapter -> de.betaapps.andlytics.c.m:
+    de.betaapps.andlytics.dialog.ExportDialog this$0 -> a
+    138:138:int getCount() -> getCount
+    143:143:de.betaapps.andlytics.model.AppInfo getItem(int) -> a
+    148:148:long getItemId(int) -> getItemId
+    156:234:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    1:1:java.lang.Object getItem(int) -> getItem
+    134:134:de.betaapps.andlytics.dialog.ExportDialog access$1(de.betaapps.andlytics.dialog.ExportDialog$ExportListAdapter) -> a
+de.betaapps.andlytics.dialog.ExportDialog$ExportListAdapter$1 -> de.betaapps.andlytics.c.n:
+    de.betaapps.andlytics.dialog.ExportDialog$ExportListAdapter this$1 -> a
+    de.betaapps.andlytics.model.AppInfo val$appDownloadInfo -> b
+    207:216:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.ExportDialog$ExportListAdapter$2 -> de.betaapps.andlytics.c.o:
+    de.betaapps.andlytics.dialog.ExportDialog$ExportListAdapter this$1 -> a
+    de.betaapps.andlytics.model.AppInfo val$appDownloadInfo -> b
+    224:231:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.ExportDialog$ExportListAdapter$ViewHolder -> de.betaapps.andlytics.c.p:
+    android.widget.RelativeLayout row -> a
+    android.widget.TextView name -> b
+    android.widget.TextView packageName -> c
+    android.widget.ImageView icon -> d
+    android.widget.CheckBox checkbox -> e
+    de.betaapps.andlytics.dialog.ExportDialog$ExportListAdapter this$1 -> f
+de.betaapps.andlytics.dialog.ExportDialog$GetCachedImageTask -> de.betaapps.andlytics.c.q:
+    android.widget.ImageView imageView -> b
+    java.lang.String reference -> c
+    de.betaapps.andlytics.dialog.ExportDialog this$0 -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.dialog.FeedbackDialog -> de.betaapps.andlytics.c.r:
+    android.widget.EditText inputField -> a
+    232:233:void setInputField(android.widget.EditText) -> a
+de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder -> de.betaapps.andlytics.c.s:
+    android.content.Context context -> a
+    java.lang.String title -> b
+    java.lang.String message -> c
+    java.lang.String positiveViewText -> d
+    java.lang.String negativeViewText -> e
+    android.content.DialogInterface$OnClickListener positiveViewClickListener -> f
+    android.content.DialogInterface$OnClickListener negativeViewClickListener -> g
+    57:58:de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder setMessage(java.lang.String) -> a
+    90:91:de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder setTitle(java.lang.String) -> b
+    115:117:de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder setPositiveButton(java.lang.String,android.content.DialogInterface$OnClickListener) -> a
+    141:143:de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder setNegativeButton(java.lang.String,android.content.DialogInterface$OnClickListener) -> b
+    151:226:de.betaapps.andlytics.dialog.FeedbackDialog create(java.lang.String,android.app.Application) -> a
+    44:44:android.content.DialogInterface$OnClickListener access$0(de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder) -> a
+    44:44:android.content.DialogInterface$OnClickListener access$1(de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder) -> b
+de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder$1 -> de.betaapps.andlytics.c.t:
+    de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder this$1 -> a
+    android.widget.EditText val$input -> b
+    java.lang.String val$defaultMessage -> c
+    de.betaapps.andlytics.dialog.FeedbackDialog val$dialog -> d
+    android.app.Application val$application -> e
+    176:197:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder$1$1 -> de.betaapps.andlytics.c.u:
+    de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder$1 this$2 -> a
+    android.app.Application val$application -> b
+    java.lang.String val$msg -> c
+    182:186:void run() -> run
+de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder$2 -> de.betaapps.andlytics.c.v:
+    de.betaapps.andlytics.dialog.FeedbackDialog$FeedbackDialogBuilder this$1 -> a
+    de.betaapps.andlytics.dialog.FeedbackDialog val$dialog -> b
+    211:212:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.GhostDialog -> de.betaapps.andlytics.c.w:
+    android.widget.Button okButton -> a
+    de.betaapps.andlytics.dialog.GhostDialog$GhostListAdapter adapter -> b
+    java.util.List appInfos -> c
+    android.view.LayoutInflater layoutInflater -> d
+    de.betaapps.andlytics.cache.AppIconInMemoryCache inMemoryCache -> e
+    java.io.File cachDir -> f
+    android.app.Activity context -> g
+    android.graphics.drawable.Drawable spacerIcon -> h
+    de.betaapps.andlytics.dialog.GhostDialog$GhostSelectonChangeListener listener -> i
+    100:101:void show() -> show
+    106:108:void onClick(android.view.View) -> onClick
+    257:261:void updateMainImage$b4cd46(android.widget.ImageView,android.graphics.Bitmap) -> a
+    264:268:void setAppInfos(java.util.List) -> a
+    271:271:java.util.List getAppInfos() -> a
+    41:41:android.view.LayoutInflater access$0(de.betaapps.andlytics.dialog.GhostDialog) -> a
+    45:45:java.io.File access$1(de.betaapps.andlytics.dialog.GhostDialog) -> b
+    43:43:de.betaapps.andlytics.cache.AppIconInMemoryCache access$2(de.betaapps.andlytics.dialog.GhostDialog) -> c
+    47:47:android.app.Activity access$3(de.betaapps.andlytics.dialog.GhostDialog) -> d
+    51:51:de.betaapps.andlytics.dialog.GhostDialog$GhostSelectonChangeListener access$4(de.betaapps.andlytics.dialog.GhostDialog) -> e
+    49:49:android.graphics.drawable.Drawable access$5(de.betaapps.andlytics.dialog.GhostDialog) -> f
+de.betaapps.andlytics.dialog.GhostDialog$1 -> de.betaapps.andlytics.c.x:
+    de.betaapps.andlytics.dialog.GhostDialog this$0 -> a
+    81:83:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.GhostDialog$GetCachedImageTask -> de.betaapps.andlytics.c.y:
+    android.widget.ImageView imageView -> b
+    java.lang.String reference -> c
+    de.betaapps.andlytics.dialog.GhostDialog this$0 -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.dialog.GhostDialog$GhostListAdapter -> de.betaapps.andlytics.c.z:
+    de.betaapps.andlytics.dialog.GhostDialog this$0 -> a
+    114:114:int getCount() -> getCount
+    119:119:de.betaapps.andlytics.model.AppInfo getItem(int) -> a
+    124:124:long getItemId(int) -> getItemId
+    132:201:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    1:1:java.lang.Object getItem(int) -> getItem
+    110:110:de.betaapps.andlytics.dialog.GhostDialog access$1(de.betaapps.andlytics.dialog.GhostDialog$GhostListAdapter) -> a
+de.betaapps.andlytics.dialog.GhostDialog$GhostListAdapter$1 -> de.betaapps.andlytics.c.aa:
+    de.betaapps.andlytics.dialog.GhostDialog$GhostListAdapter this$1 -> a
+    de.betaapps.andlytics.model.AppInfo val$appDownloadInfo -> b
+    182:186:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.GhostDialog$GhostListAdapter$2 -> de.betaapps.andlytics.c.ab:
+    de.betaapps.andlytics.dialog.GhostDialog$GhostListAdapter this$1 -> a
+    de.betaapps.andlytics.model.AppInfo val$appDownloadInfo -> b
+    195:198:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.GhostDialog$GhostListAdapter$ViewHolder -> de.betaapps.andlytics.c.ac:
+    android.widget.RelativeLayout row -> a
+    android.widget.TextView name -> b
+    android.widget.TextView packageName -> c
+    android.widget.ImageView icon -> d
+    android.widget.CheckBox checkbox -> e
+    de.betaapps.andlytics.dialog.GhostDialog$GhostListAdapter this$1 -> f
+de.betaapps.andlytics.dialog.GhostDialog$GhostSelectonChangeListener -> de.betaapps.andlytics.c.ad:
+    void onGhostSelectionChanged(java.lang.String,boolean) -> a
+    void onGhostDialogClose() -> c
+de.betaapps.andlytics.dialog.ImportDialog -> de.betaapps.andlytics.c.ae:
+    android.widget.Button okButton -> a
+    de.betaapps.andlytics.dialog.ImportDialog$ImportListAdapter adapter -> b
+    java.util.List files -> c
+    android.view.LayoutInflater layoutInflater -> d
+    java.util.List importFileNames -> e
+    102:103:void show() -> show
+    108:110:void onClick(android.view.View) -> onClick
+    33:33:java.util.List access$0(de.betaapps.andlytics.dialog.ImportDialog) -> a
+    35:35:android.view.LayoutInflater access$1(de.betaapps.andlytics.dialog.ImportDialog) -> b
+    37:37:java.util.List access$2(de.betaapps.andlytics.dialog.ImportDialog) -> c
+de.betaapps.andlytics.dialog.ImportDialog$1 -> de.betaapps.andlytics.c.af:
+    de.betaapps.andlytics.dialog.ImportDialog this$0 -> a
+    58:59:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.ImportDialog$2 -> de.betaapps.andlytics.c.ag:
+    de.betaapps.andlytics.dialog.ImportDialog this$0 -> a
+    android.app.Activity val$context -> b
+    java.lang.String val$accountName -> c
+    70:93:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.ImportDialog$ImportListAdapter -> de.betaapps.andlytics.c.ah:
+    de.betaapps.andlytics.dialog.ImportDialog this$0 -> a
+    116:116:int getCount() -> getCount
+    121:121:java.lang.String getItem(int) -> a
+    126:126:long getItemId(int) -> getItemId
+    134:188:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    1:1:java.lang.Object getItem(int) -> getItem
+    112:112:de.betaapps.andlytics.dialog.ImportDialog access$1(de.betaapps.andlytics.dialog.ImportDialog$ImportListAdapter) -> a
+de.betaapps.andlytics.dialog.ImportDialog$ImportListAdapter$1 -> de.betaapps.andlytics.c.ai:
+    de.betaapps.andlytics.dialog.ImportDialog$ImportListAdapter this$1 -> a
+    java.lang.String val$fileName -> b
+    158:167:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.ImportDialog$ImportListAdapter$2 -> de.betaapps.andlytics.c.aj:
+    de.betaapps.andlytics.dialog.ImportDialog$ImportListAdapter this$1 -> a
+    java.lang.String val$fileName -> b
+    176:185:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.ImportDialog$ImportListAdapter$ViewHolder -> de.betaapps.andlytics.c.ak:
+    android.widget.RelativeLayout row -> a
+    android.widget.TextView name -> b
+    android.widget.CheckBox checkbox -> c
+    de.betaapps.andlytics.dialog.ImportDialog$ImportListAdapter this$1 -> d
+de.betaapps.andlytics.dialog.NotificationsDialog -> de.betaapps.andlytics.c.al:
+    android.widget.Button okButton -> a
+    de.betaapps.andlytics.dialog.NotificationsDialog$GhostListAdapter adapter -> b
+    java.util.List appInfos -> c
+    android.view.LayoutInflater layoutInflater -> d
+    de.betaapps.andlytics.cache.AppIconInMemoryCache inMemoryCache -> e
+    java.io.File cachDir -> f
+    android.app.Activity context -> g
+    android.graphics.drawable.Drawable spacerIcon -> h
+    android.view.ViewGroup ratingChangeButton -> i
+    android.view.ViewGroup commentsChangeButton -> j
+    android.view.ViewGroup downloadsChangeButton -> k
+    android.view.ViewGroup soundButton -> l
+    de.betaapps.andlytics.ContentAdapter db -> m
+    android.view.ViewGroup lightButton -> n
+    167:181:void updateButtons(java.lang.String) -> a
+    186:187:void show() -> show
+    192:194:void onClick(android.view.View) -> onClick
+    342:346:void updateMainImage$b4cd46(android.widget.ImageView,android.graphics.Bitmap) -> a
+    356:356:java.util.List getAppInfos() -> a
+    43:43:android.view.LayoutInflater access$0(de.betaapps.andlytics.dialog.NotificationsDialog) -> a
+    47:47:java.io.File access$1(de.betaapps.andlytics.dialog.NotificationsDialog) -> b
+    45:45:de.betaapps.andlytics.cache.AppIconInMemoryCache access$2(de.betaapps.andlytics.dialog.NotificationsDialog) -> c
+    49:49:android.app.Activity access$3(de.betaapps.andlytics.dialog.NotificationsDialog) -> d
+    61:61:de.betaapps.andlytics.ContentAdapter access$4(de.betaapps.andlytics.dialog.NotificationsDialog) -> e
+    51:51:android.graphics.drawable.Drawable access$5(de.betaapps.andlytics.dialog.NotificationsDialog) -> f
+    359:359:void access$6$252481a4(android.app.Activity,java.lang.String,java.lang.String) -> a
+de.betaapps.andlytics.dialog.NotificationsDialog$1 -> de.betaapps.andlytics.c.am:
+    de.betaapps.andlytics.dialog.NotificationsDialog this$0 -> a
+    91:92:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.NotificationsDialog$2 -> de.betaapps.andlytics.c.an:
+    de.betaapps.andlytics.dialog.NotificationsDialog this$0 -> a
+    android.app.Activity val$context -> b
+    java.lang.String val$accountName -> c
+    107:109:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.NotificationsDialog$3 -> de.betaapps.andlytics.c.ao:
+    de.betaapps.andlytics.dialog.NotificationsDialog this$0 -> a
+    android.app.Activity val$context -> b
+    java.lang.String val$accountName -> c
+    118:120:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.NotificationsDialog$4 -> de.betaapps.andlytics.c.ap:
+    de.betaapps.andlytics.dialog.NotificationsDialog this$0 -> a
+    android.app.Activity val$context -> b
+    java.lang.String val$accountName -> c
+    129:131:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.NotificationsDialog$5 -> de.betaapps.andlytics.c.aq:
+    de.betaapps.andlytics.dialog.NotificationsDialog this$0 -> a
+    android.app.Activity val$context -> b
+    java.lang.String val$accountName -> c
+    140:142:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.NotificationsDialog$6 -> de.betaapps.andlytics.c.ar:
+    de.betaapps.andlytics.dialog.NotificationsDialog this$0 -> a
+    android.app.Activity val$context -> b
+    java.lang.String val$accountName -> c
+    152:154:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.NotificationsDialog$GetCachedImageTask -> de.betaapps.andlytics.c.as:
+    android.widget.ImageView imageView -> b
+    java.lang.String reference -> c
+    de.betaapps.andlytics.dialog.NotificationsDialog this$0 -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+de.betaapps.andlytics.dialog.NotificationsDialog$GhostListAdapter -> de.betaapps.andlytics.c.at:
+    de.betaapps.andlytics.dialog.NotificationsDialog this$0 -> a
+    200:200:int getCount() -> getCount
+    205:205:de.betaapps.andlytics.model.AppInfo getItem(int) -> a
+    210:210:long getItemId(int) -> getItemId
+    218:287:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    1:1:java.lang.Object getItem(int) -> getItem
+    196:196:de.betaapps.andlytics.dialog.NotificationsDialog access$1(de.betaapps.andlytics.dialog.NotificationsDialog$GhostListAdapter) -> a
+de.betaapps.andlytics.dialog.NotificationsDialog$GhostListAdapter$1 -> de.betaapps.andlytics.c.au:
+    de.betaapps.andlytics.dialog.NotificationsDialog$GhostListAdapter this$1 -> a
+    java.lang.String val$packageName -> b
+    de.betaapps.andlytics.model.AppInfo val$appDownloadInfo -> c
+    266:271:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.NotificationsDialog$GhostListAdapter$2 -> de.betaapps.andlytics.c.av:
+    de.betaapps.andlytics.dialog.NotificationsDialog$GhostListAdapter this$1 -> a
+    java.lang.String val$packageName -> b
+    de.betaapps.andlytics.model.AppInfo val$appDownloadInfo -> c
+    280:284:void onClick(android.view.View) -> onClick
+de.betaapps.andlytics.dialog.NotificationsDialog$GhostListAdapter$ViewHolder -> de.betaapps.andlytics.c.aw:
+    android.widget.RelativeLayout row -> a
+    android.widget.TextView name -> b
+    android.widget.ImageView icon -> c
+    android.widget.CheckBox checkbox -> d
+    de.betaapps.andlytics.dialog.NotificationsDialog$GhostListAdapter this$1 -> e
+de.betaapps.andlytics.exception.AuthenticationException -> de.betaapps.andlytics.d.a:
+de.betaapps.andlytics.exception.DeveloperConsoleException -> de.betaapps.andlytics.d.b:
+de.betaapps.andlytics.exception.FeedbackException -> de.betaapps.andlytics.d.c:
+de.betaapps.andlytics.exception.InvalidJSONResponseException -> de.betaapps.andlytics.d.d:
+de.betaapps.andlytics.exception.MultiAccountAcception -> de.betaapps.andlytics.d.e:
+de.betaapps.andlytics.exception.NegativeIndexValueExecption -> de.betaapps.andlytics.d.f:
+de.betaapps.andlytics.exception.NetworkException -> de.betaapps.andlytics.d.g:
+de.betaapps.andlytics.exception.NoCookieSetException -> de.betaapps.andlytics.d.h:
+de.betaapps.andlytics.exception.SignupException -> de.betaapps.andlytics.d.i:
+de.betaapps.andlytics.gwt.Base64Utils -> de.betaapps.andlytics.e.a:
+    char[] base64Chars -> b
+    byte[] base64Values -> c
+    boolean $assertionsDisabled -> a
+    98:105:long longFromBase64(java.lang.String) -> a
+    163:180:java.lang.String toBase64(long) -> a
+    185:191:boolean base64Append(java.lang.StringBuilder,int,boolean) -> a
+de.betaapps.andlytics.gwt.GwtParser -> de.betaapps.andlytics.e.b:
+    java.util.ArrayList indexList -> a
+    java.util.ArrayList valueList -> b
+    java.lang.String jsonCopy -> c
+    boolean debug -> d
+    java.lang.String TAG -> e
+    138:213:java.util.List getComments() -> a
+    263:263:java.lang.String getStringForIndex(java.lang.String) -> b
+    288:678:java.util.List getAppInfos(java.lang.String) -> a
+    685:704:int findFirstAfterMoneyIndex(int,java.util.List) -> a
+    741:767:int getIntegerPairLenght(int) -> a
+    772:776:void validateString(java.lang.String,java.lang.String,int) -> a
+    779:783:void debugPrint(java.lang.String) -> c
+    798:816:int findRatingsStartIndex(int,java.util.List) -> b
+    845:902:int getListOrSetLenght(int,de.betaapps.andlytics.gwt.GwtParser$SizeCallback) -> a
+    911:919:java.lang.String getIndexStringValue(int) -> b
+    924:934:int getIndexIntegerValue(int) -> c
+    939:942:long decodeLong(java.lang.String) -> d
+    922:922:int access$0(de.betaapps.andlytics.gwt.GwtParser,int) -> a
+de.betaapps.andlytics.gwt.GwtParser$1 -> de.betaapps.andlytics.e.c:
+    de.betaapps.andlytics.gwt.GwtParser this$0 -> a
+    516:533:int getElementLength(int) -> a
+de.betaapps.andlytics.gwt.GwtParser$LongIndexValue -> de.betaapps.andlytics.e.d:
+    java.lang.Long value -> a
+    int index -> b
+    de.betaapps.andlytics.gwt.GwtParser this$0 -> c
+de.betaapps.andlytics.gwt.GwtParser$SizeCallback -> de.betaapps.andlytics.e.e:
+    int getElementLength(int) -> a
+de.betaapps.andlytics.gwt.GwtParserException -> de.betaapps.andlytics.e.f:
+de.betaapps.andlytics.io.ExportService -> de.betaapps.andlytics.io.ExportService:
+    java.lang.String TAG -> a
+    android.app.Notification notification -> b
+    java.lang.String message -> c
+    boolean errors -> d
+    java.lang.String[] packageNames -> e
+    java.lang.String accountName -> f
+    46:49:void onCreate() -> onCreate
+    54:65:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    143:149:void sendNotification() -> a
+    153:153:android.os.IBinder onBind(android.content.Intent) -> onBind
+    35:35:void access$0(de.betaapps.andlytics.io.ExportService,java.lang.String) -> a
+    39:39:java.lang.String[] access$1(de.betaapps.andlytics.io.ExportService) -> a
+    37:37:boolean access$2(de.betaapps.andlytics.io.ExportService) -> b
+    35:35:java.lang.String access$3(de.betaapps.andlytics.io.ExportService) -> c
+    33:33:void access$4(de.betaapps.andlytics.io.ExportService,android.app.Notification) -> a
+    33:33:android.app.Notification access$5(de.betaapps.andlytics.io.ExportService) -> d
+de.betaapps.andlytics.io.ExportService$StandardServiceWorker -> de.betaapps.andlytics.io.a:
+    de.betaapps.andlytics.io.ExportService this$0 -> a
+    77:100:java.lang.Boolean doInBackground$5f8445a4() -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    1:1:void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
+de.betaapps.andlytics.io.ImportService -> de.betaapps.andlytics.io.ImportService:
+    java.lang.String TAG -> a
+    android.app.Notification notification -> b
+    java.lang.String message -> c
+    boolean errors -> d
+    java.lang.String accountName -> e
+    java.lang.String[] fileNames -> f
+    45:48:void onCreate() -> onCreate
+    53:64:int onStartCommand(android.content.Intent,int,int) -> onStartCommand
+    157:163:void sendNotification() -> a
+    167:167:android.os.IBinder onBind(android.content.Intent) -> onBind
+    34:34:void access$0(de.betaapps.andlytics.io.ImportService,java.lang.String) -> a
+    40:40:java.lang.String[] access$1(de.betaapps.andlytics.io.ImportService) -> a
+    36:36:void access$2$36d3f84(de.betaapps.andlytics.io.ImportService) -> b
+    36:36:boolean access$3(de.betaapps.andlytics.io.ImportService) -> c
+    34:34:java.lang.String access$4(de.betaapps.andlytics.io.ImportService) -> d
+    32:32:void access$5(de.betaapps.andlytics.io.ImportService,android.app.Notification) -> a
+    32:32:android.app.Notification access$6(de.betaapps.andlytics.io.ImportService) -> e
+de.betaapps.andlytics.io.ImportService$StandardServiceWorker -> de.betaapps.andlytics.io.b:
+    de.betaapps.andlytics.io.ImportService this$0 -> a
+    76:110:java.lang.Boolean doInBackground$5f8445a4() -> a
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    1:1:void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
+de.betaapps.andlytics.io.ServiceExceptoin -> de.betaapps.andlytics.io.c:
+de.betaapps.andlytics.io.StatsCsvReaderWriter -> de.betaapps.andlytics.io.d:
+    java.lang.String[] HEADER_LIST -> a
+    java.text.SimpleDateFormat TIMESTAMP_FORMAT -> b
+    48:48:java.lang.String getDefaultDirectory() -> a
+    57:100:void writeStats(java.lang.String,java.util.List) -> a
+    104:135:java.util.List getImportFileNames$7a857357(java.util.List) -> a
+    141:182:boolean isValidFile$62d954fe(java.lang.String,java.util.List) -> b
+    188:234:java.util.List readStats(java.lang.String) -> a
+    240:268:java.lang.String readPackageName(java.lang.String) -> b
+de.betaapps.andlytics.io.StatsCsvReaderWriter$1 -> de.betaapps.andlytics.io.e:
+    115:115:boolean accept(java.io.File,java.lang.String) -> accept
+de.betaapps.andlytics.model.Admob -> de.betaapps.andlytics.f.a:
+    java.lang.String siteId -> a
+    java.lang.Integer requests -> b
+    java.lang.Integer houseadRequests -> c
+    java.lang.Integer interstitialRequests -> d
+    java.lang.Integer impressions -> e
+    java.lang.Float fillRate -> f
+    java.lang.Float houseadFillRate -> g
+    java.lang.Float overallFillRate -> h
+    java.lang.Integer clicks -> i
+    java.lang.Integer houseAdClicks -> j
+    java.lang.Float ctr -> k
+    java.lang.Float ecpm -> l
+    java.lang.Float revenue -> m
+    java.lang.Float cpcRevenue -> n
+    java.lang.Float cpmRevenue -> o
+    java.lang.Integer exchangeDownloads -> p
+    java.util.Date date -> q
+    26:26:java.lang.String getSiteId() -> a
+    29:30:void setSiteId(java.lang.String) -> a
+    32:32:java.lang.Integer getRequests() -> b
+    35:36:void setRequests(java.lang.Integer) -> a
+    38:38:java.lang.Integer getHouseadRequests() -> c
+    41:42:void setHouseadRequests(java.lang.Integer) -> b
+    44:44:java.lang.Integer getInterstitialRequests() -> d
+    47:48:void setInterstitialRequests(java.lang.Integer) -> c
+    50:50:java.lang.Integer getImpressions() -> e
+    53:54:void setImpressions(java.lang.Integer) -> d
+    56:56:java.lang.Float getFillRate() -> f
+    59:60:void setFillRate(java.lang.Float) -> a
+    62:62:java.lang.Float getHouseadFillRate() -> g
+    65:66:void setHouseadFillRate(java.lang.Float) -> b
+    68:68:java.lang.Float getOverallFillRate() -> h
+    71:72:void setOverallFillRate(java.lang.Float) -> c
+    74:74:java.lang.Integer getClicks() -> i
+    77:78:void setClicks(java.lang.Integer) -> e
+    80:80:java.lang.Integer getHouseAdClicks() -> j
+    83:84:void setHouseAdClicks(java.lang.Integer) -> f
+    86:86:java.lang.Float getCtr() -> k
+    89:90:void setCtr(java.lang.Float) -> d
+    92:92:java.lang.Float getEcpm() -> l
+    95:96:void setEcpm(java.lang.Float) -> e
+    98:98:java.lang.Float getRevenue() -> m
+    101:102:void setRevenue(java.lang.Float) -> f
+    104:104:java.lang.Float getCpcRevenue() -> n
+    107:108:void setCpcRevenue(java.lang.Float) -> g
+    110:110:java.lang.Float getCpmRevenue() -> o
+    113:114:void setCpmRevenue(java.lang.Float) -> h
+    117:117:java.util.Date getDate() -> p
+    120:121:void setDate(java.util.Date) -> a
+    123:124:void setExchangeDownloads(java.lang.Integer) -> g
+    126:126:java.lang.Integer getExchangeDownloads() -> q
+de.betaapps.andlytics.model.AdmobList -> de.betaapps.andlytics.f.b:
+    java.util.List admobs -> a
+    de.betaapps.andlytics.model.Admob overallStats -> b
+    12:13:void setOverallStats(de.betaapps.andlytics.model.Admob) -> a
+    16:16:de.betaapps.andlytics.model.Admob getOverallStats() -> a
+    20:21:void setAdmobs(java.util.List) -> a
+    24:24:java.util.List getAdmobs() -> b
+de.betaapps.andlytics.model.AppInfo -> de.betaapps.andlytics.f.c:
+    java.lang.String account -> a
+    java.lang.String packageName -> b
+    java.util.Date lastUpdate -> c
+    java.lang.String name -> d
+    java.lang.String iconUrl -> e
+    java.util.List history -> f
+    de.betaapps.andlytics.model.AppStats latestStats -> g
+    boolean isDraftOnly -> h
+    boolean ghost -> i
+    boolean skipNotification -> j
+    boolean ratingDetailsExpanded -> k
+    java.lang.String versionName -> l
+    de.betaapps.andlytics.model.Admob admobStats -> m
+    38:38:java.lang.String getAccount() -> a
+    42:43:void setAccount(java.lang.String) -> a
+    46:46:java.lang.String getPackageName() -> b
+    50:51:void setPackageName(java.lang.String) -> b
+    54:54:java.util.Date getLastUpdate() -> c
+    58:59:void setLastUpdate(java.util.Date) -> a
+    62:62:java.lang.String getName() -> d
+    66:67:void setName(java.lang.String) -> c
+    70:71:void setIconUrl(java.lang.String) -> d
+    74:74:java.lang.String getIconUrl() -> e
+    78:86:java.lang.String getIconName() -> f
+    102:103:void setLatestStats(de.betaapps.andlytics.model.AppStats) -> a
+    106:106:de.betaapps.andlytics.model.AppStats getLatestStats() -> g
+    111:120:int hashCode() -> hashCode
+    125:167:boolean equals(java.lang.Object) -> equals
+    171:172:void setDraftOnly$1385ff() -> h
+    175:175:boolean isDraftOnly() -> i
+    179:180:void setGhost(boolean) -> a
+    183:183:boolean isGhost() -> j
+    187:188:void setRatingDetailsExpanded(boolean) -> b
+    191:191:boolean isRatingDetailsExpanded() -> k
+    195:196:void setSkipNotification(boolean) -> c
+    199:199:boolean isSkipNotification() -> l
+    203:204:void setVersionName(java.lang.String) -> e
+    207:207:java.lang.String getVersionName() -> m
+    211:212:void setAdmobStats(de.betaapps.andlytics.model.Admob) -> a
+    215:215:de.betaapps.andlytics.model.Admob getAdmobStats() -> n
+de.betaapps.andlytics.model.AppStats -> de.betaapps.andlytics.f.d:
+    int totalDownloads -> a
+    int activeInstalls -> b
+    int activeInstallsDiff -> c
+    int numberOfComments -> d
+    int numberOfCommentsDiff -> e
+    java.util.Date requestDate -> f
+    int dailyDownloads -> g
+    boolean smoothingApplied -> h
+    java.lang.Integer versionCode -> i
+    java.lang.Integer rating1 -> j
+    java.lang.Integer rating2 -> k
+    java.lang.Integer rating3 -> l
+    java.lang.Integer rating4 -> m
+    java.lang.Integer rating5 -> n
+    java.lang.Integer rating1Diff -> o
+    java.lang.Integer rating2Diff -> p
+    java.lang.Integer rating3Diff -> q
+    java.lang.Integer rating4Diff -> r
+    java.lang.Integer rating5Diff -> s
+    float avgRating -> t
+    float avgRatingDiff -> u
+    int ratingCount -> v
+    int ratingCountDiff -> w
+    java.lang.String avgRatingString -> x
+    java.lang.String numberOfCommentsPercentString -> y
+    java.lang.String ratingCountPercentString -> z
+    java.util.HashMap ratingPercentStringMap -> A
+    java.lang.String activeInstallsPercentString -> B
+    java.lang.String avgRatingDiffString -> C
+    105:113:void init() -> a
+    116:116:int getTotalDownloads() -> b
+    120:121:void setTotalDownloads(int) -> a
+    124:124:int getActiveInstalls() -> c
+    128:129:void setActiveInstalls(int) -> b
+    132:132:int getNumberOfComments() -> d
+    136:137:void setNumberOfComments(int) -> c
+    140:140:java.util.Date getRequestDate() -> e
+    144:145:void setRequestDate(java.util.Date) -> a
+    148:148:int getDailyDownloads() -> f
+    152:153:void setDailyDownloads(int) -> d
+    156:156:boolean isSmoothingApplied() -> g
+    160:161:void setSmoothingApplied$1385ff() -> h
+    166:173:void setRating(java.util.Map) -> a
+    202:202:float getAvgRating() -> i
+    249:249:int getRatingCount() -> j
+    272:272:java.lang.String getAvgRatingString() -> k
+    276:276:java.lang.String getRatingPercentString(int) -> e
+    281:320:void calsRatingPercentStrings() -> G
+    324:324:java.lang.String getActiveInstallsPercentString() -> l
+    334:335:java.lang.String getRequestDateString() -> m
+    340:344:double getActiveInstallsPercent() -> n
+    350:358:int hashCode() -> hashCode
+    363:385:boolean equals(java.lang.Object) -> equals
+    389:389:java.lang.String getNumberOfCommentsPercentString() -> o
+    406:406:java.lang.String getRatingCountPercentString() -> p
+    422:422:java.lang.Integer getRating1() -> q
+    426:427:void setRating1(java.lang.Integer) -> a
+    430:430:java.lang.Integer getRating2() -> r
+    434:435:void setRating2(java.lang.Integer) -> b
+    438:438:java.lang.Integer getRating3() -> s
+    442:443:void setRating3(java.lang.Integer) -> c
+    446:446:java.lang.Integer getRating4() -> t
+    450:451:void setRating4(java.lang.Integer) -> d
+    454:454:java.lang.Integer getRating5() -> u
+    458:458:java.lang.Integer getRating1Diff() -> v
+    462:463:void setRating1Diff(java.lang.Integer) -> e
+    466:466:java.lang.Integer getRating2Diff() -> w
+    470:471:void setRating2Diff(java.lang.Integer) -> f
+    474:474:java.lang.Integer getRating3Diff() -> x
+    478:479:void setRating3Diff(java.lang.Integer) -> g
+    482:482:java.lang.Integer getRating4Diff() -> y
+    486:487:void setRating4Diff(java.lang.Integer) -> h
+    490:490:java.lang.Integer getRating5Diff() -> z
+    494:495:void setRating5Diff(java.lang.Integer) -> i
+    498:499:void setRating5(java.lang.Integer) -> j
+    502:503:void setAvgRatingDiff(float) -> a
+    506:506:float getAvgRatingDiff() -> A
+    510:511:void setRatingCountDiff(int) -> f
+    514:514:int getRatingCountDiff() -> B
+    522:522:java.lang.String getAvgRatingDiffString() -> C
+    526:527:void setNumberOfCommentsDiff(int) -> g
+    530:530:int getNumberOfCommentsDiff() -> D
+    534:535:void setActiveInstallsDiff(int) -> h
+    538:538:int getActiveInstallsDiff() -> E
+    542:543:void setVersionCode(java.lang.Integer) -> k
+    546:546:java.lang.Integer getVersionCode() -> F
+    550:551:void setActiveInstallsPercentString(java.lang.String) -> a
+    554:555:void setAvgRatingString(java.lang.String) -> b
+de.betaapps.andlytics.model.AppStatsList -> de.betaapps.andlytics.f.e:
+    java.util.List appStats -> a
+    java.lang.Integer highestRatingChange -> b
+    java.lang.Integer lowestRatingChange -> c
+    de.betaapps.andlytics.model.AppStats overall -> d
+    17:18:void setLowestRatingChange(java.lang.Integer) -> a
+    21:21:java.lang.Integer getLowestRatingChange() -> a
+    25:26:void setHighestRatingChange(java.lang.Integer) -> b
+    29:29:java.lang.Integer getHighestRatingChange() -> b
+    33:34:void setAppStats(java.util.List) -> a
+    37:37:java.util.List getAppStats() -> c
+    41:42:void setOverall(de.betaapps.andlytics.model.AppStats) -> a
+    45:45:de.betaapps.andlytics.model.AppStats getOverall() -> d
+de.betaapps.andlytics.model.Comment -> de.betaapps.andlytics.f.f:
+    java.lang.String text -> a
+    java.lang.String date -> b
+    int rating -> c
+    java.lang.String user -> d
+    java.text.SimpleDateFormat format -> e
+    java.lang.String appVersion -> f
+    java.lang.String device -> g
+    28:28:java.lang.String getText() -> a
+    32:33:void setText(java.lang.String) -> a
+    36:36:java.lang.String getDate() -> b
+    40:41:void setDate(java.lang.String) -> b
+    56:56:int getRating() -> c
+    60:61:void setRating(int) -> a
+    64:64:java.lang.String getUser() -> d
+    68:69:void setUser(java.lang.String) -> c
+    72:73:void setAppVersion(java.lang.String) -> d
+    76:76:java.lang.String getAppVersion() -> e
+    80:81:void setDevice(java.lang.String) -> e
+    84:84:java.lang.String getDevice() -> f
+de.betaapps.andlytics.model.CommentGroup -> de.betaapps.andlytics.f.g:
+    java.lang.String dateString -> a
+    java.util.List comments -> b
+    17:17:java.lang.String getDateString() -> a
+    21:22:void setDateString(java.lang.String) -> a
+    25:25:java.util.List getComments() -> b
+    29:30:void setComments(java.util.List) -> a
+    34:37:int hashCode() -> hashCode
+    42:54:boolean equals(java.lang.Object) -> equals
+    59:61:void addComment(de.betaapps.andlytics.model.Comment) -> a
+de.betaapps.andlytics.sync.AlarmReceiver -> de.betaapps.andlytics.sync.AlarmReceiver:
+    java.lang.String TAG -> a
+    23:38:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+de.betaapps.andlytics.sync.AutosyncHandler -> de.betaapps.andlytics.sync.a:
+    int getAutosyncPeriod(java.lang.String) -> a
+    void setAutosyncPeriod(java.lang.String,java.lang.Integer) -> a
+de.betaapps.andlytics.sync.AutosyncHandlerFactory -> de.betaapps.andlytics.sync.b:
+    8:14:de.betaapps.andlytics.sync.AutosyncHandler getInstance(android.content.Context) -> a
+de.betaapps.andlytics.sync.AutosyncHandlerLevel7 -> de.betaapps.andlytics.sync.c:
+    java.lang.String TAG -> a
+    android.content.Context context -> b
+    34:37:int getAutosyncPeriod(java.lang.String) -> a
+    48:74:void setAutosyncPeriod(java.lang.String,java.lang.Integer) -> a
+de.betaapps.andlytics.sync.AutosyncHandlerLevel8 -> de.betaapps.andlytics.sync.d:
+    24:34:int getAutosyncPeriod(java.lang.String) -> a
+    41:51:void setAutosyncPeriod(java.lang.String,java.lang.Integer) -> a
+de.betaapps.andlytics.sync.ContentProvider -> de.betaapps.andlytics.sync.ContentProvider:
+    12:12:boolean onCreate() -> onCreate
+    18:18:android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String) -> query
+    24:24:java.lang.String getType(android.net.Uri) -> getType
+    30:30:android.net.Uri insert(android.net.Uri,android.content.ContentValues) -> insert
+    36:36:int delete(android.net.Uri,java.lang.String,java.lang.String[]) -> delete
+    42:42:int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[]) -> update
+de.betaapps.andlytics.sync.NotificationHandler -> de.betaapps.andlytics.sync.e:
+    29:122:void handleNotificaions(android.content.Context,java.util.List,java.lang.String) -> a
+de.betaapps.andlytics.sync.SyncAdapterService -> de.betaapps.andlytics.sync.SyncAdapterService:
+    java.lang.String TAG -> a
+    de.betaapps.andlytics.sync.SyncAdapterService$SyncAdapterImpl sSyncAdapter -> b
+    de.betaapps.andlytics.ContentAdapter db -> c
+    66:68:android.os.IBinder onBind(android.content.Intent) -> onBind
+    77:77:void access$0$5d3f78fd(android.content.Context,android.accounts.Account) -> a
+    35:35:java.lang.String access$1() -> a
+de.betaapps.andlytics.sync.SyncAdapterService$SyncAdapterImpl -> de.betaapps.andlytics.sync.f:
+    android.content.Context mContext -> a
+    57:61:void onPerformSync(android.accounts.Account,android.os.Bundle,java.lang.String,android.content.ContentProviderClient,android.content.SyncResult) -> onPerformSync
+de.betaapps.andlytics.view.ChartGallery -> de.betaapps.andlytics.g.a:
+    boolean interceptTouchEvents -> a
+    boolean useMultiImageFling -> b
+    boolean ignoreLayoutCalls -> c
+    33:35:void onLayout(boolean,int,int,int,int) -> onLayout
+    40:43:boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    50:83:boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onFling
+    105:106:void setIgnoreLayoutCalls(boolean) -> a
+de.betaapps.andlytics.view.ChartGalleryAdapter -> de.betaapps.andlytics.g.b:
+    java.util.List views -> a
+    19:19:android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    25:25:int getCount() -> getCount
+    31:31:android.view.View getItem(int) -> a
+    37:37:long getItemId(int) -> getItemId
+    42:43:void setViews(java.util.List) -> a
+    1:1:java.lang.Object getItem(int) -> getItem
+de.betaapps.andlytics.view.Rotate3dAnimation -> de.betaapps.andlytics.g.c:
+    float mFromDegrees -> a
+    float mToDegrees -> b
+    float mCenterX -> c
+    float mCenterY -> d
+    float mDepthZ -> e
+    boolean mReverse -> f
+    android.graphics.Camera mCamera -> g
+    de.betaapps.andlytics.view.ViewSwitcher3D$ViewSwitcherListener listener -> h
+    69:71:void initialize(int,int,int,int) -> initialize
+    75:98:void applyTransformation(float,android.view.animation.Transformation) -> applyTransformation
+de.betaapps.andlytics.view.ViewSwitcher3D -> de.betaapps.andlytics.g.d:
+    android.view.ViewGroup mContainer -> a
+    android.view.View mFrondside -> b
+    android.view.View mBackside -> c
+    long mDuration -> d
+    float mDepthOfRotation -> e
+    de.betaapps.andlytics.view.ViewSwitcher3D$ViewSwitcherListener listener -> f
+    47:65:void swap() -> a
+    68:68:boolean isFrontsideVisible() -> b
+    153:154:void setListener(de.betaapps.andlytics.view.ViewSwitcher3D$ViewSwitcherListener) -> a
+    157:157:de.betaapps.andlytics.view.ViewSwitcher3D$ViewSwitcherListener getListener() -> c
+    19:19:android.view.ViewGroup access$0(de.betaapps.andlytics.view.ViewSwitcher3D) -> a
+    20:20:android.view.View access$1(de.betaapps.andlytics.view.ViewSwitcher3D) -> b
+    21:21:android.view.View access$2(de.betaapps.andlytics.view.ViewSwitcher3D) -> c
+    144:144:void access$3(de.betaapps.andlytics.view.ViewSwitcher3D) -> d
+    24:24:float access$4(de.betaapps.andlytics.view.ViewSwitcher3D) -> e
+    23:23:long access$5(de.betaapps.andlytics.view.ViewSwitcher3D) -> f
+    26:26:de.betaapps.andlytics.view.ViewSwitcher3D$ViewSwitcherListener access$6(de.betaapps.andlytics.view.ViewSwitcher3D) -> g
+de.betaapps.andlytics.view.ViewSwitcher3D$SwapViews -> de.betaapps.andlytics.g.e:
+    de.betaapps.andlytics.view.ViewSwitcher3D this$0 -> a
+    98:141:void run() -> run
+    95:95:de.betaapps.andlytics.view.ViewSwitcher3D access$1(de.betaapps.andlytics.view.ViewSwitcher3D$SwapViews) -> a
+de.betaapps.andlytics.view.ViewSwitcher3D$SwapViews$1 -> de.betaapps.andlytics.g.f:
+    de.betaapps.andlytics.view.ViewSwitcher3D$SwapViews this$1 -> a
+    125:125:void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    129:129:void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    133:136:void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+de.betaapps.andlytics.view.ViewSwitcher3D$TurnAroundListener -> de.betaapps.andlytics.g.g:
+    de.betaapps.andlytics.view.ViewSwitcher3D this$0 -> a
+    82:82:void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    85:86:void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    89:89:void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+de.betaapps.andlytics.view.ViewSwitcher3D$ViewSwitcherListener -> de.betaapps.andlytics.g.h:
+    void onViewChanged$1385ff() -> c
+    void onRender() -> d
+org.achartengine.ChartFactory -> org.achartengine.a:
+    120:123:org.achartengine.GraphicalView getTimeChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String) -> a
+    140:142:org.achartengine.GraphicalView getBarChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,org.achartengine.chart.BarChart$Type) -> a
+    511:516:void checkParameters(org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer) -> a
+org.achartengine.GraphicalActivity -> org.achartengine.GraphicalActivity:
+    org.achartengine.GraphicalView mView -> a
+    org.achartengine.chart.AbstractChart mChart -> b
+    37:48:void onCreate(android.os.Bundle) -> onCreate
+org.achartengine.GraphicalView -> org.achartengine.b:
+    org.achartengine.chart.AbstractChart mChart -> a
+    android.graphics.Rect mRect -> b
+    android.os.Handler mHandler -> c
+    51:58:void onDraw(android.graphics.Canvas) -> onDraw
+org.achartengine.chart.AbstractChart -> org.achartengine.a.a:
+    void draw(android.graphics.Canvas,int,int,int,int) -> a
+    84:125:void drawLegend(android.graphics.Canvas,org.achartengine.renderer.DefaultRenderer,java.lang.String[],int,int,int,int,int,int,android.graphics.Paint) -> a
+    128:132:boolean getExceed(float,org.achartengine.renderer.DefaultRenderer,int,int) -> a
+    136:136:boolean isVertical(org.achartengine.renderer.DefaultRenderer) -> a
+    149:158:void drawPath(android.graphics.Canvas,float[],android.graphics.Paint,boolean) -> a
+    int getLegendShapeWidth() -> a
+    void drawLegendShape(android.graphics.Canvas,org.achartengine.renderer.SimpleSeriesRenderer,float,float,android.graphics.Paint) -> a
+org.achartengine.chart.BarChart -> org.achartengine.a.b:
+    org.achartengine.chart.BarChart$Type mType -> a
+    67:82:void drawSeries(android.graphics.Canvas,android.graphics.Paint,float[],org.achartengine.renderer.SimpleSeriesRenderer,float,int) -> a
+    95:104:void drawChartValuesText(android.graphics.Canvas,org.achartengine.model.XYSeries,android.graphics.Paint,float[],int) -> a
+    112:112:int getLegendShapeWidth() -> a
+    126:128:void drawLegendShape(android.graphics.Canvas,org.achartengine.renderer.SimpleSeriesRenderer,float,float,android.graphics.Paint) -> a
+    138:146:float getHalfDiffX(float[],int,int) -> a
+org.achartengine.chart.BarChart$Type -> org.achartengine.a.c:
+    org.achartengine.chart.BarChart$Type DEFAULT -> a
+    org.achartengine.chart.BarChart$Type STACKED -> b
+    org.achartengine.chart.BarChart$Type[] $VALUES -> c
+    39:39:org.achartengine.chart.BarChart$Type[] values() -> values
+    39:39:org.achartengine.chart.BarChart$Type valueOf(java.lang.String) -> valueOf
+org.achartengine.chart.LineChart -> org.achartengine.a.d:
+    56:77:void drawSeries(android.graphics.Canvas,android.graphics.Paint,float[],org.achartengine.renderer.SimpleSeriesRenderer,float,int) -> a
+    85:85:int getLegendShapeWidth() -> a
+    99:100:void drawLegendShape(android.graphics.Canvas,org.achartengine.renderer.SimpleSeriesRenderer,float,float,android.graphics.Paint) -> a
+    108:108:boolean isRenderPoints(org.achartengine.renderer.SimpleSeriesRenderer) -> a
+org.achartengine.chart.PointStyle -> org.achartengine.a.e:
+    org.achartengine.chart.PointStyle X -> a
+    org.achartengine.chart.PointStyle CIRCLE -> b
+    org.achartengine.chart.PointStyle TRIANGLE -> c
+    org.achartengine.chart.PointStyle SQUARE -> d
+    org.achartengine.chart.PointStyle DIAMOND -> e
+    org.achartengine.chart.PointStyle POINT -> f
+    java.lang.String mName -> g
+    org.achartengine.chart.PointStyle[] $VALUES -> h
+    21:21:org.achartengine.chart.PointStyle[] values() -> values
+    21:21:org.achartengine.chart.PointStyle valueOf(java.lang.String) -> valueOf
+    50:50:java.lang.String toString() -> toString
+org.achartengine.chart.ScatterChart -> org.achartengine.a.f:
+    58:98:void drawSeries(android.graphics.Canvas,android.graphics.Paint,float[],org.achartengine.renderer.SimpleSeriesRenderer,float,int) -> a
+    106:106:int getLegendShapeWidth() -> a
+    120:145:void drawLegendShape(android.graphics.Canvas,org.achartengine.renderer.SimpleSeriesRenderer,float,float,android.graphics.Paint) -> a
+    156:158:void drawX(android.graphics.Canvas,android.graphics.Paint,float,float) -> a
+    169:170:void drawCircle(android.graphics.Canvas,android.graphics.Paint,float,float) -> b
+    182:189:void drawTriangle(android.graphics.Canvas,android.graphics.Paint,float[],float,float) -> a
+    200:201:void drawSquare(android.graphics.Canvas,android.graphics.Paint,float,float) -> c
+    213:222:void drawDiamond(android.graphics.Canvas,android.graphics.Paint,float[],float,float) -> b
+org.achartengine.chart.ScatterChart$1 -> org.achartengine.a.g:
+    int[] $SwitchMap$org$achartengine$chart$PointStyle -> a
+org.achartengine.chart.TimeChart -> org.achartengine.a.h:
+    java.lang.String mDateFormat -> a
+    62:63:void setDateFormat(java.lang.String) -> a
+    80:97:void drawXLabels(java.util.List,java.lang.Double[],android.graphics.Canvas,android.graphics.Paint,int,int,int,double,double) -> a
+    106:122:java.text.DateFormat getDateFormat(double,double) -> a
+org.achartengine.chart.XYChart -> org.achartengine.a.i:
+    org.achartengine.model.XYMultipleSeriesDataset mDataset -> b
+    org.achartengine.renderer.XYMultipleSeriesRenderer mRenderer -> c
+    float mScale -> a
+    float mTranslate -> e
+    android.graphics.PointF mCenter -> f
+    int GRID_COLOR -> d
+    73:260:void draw(android.graphics.Canvas,int,int,int,int) -> a
+    273:276:void drawChartValuesText(android.graphics.Canvas,org.achartengine.model.XYSeries,android.graphics.Paint,float[],int) -> a
+    290:300:void drawText(android.graphics.Canvas,java.lang.String,float,float,android.graphics.Paint,int) -> a
+    311:320:void transform(android.graphics.Canvas,float,boolean) -> a
+    329:335:java.lang.String getLabel(double) -> a
+    353:377:void drawXLabels(java.util.List,java.lang.Double[],android.graphics.Canvas,android.graphics.Paint,int,int,int,double,double) -> a
+    void drawSeries(android.graphics.Canvas,android.graphics.Paint,float[],org.achartengine.renderer.SimpleSeriesRenderer,float,int) -> a
+    398:398:boolean isRenderPoints(org.achartengine.renderer.SimpleSeriesRenderer) -> a
+org.achartengine.model.CategorySeries -> org.achartengine.b.a:
+    java.lang.String mTitle -> a
+    java.util.List mCategories -> b
+    java.util.List mValues -> c
+    57:58:void add(double) -> a
+    124:129:org.achartengine.model.XYSeries toXYSeries() -> a
+org.achartengine.model.XYMultipleSeriesDataset -> org.achartengine.b.b:
+    java.util.List mSeries -> a
+    34:35:void addSeries(org.achartengine.model.XYSeries) -> a
+    60:60:org.achartengine.model.XYSeries getSeriesAt(int) -> a
+    68:68:int getSeriesCount() -> a
+org.achartengine.model.XYSeries -> org.achartengine.b.c:
+    java.lang.String mTitle -> a
+    java.util.List mX -> b
+    java.util.List mY -> c
+    double mMinX -> d
+    double mMaxX -> e
+    double mMinY -> f
+    double mMaxY -> g
+    59:69:void initRange() -> g
+    77:81:void updateRange(double,double) -> b
+    89:89:java.lang.String getTitle() -> a
+    108:111:void add(double,double) -> a
+    142:142:double getX(int) -> a
+    152:152:double getY(int) -> b
+    160:160:int getItemCount() -> b
+    168:168:double getMinX() -> c
+    176:176:double getMinY() -> d
+    184:184:double getMaxX() -> e
+    192:192:double getMaxY() -> f
+org.achartengine.renderer.DefaultRenderer -> org.achartengine.c.a:
+    android.graphics.Typeface REGULAR_TEXT_FONT -> a
+    java.lang.String textTypefaceName -> b
+    int textTypefaceStyle -> c
+    int mBackgroundColor -> d
+    boolean mApplyBackgroundColor -> e
+    boolean mShowAxes -> f
+    int mAxesColor -> g
+    boolean mShowLabels -> h
+    int mLabelsColor -> i
+    float mLabelsTextSize -> j
+    boolean mShowLegend -> k
+    float mLegendTextSize -> l
+    boolean mShowGrid -> m
+    java.util.List mRenderers -> n
+    boolean antialiasing -> o
+    70:71:void addSeriesRenderer(org.achartengine.renderer.SimpleSeriesRenderer) -> a
+    89:89:org.achartengine.renderer.SimpleSeriesRenderer getSeriesRendererAt(int) -> a
+    98:98:int getSeriesRendererCount() -> a
+    116:116:int getBackgroundColor() -> b
+    134:134:boolean isApplyBackgroundColor() -> c
+    152:152:int getAxesColor() -> d
+    161:162:void setAxesColor$13462e() -> e
+    170:170:int getLabelsColor() -> f
+    179:180:void setLabelsColor$13462e() -> g
+    188:188:float getLabelsTextSize() -> h
+    197:198:void setLabelsTextSize$133aeb() -> i
+    206:206:boolean isShowAxes() -> j
+    215:216:void setShowAxes$1385ff() -> k
+    224:224:boolean isShowLabels() -> l
+    242:242:boolean isShowGrid() -> m
+    251:252:void setShowGrid$1385ff() -> n
+    260:260:boolean isShowLegend() -> o
+    269:270:void setShowLegend$1385ff() -> p
+    278:278:java.lang.String getTextTypefaceName() -> q
+    287:287:int getTextTypefaceStyle() -> r
+    296:296:float getLegendTextSize() -> s
+    324:324:boolean isAntialiasing() -> t
+    332:333:void setAntialiasing$1385ff() -> u
+org.achartengine.renderer.SimpleSeriesRenderer -> org.achartengine.c.b:
+    int mColor -> a
+    34:34:int getColor() -> a
+    42:43:void setColor(int) -> a
+org.achartengine.renderer.XYMultipleSeriesRenderer -> org.achartengine.c.c:
+    java.lang.String mChartTitle -> a
+    float mChartTitleTextSize -> b
+    java.lang.String mXTitle -> c
+    java.lang.String mYTitle -> d
+    float mAxisTitleTextSize -> e
+    double mMinX -> f
+    double mMaxX -> g
+    double mMinY -> h
+    double mMaxY -> i
+    int mXLabels -> j
+    int mYLabels -> k
+    org.achartengine.renderer.XYMultipleSeriesRenderer$Orientation mOrientation -> l
+    java.util.Map mXTextLabels -> m
+    boolean mDisplayChartValues -> n
+    float mChartValuesTextSize -> o
+    87:87:org.achartengine.renderer.XYMultipleSeriesRenderer$Orientation getOrientation() -> v
+    96:97:void setOrientation(org.achartengine.renderer.XYMultipleSeriesRenderer$Orientation) -> a
+    105:105:java.lang.String getChartTitle() -> w
+    114:115:void setChartTitle(java.lang.String) -> a
+    123:123:float getChartTitleTextSize() -> x
+    141:141:java.lang.String getXTitle() -> y
+    150:151:void setXTitle(java.lang.String) -> b
+    159:159:java.lang.String getYTitle() -> z
+    168:169:void setYTitle(java.lang.String) -> c
+    177:177:float getAxisTitleTextSize() -> A
+    195:195:double getXAxisMin() -> B
+    204:205:void setXAxisMin(double) -> a
+    212:212:boolean isMinXSet() -> C
+    221:221:double getXAxisMax() -> D
+    230:231:void setXAxisMax(double) -> b
+    238:238:boolean isMaxXSet() -> E
+    247:247:double getYAxisMin() -> F
+    256:257:void setYAxisMin(double) -> c
+    264:264:boolean isMinYSet() -> G
+    273:273:double getYAxisMax() -> H
+    282:283:void setYAxisMax(double) -> d
+    290:290:boolean isMaxYSet() -> I
+    299:299:int getXLabels() -> J
+    308:309:void setXLabels(int) -> b
+    318:319:void addTextLabel(double,java.lang.String) -> a
+    328:328:java.lang.String getXTextLabel(java.lang.Double) -> a
+    337:337:java.lang.Double[] getXTextLabelLocations() -> K
+    346:346:int getYLabels() -> L
+    355:356:void setYLabels(int) -> c
+    363:363:boolean isDisplayChartValues() -> M
+    380:380:float getChartValuesTextSize() -> N
+org.achartengine.renderer.XYMultipleSeriesRenderer$Orientation -> org.achartengine.c.d:
+    org.achartengine.renderer.XYMultipleSeriesRenderer$Orientation HORIZONTAL -> a
+    org.achartengine.renderer.XYMultipleSeriesRenderer$Orientation VERTICAL -> b
+    int mAngle -> c
+    org.achartengine.renderer.XYMultipleSeriesRenderer$Orientation[] $VALUES -> d
+    62:62:org.achartengine.renderer.XYMultipleSeriesRenderer$Orientation[] values() -> values
+    62:62:org.achartengine.renderer.XYMultipleSeriesRenderer$Orientation valueOf(java.lang.String) -> valueOf
+    77:77:int getAngle() -> a
+org.achartengine.renderer.XYSeriesRenderer -> org.achartengine.c.e:
+    boolean mFillPoints -> a
+    boolean mFillBelowLine -> b
+    int mFillColor -> c
+    org.achartengine.chart.PointStyle mPointStyle -> d
+    float mLineWidth -> e
+    43:43:boolean isFillBelowLine() -> b
+    62:62:boolean isFillPoints() -> c
+    71:72:void setFillPoints$1385ff() -> d
+    80:80:int getFillBelowLineColor() -> e
+    98:98:org.achartengine.chart.PointStyle getPointStyle() -> f
+    107:108:void setPointStyle(org.achartengine.chart.PointStyle) -> a
+    116:116:float getLineWidth() -> g
+org.achartengine.util.MathHelper -> org.achartengine.d.a:
+    double[] RADIANS -> a
+    double[] SIN -> b
+    double[] COS -> c
+    java.text.NumberFormat FORMAT -> d
+    120:139:java.util.List getLabels(double,double,int) -> a
+org.acra.ACRA -> org.acra.ACRA:
+    java.lang.String LOG_TAG -> LOG_TAG
+    java.lang.String RES_NOTIF_ICON -> RES_NOTIF_ICON
+    java.lang.String RES_NOTIF_TICKER_TEXT -> RES_NOTIF_TICKER_TEXT
+    java.lang.String RES_NOTIF_TITLE -> RES_NOTIF_TITLE
+    java.lang.String RES_NOTIF_TEXT -> RES_NOTIF_TEXT
+    java.lang.String RES_DIALOG_ICON -> RES_DIALOG_ICON
+    java.lang.String RES_DIALOG_TITLE -> RES_DIALOG_TITLE
+    java.lang.String RES_DIALOG_TEXT -> RES_DIALOG_TEXT
+    java.lang.String RES_DIALOG_COMMENT_PROMPT -> RES_DIALOG_COMMENT_PROMPT
+    java.lang.String RES_DIALOG_OK_TOAST -> RES_DIALOG_OK_TOAST
+    java.lang.String RES_TOAST_TEXT -> RES_TOAST_TEXT
+    int NOTIF_CRASH_ID -> NOTIF_CRASH_ID
+    java.lang.String PREF_DISABLE_ACRA -> PREF_DISABLE_ACRA
+    java.lang.String PREF_ENABLE_ACRA -> PREF_ENABLE_ACRA
+    android.app.Application mApplication -> mApplication
+    org.acra.annotation.ReportsCrashes mReportsCrashes -> mReportsCrashes
+    android.os.Bundle mCrashResources -> mCrashResources
+    android.content.SharedPreferences$OnSharedPreferenceChangeListener mPrefListener -> mPrefListener
+    int[] $SWITCH_TABLE$org$acra$ReportingInteractionMode -> $SWITCH_TABLE$org$acra$ReportingInteractionMode
+    114:177:void init(android.app.Application) -> init
+    185:200:void initAcra() -> initAcra
+    203:230:void initCrashResources() -> initCrashResources
+    233:233:android.os.Bundle getCrashResources() -> getCrashResources
+    238:238:android.net.Uri getFormUri() -> getFormUri
+    250:256:android.content.SharedPreferences getACRASharedPreferences() -> getACRASharedPreferences
+    184:184:void access$0() -> access$0
+    38:38:int[] $SWITCH_TABLE$org$acra$ReportingInteractionMode() -> $SWITCH_TABLE$org$acra$ReportingInteractionMode
+org.acra.ACRA$1 -> org.acra.a:
+    127:147:void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String) -> onSharedPreferenceChanged
+org.acra.ACRAConfigurationException -> org.acra.b:
+org.acra.ConfigurationInspector -> org.acra.c:
+    android.util.SparseArray mHardKeyboardHiddenValues -> a
+    android.util.SparseArray mKeyboardValues -> b
+    android.util.SparseArray mKeyboardHiddenValues -> c
+    android.util.SparseArray mNavigationValues -> d
+    android.util.SparseArray mNavigationHiddenValues -> e
+    android.util.SparseArray mOrientationValues -> f
+    android.util.SparseArray mScreenLayoutValues -> g
+    android.util.SparseArray mTouchScreenValues -> h
+    android.util.SparseArray mUiModeValues -> i
+    java.util.HashMap mValueArrays -> j
+    120:139:java.lang.String toString(android.content.res.Configuration) -> a
+    196:211:java.lang.String activeFlags(android.util.SparseArray,int) -> a
+org.acra.CrashReportDialog -> org.acra.CrashReportDialog:
+    android.widget.EditText userComment -> b
+    java.lang.String mReportFileName -> a
+    57:175:void onCreate(android.os.Bundle) -> onCreate
+    48:48:android.widget.EditText access$0(org.acra.CrashReportDialog) -> a
+org.acra.CrashReportDialog$1 -> org.acra.d:
+    org.acra.CrashReportDialog this$0 -> a
+    android.os.Bundle val$crashResources -> b
+    116:135:void onClick(android.view.View) -> onClick
+org.acra.CrashReportDialog$2 -> org.acra.e:
+    org.acra.CrashReportDialog this$0 -> a
+    146:148:void onClick(android.view.View) -> onClick
+org.acra.ErrorReporter -> org.acra.ErrorReporter:
+    java.lang.String LOG_TAG -> c
+    java.util.Properties mCrashProperties -> d
+    java.util.Map mCustomParameters -> a
+    java.lang.String mUserComment -> b
+    java.lang.Thread$UncaughtExceptionHandler mDfltExceptionHandler -> e
+    org.acra.ErrorReporter mInstanceSingleton -> f
+    android.content.Context mContext -> g
+    java.lang.String mInitialConfiguration -> h
+    org.acra.ReportingInteractionMode mReportingInteractionMode -> i
+    android.os.Bundle mCrashResources -> j
+    android.net.Uri mFormUri -> k
+    201:202:void setFormUri(android.net.Uri) -> a
+    212:213:void addCustomData(java.lang.String,java.lang.String) -> addCustomData
+    273:280:java.lang.String createCustomInfoString() -> e
+    289:292:org.acra.ErrorReporter getInstance() -> a
+    307:313:void init(android.content.Context) -> a
+    437:481:void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+    496:563:org.acra.ErrorReporter$ReportsSenderWorker handleException(java.lang.Throwable,org.acra.ReportingInteractionMode) -> a
+    589:590:org.acra.ErrorReporter$ReportsSenderWorker handleSilentException(java.lang.Throwable) -> handleSilentException
+    606:629:void notifySendReport(java.lang.String) -> b
+    664:681:java.lang.String saveCrashReportFile() -> f
+    690:704:java.lang.String[] getCrashReportFilesList() -> g
+    726:775:void checkAndSendReports(android.content.Context,java.lang.String,boolean) -> a
+    789:789:boolean storeToXML() -> h
+    798:799:void setReportingInteractionMode(org.acra.ReportingInteractionMode) -> a
+    806:830:void checkReportsOnApplicationStart() -> b
+    850:851:void deletePendingReports() -> c
+    892:893:void setCrashResources(android.os.Bundle) -> a
+    900:908:void disable() -> d
+    934:935:void setUserComment(java.lang.String) -> a
+    940:951:int getAPILevel() -> i
+    180:180:android.content.Context access$0(org.acra.ErrorReporter) -> a
+    189:189:android.os.Bundle access$1(org.acra.ErrorReporter) -> b
+org.acra.ErrorReporter$1 -> org.acra.f:
+    org.acra.ErrorReporter this$0 -> a
+    525:528:void run() -> run
+org.acra.ErrorReporter$2 -> org.acra.g:
+    org.acra.ErrorReporter this$0 -> a
+    697:697:boolean accept(java.io.File,java.lang.String) -> accept
+org.acra.ErrorReporter$ReportsSenderWorker -> org.acra.h:
+    java.lang.String mReportFileName -> b
+    boolean mSendOnlySilentReports -> c
+    org.acra.ErrorReporter this$0 -> a
+    109:110:void run() -> run
+    113:114:void setCommentReportFileName(java.lang.String) -> a
+org.acra.HttpUtils -> org.acra.i:
+    java.lang.String LOG_TAG -> a
+    javax.net.ssl.TrustManager[] TRUST_MANAGER -> b
+    org.apache.http.conn.ssl.AllowAllHostnameVerifier HOSTNAME_VERIFIER -> c
+    68:106:void doPost(java.util.Map,java.net.URL) -> a
+org.acra.NaiveTrustManager -> org.acra.j:
+    34:34:java.security.cert.X509Certificate[] getAcceptedIssuers() -> getAcceptedIssuers
+    47:47:void checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkClientTrusted
+    59:59:void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkServerTrusted
+org.acra.ReportingInteractionMode -> org.acra.ReportingInteractionMode:
+    org.acra.ReportingInteractionMode SILENT -> SILENT
+    org.acra.ReportingInteractionMode NOTIFICATION -> NOTIFICATION
+    org.acra.ReportingInteractionMode TOAST -> TOAST
+    org.acra.ReportingInteractionMode[] ENUM$VALUES -> ENUM$VALUES
+    1:1:org.acra.ReportingInteractionMode[] values() -> values
+    1:1:org.acra.ReportingInteractionMode valueOf(java.lang.String) -> valueOf
+org.acra.annotation.ReportsCrashes -> org.acra.a.a:
+    java.lang.String formKey() -> a
+    java.lang.String formUri() -> b
+    org.acra.ReportingInteractionMode mode() -> c
+    int resDialogCommentPrompt() -> d
+    int resDialogIcon() -> e
+    int resDialogOkToast() -> f
+    int resDialogText() -> g
+    int resDialogTitle() -> h
+    int resNotifIcon() -> i
+    int resNotifText() -> j
+    int resNotifTickerText() -> k
+    int resNotifTitle() -> l
+    int resToastText() -> m
+    java.lang.String sharedPreferencesName() -> n
+    int sharedPreferencesMode() -> o
