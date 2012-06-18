@@ -60,7 +60,7 @@
 				android:layout_width="wrap_content"
 				android:textColor="#ff0000"
 				android:layout_height="wrap_content"
-				android:text="beta"
+				android:text="redux"
 				android:layout_toRightOf="@+id/main_headline"
 				android:id="@+id/main_headline_beta"
 				android:layout_alignBaseline="@+id/main_headline"

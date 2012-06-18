@@ -3,7 +3,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="de.betaapps.andlyticsredux"
 	android:installLocation="auto"
-	android:versionName="1.3.38" android:versionCode="77">
+	android:versionName="1.3.39" android:versionCode="78">
     <!-- mantained by 8p8web since 1.3.36/75 -->
     
 	<uses-permission
