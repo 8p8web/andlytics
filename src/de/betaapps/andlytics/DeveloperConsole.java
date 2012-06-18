@@ -11,6 +11,7 @@ import de.betaapps.andlytics.gwt.Base64Utils;
 import de.betaapps.andlytics.gwt.GwtParser;
 import de.betaapps.andlytics.model.AppInfo;
 import de.betaapps.andlytics.model.Comment;
+import de.betaapps.andlyticsredux.R;
 
 import android.content.Context;
 import android.util.Log;

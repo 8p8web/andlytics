@@ -2,6 +2,7 @@ package de.betaapps.andlytics;
 
 import de.betaapps.andlytics.chart.Chart.AdmobChartType;
 import de.betaapps.andlytics.model.Admob;
+import de.betaapps.andlyticsredux.R;
 
 import android.app.Activity;
 import android.graphics.Color;

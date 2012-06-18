@@ -2,6 +2,7 @@ package de.betaapps.andlytics;
 
 import de.betaapps.andlytics.model.AppInfo;
 import de.betaapps.andlytics.model.AppStats;
+import de.betaapps.andlyticsredux.R;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;

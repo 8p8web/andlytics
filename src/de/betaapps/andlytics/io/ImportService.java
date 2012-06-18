@@ -1,7 +1,7 @@
 package de.betaapps.andlytics.io;
 
 import de.betaapps.andlytics.ContentAdapter;
-import de.betaapps.andlytics.R;
+import de.betaapps.andlyticsredux.R;
 import de.betaapps.andlytics.model.AppStats;
 
 import android.app.Notification;

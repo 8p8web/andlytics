@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello"> </string>
-    <string name="app_name">Andlytics</string>
+    
+    <string name="app_name">Andlytics Redux</string>
     <string name="app_name_admob">AdMob for Andlytics</string>
     <string name="app_name_headline_full">ANDLYTICS</string>
     <string name="app_name_headline_light">ANDLYTICS LITE</string>

@@ -5,7 +5,7 @@ import de.betaapps.andlytics.AppStatsDiff;
 import de.betaapps.andlytics.Constants;
 import de.betaapps.andlytics.Main;
 import de.betaapps.andlytics.Preferences;
-import de.betaapps.andlytics.R;
+import de.betaapps.andlyticsredux.R;
 
 import android.app.Notification;
 import android.app.NotificationManager;

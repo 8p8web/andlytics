@@ -21,6 +21,7 @@ import de.betaapps.andlytics.model.Admob;
 import de.betaapps.andlytics.model.AppInfo;
 import de.betaapps.andlytics.sync.AutosyncHandler;
 import de.betaapps.andlytics.sync.AutosyncHandlerFactory;
+import de.betaapps.andlyticsredux.R;
 
 import android.app.Dialog;
 import android.content.DialogInterface;

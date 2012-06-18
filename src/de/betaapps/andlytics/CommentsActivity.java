@@ -3,6 +3,7 @@ package de.betaapps.andlytics;
 import de.betaapps.andlytics.model.AppStats;
 import de.betaapps.andlytics.model.Comment;
 import de.betaapps.andlytics.model.CommentGroup;
+import de.betaapps.andlyticsredux.R;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

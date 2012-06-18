@@ -3,6 +3,7 @@ package de.betaapps.andlytics;
 import android.content.res.AssetManager;
 import android.graphics.Typeface;
 import android.widget.TextView;
+import de.betaapps.andlyticsredux.R;
 
 public class Style {
 

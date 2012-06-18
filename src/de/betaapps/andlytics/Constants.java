@@ -1,5 +1,7 @@
 package de.betaapps.andlytics;
 
+import de.betaapps.andlyticsredux.R;
+
 public interface Constants {
 	
 	public static final String AUTH_TOKEN_PARCEL = "de.betaapps.andlytics.authtoken";

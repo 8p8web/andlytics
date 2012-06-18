@@ -16,6 +16,7 @@ import de.betaapps.andlytics.exception.MultiAccountAcception;
 import de.betaapps.andlytics.exception.NetworkException;
 import de.betaapps.andlytics.exception.NoCookieSetException;
 import de.betaapps.andlytics.exception.SignupException;
+import de.betaapps.andlyticsredux.R;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;

@@ -13,6 +13,7 @@ import de.betaapps.andlytics.view.ChartGallery;
 import de.betaapps.andlytics.view.ChartGalleryAdapter;
 import de.betaapps.andlytics.view.ViewSwitcher3D;
 import de.betaapps.andlytics.view.ViewSwitcher3D.ViewSwitcherListener;
+import de.betaapps.andlyticsredux.R;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;

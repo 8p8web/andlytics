@@ -96,42 +96,41 @@ de.betaapps.andlytics.AdmobAuthenticatorActivity:
     public static final java.lang.String PARAM_CONFIRM_CREDENTIALS
     public static final java.lang.String PARAM_PASSWORD
 de.betaapps.andlytics.AdmobListAdapter:
-    287:287:public java.lang.Object getCurrentChart()
-    306:306:public java.util.List getStats()
-    315:315:public java.util.List getSecondPageCharts()
+    288:288:public java.lang.Object getCurrentChart()
+    307:307:public java.util.List getStats()
+    316:316:public java.util.List getSecondPageCharts()
 de.betaapps.andlytics.AndlyticsApp:
     private static final java.lang.String CONTENT_URI
     private java.lang.String feedbackMessage
-    98:99:public void setFeedbackMessage(java.lang.String)
-    102:102:public java.lang.String getFeedbackMessage()
+    99:100:public void setFeedbackMessage(java.lang.String)
+    103:103:public java.lang.String getFeedbackMessage()
 de.betaapps.andlytics.AppStatsDiff:
-    62:62:public int getActiveInstallsChange()
-    78:78:public int getRating1Change()
-    86:86:public int getRating2Change()
-    94:94:public int getRating3Change()
-    102:102:public int getRating4Change()
-    110:110:public int getRating5Change()
-    122:122:public java.lang.String getPackageName()
-    138:138:public java.lang.String getIconName()
-    154:154:public java.lang.String getVersionName()
+    64:64:public int getActiveInstallsChange()
+    80:80:public int getRating1Change()
+    88:88:public int getRating2Change()
+    96:96:public int getRating3Change()
+    104:104:public int getRating4Change()
+    112:112:public int getRating5Change()
+    124:124:public java.lang.String getPackageName()
+    140:140:public java.lang.String getIconName()
+    156:156:public java.lang.String getVersionName()
 de.betaapps.andlytics.AppVersion
 de.betaapps.andlytics.BaseActivity:
     private static final int REQUEST_AUTHENTICATE
-    659:659:protected void onPostAuthentication()
-de.betaapps.andlytics.BuildConfig
+    660:660:protected void onPostAuthentication()
 de.betaapps.andlytics.ChartListAdapter:
     private static final int RED_TEXT
-    365:365:public java.lang.Object getCurrentChart()
-    391:391:public java.util.List getVersionUpdateDates()
+    366:366:public java.lang.Object getCurrentChart()
+    392:392:public java.util.List getVersionUpdateDates()
 de.betaapps.andlytics.CommentsActivity:
     private static final int MAX_LOAD_COMMENTS
 de.betaapps.andlytics.Constants
 de.betaapps.andlytics.ContentAdapter:
-    793:865:public java.util.Map getDailyRatings(java.util.Date,java.lang.String)
-    872:875:private java.lang.Integer getDiff(java.lang.Integer,int)
+    794:866:public java.util.Map getDailyRatings(java.util.Date,java.lang.String)
+    873:876:private java.lang.Integer getDiff(java.lang.Integer,int)
 de.betaapps.andlytics.ContentAdapter$1
 de.betaapps.andlytics.DemoDataActivity:
-    41:56:public static java.lang.String readTestData(char)
+    42:57:public static java.lang.String readTestData(char)
 de.betaapps.andlytics.DemoDataActivity$LoadDemoData:
     private static final int VALUE_LENGTH_1
 de.betaapps.andlytics.DeveloperConsole:
@@ -153,14 +152,14 @@ de.betaapps.andlytics.DeveloperConsole:
     private static final java.lang.String URL_DEVELOPER_EDIT_APP
     private static final java.lang.String URL_COMMENTS
     private static final java.lang.String URL_FEEDBACK
-    241:248:public java.util.Map parseFeedbackOverviewResponse(java.lang.String)
-    254:261:private long parseGetAssetForUserCount(java.lang.String)
-    302:310:protected boolean isInteger(java.lang.String)
-    349:365:private java.lang.String grepGetAssetForUserCount()
-    410:439:protected java.lang.String grapFeedbackOverview(java.util.List)
-    627:644:private static java.lang.String convertStreamToString(java.io.InputStream)
-    648:673:public java.lang.String login(java.lang.String,java.lang.String)
-    678:710:protected java.lang.String postUrl(java.lang.String,java.util.Map)
+    242:249:public java.util.Map parseFeedbackOverviewResponse(java.lang.String)
+    255:262:private long parseGetAssetForUserCount(java.lang.String)
+    303:311:protected boolean isInteger(java.lang.String)
+    350:366:private java.lang.String grepGetAssetForUserCount()
+    411:440:protected java.lang.String grapFeedbackOverview(java.util.List)
+    628:645:private static java.lang.String convertStreamToString(java.io.InputStream)
+    649:674:public java.lang.String login(java.lang.String,java.lang.String)
+    679:711:protected java.lang.String postUrl(java.lang.String,java.util.Map)
 de.betaapps.andlytics.DeveloperConsoleRemoteCall
 de.betaapps.andlytics.LoginActivity:
     private static final java.lang.String TAG
@@ -173,7 +172,7 @@ de.betaapps.andlytics.MainListAdapter:
     public static final int TAG_IS_EXPANDED
     private static final int TAG_ROW_ID
     private static final int ANIMATION_DURATION
-    637:637:public de.betaapps.andlytics.Preferences$StatsMode getStatsMode()
+    638:638:public de.betaapps.andlytics.Preferences$StatsMode getStatsMode()
 de.betaapps.andlytics.MainListAdapter$ExpandAnimation:
     private static final int SLEEP_TIME
 de.betaapps.andlytics.MainListAdapter$ViewHolder:
@@ -206,25 +205,16 @@ de.betaapps.andlytics.Preferences:
     private static final java.lang.String ADMOB_ACCOUNT
     private static final java.lang.String SHOW_CHART_HINT
     private static final java.lang.String LATEST_VERSION_CODE
-    9:9:public Preferences()
-    92:93:public static void saveGwtPermutation(android.content.Context,java.lang.String)
-    110:111:public static void saveRequestFullAssetInfo(android.content.Context,java.lang.String)
-    114:114:public static java.lang.String getRequestGetAssetForUserCount(android.content.Context)
-    118:119:public static void saveRequestGetAssetForUserCount(android.content.Context,java.lang.String)
-    126:127:public static void saveRequestUserComments(android.content.Context,java.lang.String)
-    134:137:private static void saveVersionDependingProperty(java.lang.String,java.lang.String,android.content.Context)
-    274:277:public static void saveLatestVersionCode(android.content.Context,int)
-    280:280:public static java.lang.String getRequestFeedback(android.content.Context)
-    284:285:public static void saveRequestFeedback(android.content.Context,java.lang.String)
-de.betaapps.andlytics.R
-de.betaapps.andlytics.R$anim
-de.betaapps.andlytics.R$attr
-de.betaapps.andlytics.R$drawable
-de.betaapps.andlytics.R$id
-de.betaapps.andlytics.R$layout
-de.betaapps.andlytics.R$string
-de.betaapps.andlytics.R$style
-de.betaapps.andlytics.R$xml
+    10:10:public Preferences()
+    93:94:public static void saveGwtPermutation(android.content.Context,java.lang.String)
+    111:112:public static void saveRequestFullAssetInfo(android.content.Context,java.lang.String)
+    115:115:public static java.lang.String getRequestGetAssetForUserCount(android.content.Context)
+    119:120:public static void saveRequestGetAssetForUserCount(android.content.Context,java.lang.String)
+    127:128:public static void saveRequestUserComments(android.content.Context,java.lang.String)
+    135:138:private static void saveVersionDependingProperty(java.lang.String,java.lang.String,android.content.Context)
+    275:278:public static void saveLatestVersionCode(android.content.Context,int)
+    281:281:public static java.lang.String getRequestFeedback(android.content.Context)
+    285:286:public static void saveRequestFeedback(android.content.Context,java.lang.String)
 de.betaapps.andlytics.admob.AdmobAccountRemovedException:
     private static final long serialVersionUID
 de.betaapps.andlytics.admob.AdmobAskForPasswordException:
@@ -483,6 +473,16 @@ de.betaapps.andlytics.view.ViewSwitcher3D:
     private static final java.lang.String TAG
     41:42:public void setDuration(long)
     72:72:public boolean isBacksideVisible()
+de.betaapps.andlyticsredux.BuildConfig
+de.betaapps.andlyticsredux.R
+de.betaapps.andlyticsredux.R$anim
+de.betaapps.andlyticsredux.R$attr
+de.betaapps.andlyticsredux.R$drawable
+de.betaapps.andlyticsredux.R$id
+de.betaapps.andlyticsredux.R$layout
+de.betaapps.andlyticsredux.R$string
+de.betaapps.andlyticsredux.R$style
+de.betaapps.andlyticsredux.R$xml
 org.achartengine.ChartFactory:
     public static final java.lang.String CHART
     public static final java.lang.String TITLE

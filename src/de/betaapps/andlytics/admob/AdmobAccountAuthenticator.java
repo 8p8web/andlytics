@@ -143,7 +143,7 @@ public class AdmobAccountAuthenticator extends Service {
         @Override
         public String getAuthTokenLabel(String authTokenType) {
             if (authTokenType.equals(Constants.AUTHTOKEN_TYPE_ADMOB)) {
-                return mContext.getString(de.betaapps.andlytics.R.string.app_name_admob);
+                return mContext.getString(de.betaapps.andlyticsredux.R.string.app_name_admob);
             }
             return null;
 

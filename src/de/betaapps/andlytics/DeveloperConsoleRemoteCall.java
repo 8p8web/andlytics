@@ -1,5 +1,7 @@
 package de.betaapps.andlytics;
 
+import de.betaapps.andlyticsredux.R;
+
 
 public abstract class DeveloperConsoleRemoteCall<Params, Result> {
 

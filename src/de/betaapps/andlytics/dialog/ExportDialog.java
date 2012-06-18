@@ -1,6 +1,6 @@
 package de.betaapps.andlytics.dialog;
 
-import de.betaapps.andlytics.R;
+import de.betaapps.andlyticsredux.R;
 import de.betaapps.andlytics.cache.AppIconInMemoryCache;
 import de.betaapps.andlytics.io.ExportService;
 import de.betaapps.andlytics.model.AppInfo;

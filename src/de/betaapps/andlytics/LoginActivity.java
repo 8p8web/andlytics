@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import de.betaapps.andlyticsredux.R;
 
 import java.io.IOException;
 

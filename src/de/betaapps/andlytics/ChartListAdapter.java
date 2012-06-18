@@ -3,6 +3,7 @@ package de.betaapps.andlytics;
 import de.betaapps.andlytics.chart.Chart.DownloadChartType;
 import de.betaapps.andlytics.chart.Chart.RatingChartType;
 import de.betaapps.andlytics.model.AppStats;
+import de.betaapps.andlyticsredux.R;
 
 import android.app.Activity;
 import android.graphics.Color;

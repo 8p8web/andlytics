@@ -2,6 +2,7 @@ package de.betaapps.andlytics;
 
 import de.betaapps.andlytics.model.Comment;
 import de.betaapps.andlytics.model.CommentGroup;
+import de.betaapps.andlyticsredux.R;
 
 import android.content.Intent;
 import android.graphics.Bitmap;

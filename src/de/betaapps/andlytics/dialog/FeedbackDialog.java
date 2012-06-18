@@ -1,6 +1,6 @@
 package de.betaapps.andlytics.dialog;
 
-import de.betaapps.andlytics.R;
+import de.betaapps.andlyticsredux.R;
 import de.betaapps.andlytics.exception.FeedbackException;
 
 import android.app.Application;

@@ -6,6 +6,7 @@ import de.betaapps.andlytics.chart.Chart.ChartSet;
 import de.betaapps.andlytics.model.Admob;
 import de.betaapps.andlytics.model.AppInfo;
 import de.betaapps.andlytics.model.AppStats;
+import de.betaapps.andlyticsredux.R;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
+import de.betaapps.andlyticsredux.R;
 
 import org.acra.annotation.ReportsCrashes;
 

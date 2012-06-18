@@ -12,6 +12,7 @@ import de.betaapps.andlytics.model.AppInfo;
 import de.betaapps.andlytics.model.AppStats;
 import de.betaapps.andlytics.model.AppStatsList;
 import de.betaapps.andlytics.model.Comment;
+import de.betaapps.andlyticsredux.R;
 
 import android.content.ContentValues;
 import android.content.Context;

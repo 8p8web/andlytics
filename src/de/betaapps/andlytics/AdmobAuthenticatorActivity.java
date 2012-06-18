@@ -2,6 +2,7 @@ package de.betaapps.andlytics;
 
 import de.betaapps.andlytics.admob.AdmobAuthenticationUtilities;
 import de.betaapps.andlytics.admob.AdmobRequest;
+import de.betaapps.andlyticsredux.R;
 
 import android.accounts.Account;
 import android.accounts.AccountAuthenticatorActivity;
