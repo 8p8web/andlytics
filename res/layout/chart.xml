@@ -19,13 +19,13 @@
 
 
 
-			<de.betaapps.andlytics.chart.ChartTextSwitcher
+			<de.betaapps.andlyticsredux.chart.ChartTextSwitcher
 				android:layout_height="wrap_content"
 				android:id="@+id/chart_chart_type"
 				android:layout_centerInParent="true"
 				android:layout_width="fill_parent"
-				android:paddingTop="5dp">
-			</de.betaapps.andlytics.chart.ChartTextSwitcher>
+				android:paddingTop="5dp"
+				/>
 
 			<RelativeLayout
 				android:id="@+id/chart_button_back"
