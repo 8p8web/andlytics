@@ -41,16 +41,6 @@ de.betaapps.andlytics.sync.SyncAdapterService
 de.betaapps.andlytics.view.ChartGallery
 de.betaapps.andlytics.view.ChartGallery: ChartGallery(android.content.Context,android.util.AttributeSet,int)
 de.betaapps.andlytics.view.ChartGallery: ChartGallery(android.content.Context,android.util.AttributeSet)
-de.betaapps.andlyticsredux.chart.Chart$AdmobChartType: de.betaapps.andlyticsredux.chart.Chart$AdmobChartType[] values()
-de.betaapps.andlyticsredux.chart.Chart$AdmobChartType: de.betaapps.andlyticsredux.chart.Chart$AdmobChartType valueOf(java.lang.String)
-de.betaapps.andlyticsredux.chart.Chart$ChartSet: de.betaapps.andlyticsredux.chart.Chart$ChartSet[] values()
-de.betaapps.andlyticsredux.chart.Chart$ChartSet: de.betaapps.andlyticsredux.chart.Chart$ChartSet valueOf(java.lang.String)
-de.betaapps.andlyticsredux.chart.Chart$DownloadChartType: de.betaapps.andlyticsredux.chart.Chart$DownloadChartType[] values()
-de.betaapps.andlyticsredux.chart.Chart$DownloadChartType: de.betaapps.andlyticsredux.chart.Chart$DownloadChartType valueOf(java.lang.String)
-de.betaapps.andlyticsredux.chart.Chart$RatingChartType: de.betaapps.andlyticsredux.chart.Chart$RatingChartType[] values()
-de.betaapps.andlyticsredux.chart.Chart$RatingChartType: de.betaapps.andlyticsredux.chart.Chart$RatingChartType valueOf(java.lang.String)
-de.betaapps.andlyticsredux.chart.ChartTextSwitcher
-de.betaapps.andlyticsredux.chart.ChartTextSwitcher: ChartTextSwitcher(android.content.Context,android.util.AttributeSet)
 org.achartengine.GraphicalActivity
 org.achartengine.chart.BarChart$Type: org.achartengine.chart.BarChart$Type[] values()
 org.achartengine.chart.BarChart$Type: org.achartengine.chart.BarChart$Type valueOf(java.lang.String)

@@ -2,7 +2,7 @@ package de.betaapps.andlytics;
 
 import de.betaapps.andlytics.Preferences.Timeframe;
 import de.betaapps.andlytics.chart.Chart;
-import de.betaapps.andlyticsredux.chart.ChartTextSwitcher;
+import de.betaapps.andlytics.chart.ChartTextSwitcher;
 import de.betaapps.andlytics.chart.Chart.ChartSet;
 import de.betaapps.andlytics.chart.Chart.DownloadChartType;
 import de.betaapps.andlytics.chart.Chart.RatingChartType;

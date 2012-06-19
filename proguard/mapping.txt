@@ -379,7 +379,7 @@ de.betaapps.andlytics.ChartActivity -> de.betaapps.andlytics.ChartActivity:
     android.widget.TextView timeframeText -> n
     android.view.View oneEntryHint -> o
     boolean dataUpdateRequested -> p
-    de.betaapps.andlyticsredux.chart.ChartTextSwitcher titleTextSwitcher -> q
+    de.betaapps.andlytics.chart.ChartTextSwitcher titleTextSwitcher -> q
     int currentChartPosition -> r
     android.view.animation.Animation inNegative -> s
     android.view.animation.Animation outNegative -> t
@@ -430,7 +430,7 @@ de.betaapps.andlytics.ChartActivity -> de.betaapps.andlytics.ChartActivity:
     70:70:void access$17(de.betaapps.andlytics.ChartActivity,de.betaapps.andlytics.Preferences$Timeframe) -> a
     75:75:void access$18(de.betaapps.andlytics.ChartActivity,java.lang.Boolean) -> a
     59:59:int access$19(de.betaapps.andlytics.ChartActivity) -> p
-    58:58:de.betaapps.andlyticsredux.chart.ChartTextSwitcher access$20(de.betaapps.andlytics.ChartActivity) -> q
+    58:58:de.betaapps.andlytics.chart.ChartTextSwitcher access$20(de.betaapps.andlytics.ChartActivity) -> q
     60:60:android.view.animation.Animation access$21(de.betaapps.andlytics.ChartActivity) -> r
     61:61:android.view.animation.Animation access$22(de.betaapps.andlytics.ChartActivity) -> s
     62:62:android.view.animation.Animation access$23(de.betaapps.andlytics.ChartActivity) -> t
@@ -1177,7 +1177,7 @@ de.betaapps.andlytics.chart.Chart$ValueCallbackHander -> de.betaapps.andlytics.b
     boolean isHeilightValue(java.lang.Object,java.lang.Object) -> a
 de.betaapps.andlytics.chart.ChartTextSwitcher -> de.betaapps.andlytics.b.ab:
     43:49:void addView(android.view.View,int,android.view.ViewGroup$LayoutParams) -> addView
-    58:70:void setText$6a88fbbd(java.lang.CharSequence) -> a
+    58:70:void setText(java.lang.CharSequence,android.graphics.drawable.Drawable) -> a
 de.betaapps.andlytics.db.AdmobTable -> de.betaapps.andlytics.db.a:
     android.net.Uri CONTENT_URI -> a
     java.util.HashMap PROJECTION_MAP -> b
@@ -1965,9 +1965,6 @@ de.betaapps.andlytics.view.ViewSwitcher3D$TurnAroundListener -> de.betaapps.andl
 de.betaapps.andlytics.view.ViewSwitcher3D$ViewSwitcherListener -> de.betaapps.andlytics.g.h:
     void onViewChanged$1385ff() -> c
     void onRender() -> d
-de.betaapps.andlyticsredux.chart.ChartTextSwitcher -> de.betaapps.a.a.a:
-    43:49:void addView(android.view.View,int,android.view.ViewGroup$LayoutParams) -> addView
-    58:70:void setText(java.lang.CharSequence,android.graphics.drawable.Drawable) -> a
 org.achartengine.ChartFactory -> org.achartengine.a:
     120:123:org.achartengine.GraphicalView getTimeChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String) -> a
     140:142:org.achartengine.GraphicalView getBarChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,org.achartengine.chart.BarChart$Type) -> a

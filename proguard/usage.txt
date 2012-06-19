@@ -483,37 +483,6 @@ de.betaapps.andlyticsredux.R$layout
 de.betaapps.andlyticsredux.R$string
 de.betaapps.andlyticsredux.R$style
 de.betaapps.andlyticsredux.R$xml
-de.betaapps.andlyticsredux.chart.AbstractChart
-de.betaapps.andlyticsredux.chart.Chart
-de.betaapps.andlyticsredux.chart.Chart$1
-de.betaapps.andlyticsredux.chart.Chart$10
-de.betaapps.andlyticsredux.chart.Chart$11
-de.betaapps.andlyticsredux.chart.Chart$12
-de.betaapps.andlyticsredux.chart.Chart$13
-de.betaapps.andlyticsredux.chart.Chart$14
-de.betaapps.andlyticsredux.chart.Chart$15
-de.betaapps.andlyticsredux.chart.Chart$16
-de.betaapps.andlyticsredux.chart.Chart$17
-de.betaapps.andlyticsredux.chart.Chart$18
-de.betaapps.andlyticsredux.chart.Chart$2
-de.betaapps.andlyticsredux.chart.Chart$3
-de.betaapps.andlyticsredux.chart.Chart$4
-de.betaapps.andlyticsredux.chart.Chart$5
-de.betaapps.andlyticsredux.chart.Chart$6
-de.betaapps.andlyticsredux.chart.Chart$7
-de.betaapps.andlyticsredux.chart.Chart$8
-de.betaapps.andlyticsredux.chart.Chart$9
-de.betaapps.andlyticsredux.chart.Chart$AdmobChartType
-de.betaapps.andlyticsredux.chart.Chart$AdmobValueCallbackHander
-de.betaapps.andlyticsredux.chart.Chart$ChartSet
-de.betaapps.andlyticsredux.chart.Chart$DevConValueCallbackHander
-de.betaapps.andlyticsredux.chart.Chart$DownloadChartType
-de.betaapps.andlyticsredux.chart.Chart$RatingChartType
-de.betaapps.andlyticsredux.chart.Chart$ValueCallbackHander
-de.betaapps.andlyticsredux.chart.ChartTextSwitcher:
-    21:22:public ChartTextSwitcher(android.content.Context)
-    32:33:public ChartTextSwitcher(android.content.Context,android.util.AttributeSet)
-    79:90:public void setCurrentText(java.lang.CharSequence,android.graphics.drawable.Drawable)
 org.achartengine.ChartFactory:
     public static final java.lang.String CHART
     public static final java.lang.String TITLE

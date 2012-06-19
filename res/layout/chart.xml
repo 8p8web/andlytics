@@ -19,7 +19,7 @@
 
 
 
-			<de.betaapps.andlyticsredux.chart.ChartTextSwitcher
+			<de.betaapps.andlytics.chart.ChartTextSwitcher
 				android:layout_height="wrap_content"
 				android:id="@+id/chart_chart_type"
 				android:layout_centerInParent="true"
