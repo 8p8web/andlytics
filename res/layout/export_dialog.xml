@@ -29,9 +29,9 @@
 			android:cacheColorHint="#fff"
 			android:layout_height="wrap_content"
 			android:layout_above="@+id/export_dialog_buttons"
-			android:layout_below="@+id/export_dialog_title"
 			android:layout_margin="2dp" />
-
+<!--             android:layout_below="@+id/export_dialog_title" -->
+		
 
 		<LinearLayout
 			android:id="@+id/export_dialog_buttons"

@@ -277,7 +277,6 @@ de.betaapps.andlytics.chart.Chart:
     private static final int MAX_BAR_VALUES
 de.betaapps.andlytics.chart.ChartTextSwitcher:
     21:22:public ChartTextSwitcher(android.content.Context)
-    32:33:public ChartTextSwitcher(android.content.Context,android.util.AttributeSet)
     79:90:public void setCurrentText(java.lang.CharSequence,android.graphics.drawable.Drawable)
 de.betaapps.andlytics.db.AdmobTable:
     public static final java.lang.String DATABASE_TABLE_NAME
@@ -462,8 +461,6 @@ de.betaapps.andlytics.sync.NotificationHandler:
     19:19:public NotificationHandler()
 de.betaapps.andlytics.view.ChartGallery:
     private static final float SWIPE_MIN_DISTANCE
-    20:21:public ChartGallery(android.content.Context,android.util.AttributeSet,int)
-    24:25:public ChartGallery(android.content.Context,android.util.AttributeSet)
     28:29:public ChartGallery(android.content.Context)
     89:90:public void setInterceptTouchEvents(boolean)
     93:93:public boolean isInterceptTouchEvents()
