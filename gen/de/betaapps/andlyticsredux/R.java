@@ -450,6 +450,7 @@ public final class R {
         public static final int autosync_off=0x7f060004;
         public static final int autosync_on=0x7f060005;
         public static final int crash_desc=0x7f060009;
+        public static final int donate_desc=0x7f06000b;
         public static final int newversion_desc=0x7f06000a;
         public static final int one_entry_hint_demo=0x7f060007;
         public static final int one_entry_hint_desc=0x7f060006;

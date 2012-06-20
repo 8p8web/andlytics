@@ -6,13 +6,17 @@ import android.accounts.AccountManagerCallback;
 import android.accounts.AccountManagerFuture;
 import android.accounts.AuthenticatorException;
 import android.accounts.OperationCanceledException;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import de.betaapps.andlytics.dialog.CrashDialog;
+import de.betaapps.andlytics.dialog.CrashDialog.CrashDialogBuilder;
 import de.betaapps.andlyticsredux.R;
 
 import java.io.IOException;
@@ -38,6 +42,9 @@ public class LoginActivity extends BaseActivity {
         Style.getInstance(getAssets()).styleHeadline(headlineBeta);
 
 		accountList = (LinearLayout) findViewById(R.id.login_input);
+		
+		// Show donate dialog
+		AndlyticsApp.showDonateDialog(this);
 
 		View addAccountButton = (View) findViewById(R.id.loign_add_account_button);
 		addAccountButton.setOnClickListener(new OnClickListener() {

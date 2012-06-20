@@ -1,29 +1,11 @@
 package de.betaapps.andlytics;
 
-import de.betaapps.andlytics.exception.AuthenticationException;
-import de.betaapps.andlytics.exception.DeveloperConsoleException;
-import de.betaapps.andlytics.exception.InvalidJSONResponseException;
-import de.betaapps.andlytics.exception.MultiAccountAcception;
-import de.betaapps.andlytics.exception.NetworkException;
-import de.betaapps.andlytics.exception.NoCookieSetException;
-import de.betaapps.andlytics.exception.SignupException;
-import de.betaapps.andlytics.gwt.Base64Utils;
-import de.betaapps.andlytics.gwt.GwtParser;
-import de.betaapps.andlytics.model.AppInfo;
-import de.betaapps.andlytics.model.Comment;
-import de.betaapps.andlyticsredux.R;
-
-import android.content.Context;
-import android.util.Log;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.lang.reflect.Field;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.SocketException;
 import java.net.URI;
@@ -64,24 +46,35 @@ import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 import org.apache.http.params.HttpProtocolParams;
 import org.apache.http.protocol.BasicHttpContext;
-import org.apache.http.protocol.ExecutionContext;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.content.Context;
+import android.util.Log;
+import de.betaapps.andlytics.exception.AuthenticationException;
+import de.betaapps.andlytics.exception.DeveloperConsoleException;
+import de.betaapps.andlytics.exception.InvalidJSONResponseException;
+import de.betaapps.andlytics.exception.MultiAccountAcception;
+import de.betaapps.andlytics.exception.NetworkException;
+import de.betaapps.andlytics.exception.NoCookieSetException;
+import de.betaapps.andlytics.exception.SignupException;
+import de.betaapps.andlytics.gwt.Base64Utils;
+import de.betaapps.andlytics.gwt.GwtParser;
+import de.betaapps.andlytics.model.AppInfo;
+import de.betaapps.andlytics.model.Comment;
+
 public class DeveloperConsole {
 	
 	private static final String GWT_PERMUTATION = "6D75CBE66FE85272BB1AD2C64A98B720";
 	
-	private static final String PARAM_XSRFTOKEN = "<<xsrftoken>>";
-
-	private static final String GET_FULL_ASSET_INFO_FOR_USER_REQUEST = "7|2|8|https://play.google.com/apps/publish/gwt/|3B7A8BF63F2CA8EABDB009A5A41DB7E4|com.google.gwt.user.client.rpc.XsrfToken/4254043109|"+PARAM_XSRFTOKEN+"|com.google.wireless.android.vending.developer.shared.AppEditorService|getProductInfosForUser|java.lang.String/2004016611|J|1|2|3|4|5|6|3|7|8|8|0|A|Bk|";
+	private static final String GET_FULL_ASSET_INFO_FOR_USER_REQUEST = "7|2|8|https://play.google.com/apps/publish/gwt/|3B7A8BF63F2CA8EABDB009A5A41DB7E4|com.google.gwt.user.client.rpc.XsrfToken/4254043109|<<xsrftoken>>|com.google.wireless.android.vending.developer.shared.AppEditorService|getProductInfosForUser|java.lang.String/2004016611|J|1|2|3|4|5|6|3|7|8|8|0|A|Bk|";
 
 	private static final String GET_ASSET_FOR_USER_COUNT_REQUEST = "7|0|4|https://play.google.com/apps/publish/gwt/|11B29A336607683DE538737452FFF924|com.google.wireless.android.vending.developer.shared.AppEditorService|getAssetForUserCount|1|2|3|4|0|";
 	
-	private static final String GET_USER_COMMENTS_REQUEST = "7|0|9|https://play.google.com/apps/publish/gwt/|2E9964DE97CC7BE08F40232BE9F2F2D9|com.google.wireless.android.vending.developer.shared.CommentsService|getUserComments|java.lang.String/2004016611|J|java.lang.Iterable|<<appname>>|java.util.ArrayList/4159755760|1|2|3|4|7|5|6|6|7|7|7|5|8|<<start>>|<<length>>|9|0|9|0|9|0|0|";
+    private static final String GET_USER_COMMENTS_REQUEST = "7|2|11|https://play.google.com/apps/publish/gwt/|3B4252B1EA6FFDBEAC02B41B3975C468|com.google.gwt.user.client.rpc.XsrfToken/4254043109|<<xsrftoken>>|com.google.wireless.android.vending.developer.shared.CommentsService|getUserComments|java.lang.String/2004016611|J|java.lang.Iterable|<<appname>>|java.util.ArrayList/4159755760|1|2|3|4|5|6|7|7|8|8|9|9|9|7|10|A|U|11|0|11|0|11|0|0|";
 
 	private static final String GET_FEEDBACK_OVERVIEW = "7|0|6|https://play.google.com/apps/publish/gwt/|8A88A8C8E8E60107C7E013322C6CE8F2|com.google.wireless.android.vending.developer.shared.FeedbackService|getOverviewsForPackages|com.google.protos.userfeedback.gwt.AndroidFrontend$AndroidPackageListRequest$Json/4146859527|[,[<<packagelist>>] ] |1|2|3|4|1|5|5|6|";
 	
@@ -331,7 +324,7 @@ public class DeveloperConsole {
 		
 		// 8p8 fix for xsrfToken
 		String xsrfToken = ((AndlyticsApp) context.getApplicationContext()).getXsrfToken();
-		if (xsrfToken != null) developerPostData = developerPostData.replace(PARAM_XSRFTOKEN, xsrfToken);
+		if (xsrfToken != null) developerPostData = developerPostData.replace("<<xsrftoken>>", xsrfToken);
 		
 		String result = null;
 
@@ -391,6 +384,10 @@ public class DeveloperConsole {
 		postData = postData.replace(PARAM_STARTINDEX, startIndexString);
 		postData = postData.replace(PARAM_LENGTH, lengthString);
 
+        // 8p8 fix for xsrfToken
+        String xsrfToken = ((AndlyticsApp) context.getApplicationContext()).getXsrfToken();
+        if (xsrfToken != null) postData = postData.replace("<<xsrftoken>>", xsrfToken);
+		
 		String result = null;
 		
 		this.postData = postData;

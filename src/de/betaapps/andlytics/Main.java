@@ -246,6 +246,9 @@ public class Main extends BaseActivity implements GhostSelectonChangeListener, A
 
         }
 
+        // Show donate dialog
+        AndlyticsApp.showDonateDialog(this);
+        
     }
 
     @Override
