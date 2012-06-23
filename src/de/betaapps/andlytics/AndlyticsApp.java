@@ -133,10 +133,10 @@ public class AndlyticsApp extends Application {
             builder.setNegativeButton("not now", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) { dialog.dismiss(); }
             });
-            builder.create().show();
+            //builder.create().show();
             
-            SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
-            editor.putInt(PREF_SHOWN_DIALOG, versionCode); editor.commit();
+            //SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
+            //editor.putInt(PREF_SHOWN_DIALOG, versionCode); editor.commit();
         }
     }
 
